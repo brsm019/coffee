@@ -65,5 +65,6 @@ const Sidebar = () => {
     </div>
   );
 };
+//sidebar
 
 export default Sidebar;
