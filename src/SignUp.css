@@ -1,0 +1,55 @@
+/* <div className="signup">
+      <Header />
+      <div className="signup__container">
+        <div>-------------</div>
+        <h1 className="signup__header">REGISTER</h1>
+        <div>-------------</div>
+      </div> */
+
+.signup__container {
+  background-color: white;
+  width: 65%;
+  max-width: 550px;
+  min-width: 400px;
+  margin: auto;
+  margin-top: 20px;
+  padding: 2em;
+}
+
+.signup__header {
+  text-align: center;
+  color: black;
+  margin: 5px 0px;
+}
+
+.signup__line {
+  text-align: center;
+  color: rgb(104, 104, 104, 0.35);
+}
+
+.signup__form__container {
+  text-align: center;
+  margin: auto;
+}
+
+.signup__form {
+  text-align: left;
+}
+
+.signup__form > label {
+  display: table-caption;
+  font-style: italic;
+  color: darkgray;
+  font-size: small;
+  padding-top: 15px;
+}
+
+.signup__form input[type='text'] {
+  border: 0.5px solid darkgray;
+  border-radius: 1px;
+}
+
+input[type='text']:focus {
+  border: 0.5px solid red;
+  border-radius: 1px;
+}

@@ -124,10 +124,10 @@ const SideBar = () => {
                 className="sidebar__link"
                 activeClassName="sidebar__active"
               >
-                My Cart
+                MY CART
               </NavLink>
             </li>
-            <br></br>
+            {/* <br></br>
             <br></br>
             <br></br>
             <br></br>
@@ -157,8 +157,14 @@ const SideBar = () => {
               >
                 SIGN UP
               </NavLink>
-            </span>
+            </span> */}
           </ul>
+          <div className="sidebar__footer">
+          <h6 className="sidebar__footer__title">Square Mile<br></br>Coffee Roasters</h6>
+          <a className="sidebar__footer__link" href="mailto:testing@squaremiletest.com">webshop@squaremiletest.com</a>
+          <br></br>
+          <a className="sidebar__footer__link" href="mailto:testing@squaremiletest.com">info@squaremiletest.com</a>
+          </div>
 
           <Switch>
             {routes.map((route, index) => (

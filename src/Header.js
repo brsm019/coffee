@@ -11,8 +11,8 @@ const Header = () => {
       <Link to="/login" className="header__item">
         Login
       </Link>
-      <span className="header__item">Items: 01</span>
-      <span className="header__item">Total: £14.00</span>
+      <span className="header__item">Items: <b>01</b></span>
+      <span className="header__item">Total: <b>£14.00</b></span>
       <Link to="/myCart" id="header__cart" className="header__item">
         My Cart
       </Link>
