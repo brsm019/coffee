@@ -11,7 +11,7 @@
 }
 
 .header__item {
-  font-family: "gentium_basicitalic", Georgia, Times, "Times New Roman", serif;
+  font-family: "gentium", Georgia, Times, "Times New Roman", serif;
   padding-right: 0.9rem;
   padding-top: 0.85em;
   color: #464646;
@@ -20,7 +20,7 @@
   font-size: 12px;
 }
 .header__item:hover {
-  font-family: "gentium_basicitalic", Georgia, Times, "Times New Roman", serif;
+  font-family: "gentium", Georgia, Times, "Times New Roman", serif;
   padding-right: 0.9rem;
   padding-top: 0.85em;
   color: #7c7c7c;

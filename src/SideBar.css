@@ -33,8 +33,7 @@
 }
 
 .sidebar__link {
-  font-family: "TradeGothicLTPro-BdCn20", "Helvetica Neue", Helvetica, Arial,
-    sans-serif;
+  font-family: "TradeGothico", "Helvetica Neue", Helvetica, Arial, sans-serif;
   color: gray;
   transition: color 0.7s, border-bottom 0.7s;
   font-weight: bold;

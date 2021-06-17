@@ -18,8 +18,7 @@
 }
 
 .signup__header {
-  font-family: "TradeGothicLTPro-BdCn20", "Helvetica Neue", Helvetica, Arial,
-    sans-serif;
+  font-family: "TradeGothic", "Helvetica Neue", Helvetica, Arial, sans-serif;
   text-align: center;
   color: black;
   margin: 5px 0px;
@@ -41,7 +40,7 @@
 }
 
 .form-group label {
-  font-family: "gentium_basicitalic", Georgia, Times, "Times New Roman", serif;
+  font-family: "gentium", Georgia, Times, "Times New Roman", serif;
   font-style: italic;
   font-size: 14px;
   color: #7b7b7b;
@@ -59,8 +58,7 @@ input.form-control:focus {
 }
 
 .form__button {
-  font-family: "TradeGothicLTPro-BdCn20", "Helvetica Neue", Helvetica, Arial,
-    sans-serif;
+  font-family: "TradeGothic", "Helvetica Neue", Helvetica, Arial, sans-serif;
   align-content: left;
   display: flex;
   margin: 1em 5em;
@@ -97,7 +95,7 @@ input.form-control:focus {
 }
 
 .form__link {
-  font-family: "gentium_basicregular", Georgia, Times, "Times New Roman", serif;
+  font-family: "gentium", Georgia, Times, "Times New Roman", serif;
 }
 
 .form__link > a {
