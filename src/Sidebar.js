@@ -77,7 +77,7 @@ const routes = [
   },
 ];
 
-//Move styling into css
+//
 
 const SideBar = () => {
   return (
