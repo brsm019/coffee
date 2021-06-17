@@ -1,9 +1,11 @@
 import React from "react";
+import Header from "./Header";
 import "./Login.css";
 const Login = () => {
   return (
     <div className="login">
-      <h1>Log In</h1>
+      <Header />
+      <h1>Log In Component</h1>
     </div>
   );
 };

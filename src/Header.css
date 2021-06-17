@@ -1,0 +1,24 @@
+.header {
+  display: flex;
+  justify-content: flex-end;
+  width: 97%;
+  margin: 0px 1.5%;
+  height: 40px;
+  background-color: white;
+
+  border-radius: 0px 0px 5px 5px;
+  box-shadow: 1px 1px 1px rgb(0 0 0 / 10%);
+}
+
+.header__item {
+  padding-right: 0.5rem;
+  padding-top: 0.8em;
+  color: grey;
+  text-decoration: none;
+  font-style: italic;
+  font-size: smaller;
+}
+
+#header__cart {
+  text-decoration: underline;
+}

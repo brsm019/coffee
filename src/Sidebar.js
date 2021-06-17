@@ -6,7 +6,9 @@ import {
   NavLink,
 } from "react-router-dom";
 import Cart from "./Cart";
+import Home from "./Home";
 import Login from "./Login";
+import ShopEquipment from "./ShopEquipment";
 // import TopBar from "./TopBar";
 import "./SideBar.css";
 import SignUp from "./SignUp";
@@ -16,30 +18,60 @@ import SignUp from "./SignUp";
 const routes = [
   {
     path: "/signup",
-    sidebar: () => <div>signup</div>,
+    sidebar: () => <div></div>,
     main: () => (
       <div>
-        <h2>Sign Up</h2>
+        <SignUp />
       </div>
     ),
   },
   {
     path: "/",
     exact: true,
-    sidebar: () => <div>sidebar1</div>,
+    sidebar: () => <div></div>,
     main: () => (
       <div>
-        <h2>Coffee Selection</h2>
+        <Home />
       </div>
     ),
   },
   {
     path: "/equipment",
     exact: true,
-    sidebar: () => <div>sidebar2</div>,
+    sidebar: () => <div></div>,
     main: () => (
       <div>
-        <h2>Shop Equipment</h2>
+        <ShopEquipment />
+      </div>
+    ),
+  },
+  {
+    path: "/mycart",
+    exact: true,
+    sidebar: () => <div></div>,
+    main: () => (
+      <div>
+        <Cart />
+      </div>
+    ),
+  },
+  {
+    path: "/login",
+    exact: true,
+    sidebar: () => <div></div>,
+    main: () => (
+      <div>
+        <Login />
+      </div>
+    ),
+  },
+  {
+    path: "/equipment",
+    exact: true,
+    sidebar: () => <div></div>,
+    main: () => (
+      <div>
+        <SignUp />
       </div>
     ),
   },

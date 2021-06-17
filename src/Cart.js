@@ -1,9 +1,11 @@
 import React from "react";
 import "./Cart.css";
+import Header from "./Header";
 const Cart = () => {
   return (
     <div className="cart">
-      <h1>Cart</h1>
+      <Header />
+      <h1>Cart This</h1>
     </div>
   );
 };
