@@ -32,27 +32,32 @@
   padding-bottom: 8px;
 }
 
-
-
 .sidebar__link {
+  font-family: "TradeGothicLTPro-BdCn20", "Helvetica Neue", Helvetica, Arial,
+    sans-serif;
   color: gray;
   transition: color 0.7s, border-bottom 0.7s;
+  font-weight: bold;
+  font-size: small;
+}
+
+a.sidebar__link:hover {
+  color: white;
+  border-bottom: 2px solid white;
   font-weight: bold;
   font-size: small;
   text-decoration: none;
 }
 
-​ .sidebar__link:hover {
+a.sidebar__link:focus {
   color: white;
   border-bottom: 2px solid white;
+  font-weight: bold;
+  font-size: small;
+  text-decoration: none;
 }
 
-.sidebar__link:focus {
-  color: white;
-  border-bottom: 2px solid white;
-}
-
-.sidebar__active {
+a.sidebar__link:active {
   color: white;
   border-bottom: 2px solid white;
   transition: color 0.7s;
@@ -71,7 +76,7 @@
 
 .sidebar__pages {
   background-image: url(//cdn.shopify.com/s/files/1/0017/1562/t/18/assets/sqmile-img-main-bg.png?v=7383976945172872428);
-    background-repeat: repeat;
+  background-repeat: repeat;
 }
 .sidebar__pages > h2 {
   color: black;
@@ -101,7 +106,7 @@
   bottom: 40px;
   margin-left: 10px;
   width: 100%;
-  right: 2px
+  right: 2px;
 }
 
 .sidebar__footer__header {

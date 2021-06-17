@@ -11,12 +11,23 @@
 }
 
 .header__item {
-  padding-right: 0.5rem;
-  padding-top: 0.8em;
-  color: grey;
+  font-family: "gentium_basicitalic", Georgia, Times, "Times New Roman", serif;
+  padding-right: 0.9rem;
+  padding-top: 0.85em;
+  color: #464646;
   text-decoration: none;
   font-style: italic;
-  font-size: smaller;
+  font-size: 12px;
+}
+.header__item:hover {
+  font-family: "gentium_basicitalic", Georgia, Times, "Times New Roman", serif;
+  padding-right: 0.9rem;
+  padding-top: 0.85em;
+  color: #7c7c7c;
+  text-decoration: none;
+  font-style: italic;
+  font-size: 12px;
+  text-decoration: none;
 }
 
 #header__cart {
