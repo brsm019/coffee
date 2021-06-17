@@ -3,30 +3,51 @@ import {
   BrowserRouter as Router,
   Switch,
   Route,
-  Link,
   NavLink,
 } from "react-router-dom";
-import Home from "./Home";
-import ShopEquipment from "./ShopEquipment";
-import "./Sidebar.css";
+import Cart from "./Cart";
+import Login from "./Login";
+// import TopBar from "./TopBar";
+import "./SideBar.css";
+import SignUp from "./SignUp";
+
+//Need to make the two navbars communicate with each other so pages aren't overlaying each other
 
 const routes = [
   {
+    path: "/signup",
+    sidebar: () => <div>signup</div>,
+    main: () => (
+      <div>
+        <h2>Sign Up</h2>
+      </div>
+    ),
+  },
+  {
     path: "/",
     exact: true,
-    sidebar: () => <div></div>,
-    main: () => <h2>Coffee Selection</h2>,
+    sidebar: () => <div>sidebar1</div>,
+    main: () => (
+      <div>
+        <h2>Coffee Selection</h2>
+      </div>
+    ),
   },
   {
     path: "/equipment",
-    sidebar: () => <div></div>,
-    main: () => <h2>Shop Equipment</h2>,
+    exact: true,
+    sidebar: () => <div>sidebar2</div>,
+    main: () => (
+      <div>
+        <h2>Shop Equipment</h2>
+      </div>
+    ),
   },
 ];
 
-//change link to navlink and then set active class
+//Move styling into css
 
-const Sidebar = () => {
+const SideBar = () => {
   return (
     <Router>
       <div className="sidebar" style={{ display: "flex" }}>
@@ -64,7 +85,49 @@ const Sidebar = () => {
                 SHOP EQUIPMENT
               </NavLink>
             </li>
+
+            <li className="sidebar__list">
+              <NavLink
+                to="/mycart"
+                className="sidebar__link"
+                activeClassName="sidebar__active"
+              >
+                My Cart
+              </NavLink>
+            </li>
+            <br></br>
+            <br></br>
+            <br></br>
+            <br></br>
+            <br></br>
+            <br></br>
+            <br></br>
+            <br></br>
+            <br></br>
+            <br></br>
+            <br></br>
+            <span className="sidebar__list2">
+              <NavLink
+                to="/login"
+                className="sidebar__link"
+                id="footer__size"
+                activeClassName="sidebar__active"
+              >
+                LOGIN
+              </NavLink>
+            </span>
+            <span className="sidebar__list3">
+              <NavLink
+                to="/signup"
+                className="sidebar__link"
+                id="footer__size"
+                activeClassName="sidebar__active"
+              >
+                SIGN UP
+              </NavLink>
+            </span>
           </ul>
+
           <Switch>
             {routes.map((route, index) => (
               <Route
@@ -78,7 +141,7 @@ const Sidebar = () => {
         </div>
         {/* A <Switch> looks through its children <Route>s and
             renders the first one that matches the current URL. */}
-        <div style={{ flex: 1, padding: "10px" }} className="sidebar__pages">
+        <div style={{ flex: 1, padding: "" }} className="sidebar__pages">
           <Switch>
             {routes.map((route, index) => (
               <Route
@@ -95,6 +158,6 @@ const Sidebar = () => {
   );
 };
 
-export default Sidebar;
+export default SideBar;
 
 //test
