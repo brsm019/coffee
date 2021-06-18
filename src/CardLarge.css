@@ -1,0 +1,9 @@
+.cardlarge__container {
+  padding-top: 10px;
+  width: 97%;
+  margin: 0px 1.5%;
+}
+
+.cardlarge__image {
+  object-fit: contain;
+}
