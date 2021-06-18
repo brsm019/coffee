@@ -12,12 +12,13 @@
 
 .header__item {
   font-family: "gentium", Georgia, Times, "Times New Roman", serif;
+  font-weight: lighter;
   padding-right: 0.9rem;
-  padding-top: 0.85em;
+  padding-top: 0.9em;
   color: #464646;
   text-decoration: none;
   font-style: italic;
-  font-size: 12px;
+  font-size: 13px;
 }
 .header__item:hover {
   font-family: "gentium", Georgia, Times, "Times New Roman", serif;
