@@ -2,7 +2,7 @@
 
 const express = require("express");
 const ObjectID = require("mongodb").ObjectID;
-
+const bcrypt = require("bcryptjs");
 // This function will hold all the routing functionality for the database, and will be used in server.js
 const newRouter = function (collection) {
   const router = express.Router();
@@ -42,17 +42,6 @@ const newRouter = function (collection) {
       .catch((err) => console.log(err));
   });
 
-  // Route for creating new staff
-  router.post("/", (req, res) => {
-    const newData = req.body;
-    collection
-      .insertOne(newData)
-      .then((result) => {
-        res.json(result.ops[0]);
-      })
-      .catch((err) => console.log(err));
-  });
-
   // Route for updating specific staff
   router.put("/:id", (req, res) => {
     const itemId = req.params.id;
@@ -66,7 +55,58 @@ const newRouter = function (collection) {
       .catch((err) => console.log(err));
   });
 
+  // // Route for creating new staff
+  // router.post("/", (req, res) => {
+  //   const newData = req.body;
+  //   collection
+  //     .insertOne(newData)
+  //     .then((result) => {
+  //       res.json(result.ops[0]);
+  //     })
+  //     .catch((err) => console.log(err));
+  // });
+
+  // Route for creating new registration
+  router.post("/register", async (req, res) => {
+    console.log(req.body);
+    const {
+      firstName,
+      lastName,
+      email,
+      password: plainTextPassword,
+    } = req.body;
+
+    const password = await bcrypt.hash(plainTextPassword, 10);
+    console.log(password);
+
+    try {
+      collection
+        .insertOne({
+          firstName: firstName,
+          lastName: lastName,
+          email: email,
+          password: password,
+        })
+        .then((result) => {
+          res.json(result.ops[0]);
+          console.log(result);
+        });
+      console.log("New collection created");
+    } catch (error) {
+      console.log(error);
+      return res.json({ status: error });
+    }
+  });
+
   return router;
 };
 
-module.exports = newRouter;
+/*
+
+CREATE A USER SCHEMA FOR YOUR DATABASE AND SET FIELDS TO REQUIRED AND UNIQUE
+
+CREATE NEW DATABASE FOR PRODUCTION NOT TESTING
+
+*/
+
+TODO: module.exports = newRouter;
