@@ -7,26 +7,50 @@ const SignUp = () => {
   const [lastName, setLastName] = useState("");
   const [email, setEmail] = useState("");
   const [password, setPassword] = useState("");
+  const [bod, setBod] = useState([]);
 
   const handleNameChange = (e) => {
+    e.preventDefault();
     setFirstName(e.target.value);
   };
   const handleLastNameChange = (e) => {
+    e.preventDefault();
     setLastName(e.target.value);
   };
   const handleEmailChange = (e) => {
+    e.preventDefault();
     setEmail(e.target.value);
   };
   const handlePasswordChange = (e) => {
+    e.preventDefault();
     setPassword(e.target.value);
-  };
-  const handleLogin = (e) => {
-    return [email, password];
   };
 
   console.log(firstName, lastName, email, password);
 
-  console.log(handleLogin());
+  const handleLogin = async (event) => {
+    event.preventDefault();
+    const postURL = "http://localhost:4000/api/test"; //Our previously set up route in the backend
+    const result = await fetch(postURL, {
+      method: "POST",
+      headers: {
+        Accept: "application/json",
+        "Content-Type": "application/json",
+      },
+      body: JSON.stringify({
+        // We should keep the fields consistent for managing this data later
+        firstName: firstName,
+        lastName: lastName,
+        email: email,
+        password: password,
+      }),
+    }).then((res) => {
+      // Once posted, the user will be notified
+      res.json();
+      alert("You have been added to the system!");
+    });
+    console.log(result);
+  };
 
   return (
     <div className="signup">
@@ -39,7 +63,7 @@ const SignUp = () => {
         <br></br>
         <br></br>
         <div className="signup__form__container">
-          <form>
+          <form onSubmit={handleLogin}>
             <div className="form-group">
               <label for="first__name">First Name</label>
               <input
@@ -85,12 +109,7 @@ const SignUp = () => {
               />
             </div>
             <div class="form__button">
-              <button
-                type="submit"
-                class="btn-xs"
-                value="Submit"
-                onSubmit={handleLogin}
-              >
+              <button type="submit" class="btn-xs" value="submit">
                 CREATE
               </button>
               <span className="form__link">

@@ -2,7 +2,8 @@
 
 const express = require("express");
 const ObjectID = require("mongodb").ObjectID;
-
+const User = require("./model/user");
+const bcrypt = require("bcryptjs");
 // This function will hold all the routing functionality for the database, and will be used in server.js
 const newRouter = function (collection) {
   const router = express.Router();
@@ -43,15 +44,15 @@ const newRouter = function (collection) {
   });
 
   // Route for creating new staff
-  router.post("/", (req, res) => {
-    const newData = req.body;
-    collection
-      .insertOne(newData)
-      .then((result) => {
-        res.json(result.ops[0]);
-      })
-      .catch((err) => console.log(err));
-  });
+  // router.post("/", (req, res) => {
+  //   const newData = req.body;
+  //   collection
+  //     .insertOne(newData)
+  //     .then((result) => {
+  //       res.json(result.ops[0]);
+  //     })
+  //     .catch((err) => console.log(err));
+  // });
 
   // Route for updating specific staff
   router.put("/:id", (req, res) => {
@@ -64,6 +65,13 @@ const newRouter = function (collection) {
         res.json(result.value);
       })
       .catch((err) => console.log(err));
+  });
+
+  router.post("/", async (req, res) => {
+    console.log(req.body);
+    // const { firstName, lastName, email, password } = req.body;
+    // console.log(await bcrypt.hash(password, 10));
+    res.json({ status: "ok" });
   });
 
   return router;
