@@ -23,6 +23,12 @@ const SignUp = () => {
 
   console.log(firstName, lastName, email, password);
 
+  /*   TODO: Work out how to verify JWT token on client side and log in - just get console log of information:
+      username with hashed password to begin with.
+      Then work out how to only show certain pages based on the user being signed in - like the cart.
+
+*/
+
   const handleSignUp = (e) => {
     e.preventDefault();
     const postURL = "http://localhost:4000/auth/register"; //Our previously set up route in the backend

@@ -22,7 +22,18 @@ const Login = () => {
     setPassword(e.target.value);
   };
   const handleLogin = (e) => {
-    return [email, password];
+    e.preventDefault();
+    fetch("http://localhost:400/auth/sign_in", {
+      method: "POST",
+      headers: {
+        Accept: "application/json",
+        "Content-Type": "application/json",
+      },
+      body: JSON.Stringify({
+        email: email,
+        password: password,
+      }),
+    });
   };
 
   console.log(firstName, lastName, email, password);
