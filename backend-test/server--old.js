@@ -3,7 +3,7 @@
 // Lets use some of the packages we've installed
 var mongoDb = require("mongodb");
 var MongoClient = mongoDb.MongoClient;
-const newRouter = require("./router.js");
+const newRouter = require("./api/router.js");
 
 const express = require("express");
 const app = express();

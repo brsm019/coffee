@@ -3,6 +3,7 @@
 const express = require("express");
 const ObjectID = require("mongodb").ObjectID;
 const bcrypt = require("bcryptjs");
+const User = require("../models/userModelsß.js");
 // This function will hold all the routing functionality for the database, and will be used in server.js
 const newRouter = function (collection) {
   const router = express.Router();
@@ -80,18 +81,17 @@ const newRouter = function (collection) {
     console.log(password);
 
     try {
-      collection
-        .insertOne({
-          firstName: firstName,
-          lastName: lastName,
-          email: email,
-          password: password,
-        })
-        .then((result) => {
-          res.json(result.ops[0]);
-          console.log(result);
-        });
-      console.log("New collection created");
+      const response = await User.insertOne({
+        firstName: firstName,
+        lastName: lastName,
+        email: email,
+        password: password,
+      });
+      // .then((result) => {
+      //   res.json(result.ops[0]);
+      //   console.log(result);
+      // });
+      console.log("New collection created", response);
     } catch (error) {
       console.log(error);
       return res.json({ status: error });
@@ -103,10 +103,13 @@ const newRouter = function (collection) {
 
 /*
 
-CREATE A USER SCHEMA FOR YOUR DATABASE AND SET FIELDS TO REQUIRED AND UNIQUE
+CREATE A USER SCHEMA FOR YOUR DATABASE AND SET FIELDS TO REQUIRED AND UNIQUE//
+
+Need to change mongoDB to mongoose in server and then create a new database, connect routes to new database
+then test on new user schema
 
 CREATE NEW DATABASE FOR PRODUCTION NOT TESTING
 
 */
 
-TODO: module.exports = newRouter;
+module.exports = newRouter;
