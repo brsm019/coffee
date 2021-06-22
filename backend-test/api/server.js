@@ -3,6 +3,8 @@ let express = require("express"),
   port = process.env.PORT || 4000,
   User = require("./models/userModels"),
   jsonwebtoken = require("jsonwebtoken");
+const cors = require("cors");
+app.use(cors());
 
 const mongoose = require("mongoose");
 mongoose.set("useNewUrlParser", true);
@@ -23,13 +25,13 @@ mongoose
   .then(
     () => {
       // console.log(client);
-      var conn = mongoose.connection;
-      conn.on("connected", function () {
-        console.log("database is connected successfully");
-      });
-      conn.on("disconnected", function () {
-        console.log("database is disconnected successfully");
-      });
+      // var conn = mongoose.connection;
+      // conn.on("connected", function () {
+      //   console.log("database is connected successfully");
+      // });
+      // conn.on("disconnected", function () {
+      //   console.log("database is disconnected successfully");
+      // });
     },
     function (err) {
       //err handle

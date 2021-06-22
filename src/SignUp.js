@@ -23,9 +23,9 @@ const SignUp = () => {
 
   console.log(firstName, lastName, email, password);
 
-  const handleLogin = (e) => {
+  const handleSignUp = (e) => {
     e.preventDefault();
-    const postURL = "http://localhost:4000/api/test/register"; //Our previously set up route in the backend
+    const postURL = "http://localhost:4000/auth/register"; //Our previously set up route in the backend
     fetch(postURL, {
       method: "POST",
       headers: {
@@ -56,7 +56,7 @@ const SignUp = () => {
         <br></br>
         <br></br>
         <div className="signup__form__container">
-          <form onSubmit={handleLogin}>
+          <form onSubmit={handleSignUp}>
             <div className="form-group">
               <label for="first__name">First Name</label>
               <input
