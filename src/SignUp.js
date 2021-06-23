@@ -20,13 +20,36 @@ const SignUp = () => {
   const handlePasswordChange = (e) => {
     setPassword(e.target.value);
   };
-  const handleLogin = (e) => {
-    return [email, password];
-  };
 
   console.log(firstName, lastName, email, password);
 
-  console.log(handleLogin());
+  /*   TODO: Work out how to verify JWT token on client side and log in - just get console log of information:
+      username with hashed password to begin with.
+      Then work out how to only show certain pages based on the user being signed in - like the cart.
+
+*/
+
+  const handleSignUp = (e) => {
+    e.preventDefault();
+    const postURL = "http://localhost:4000/auth/register"; //Our previously set up route in the backend
+    fetch(postURL, {
+      method: "POST",
+      headers: {
+        Accept: "application/json",
+        "Content-Type": "application/json",
+      },
+      body: JSON.stringify({
+        // We should keep the fields consistent for managing this data later
+        firstName: firstName,
+        lastName: lastName,
+        email: email,
+        password: password,
+      }),
+    }).then(() => {
+      // Once posted, the user will be notified
+      console.log("You have been added to the system!");
+    });
+  };
 
   return (
     <div className="signup">
@@ -39,7 +62,7 @@ const SignUp = () => {
         <br></br>
         <br></br>
         <div className="signup__form__container">
-          <form>
+          <form onSubmit={handleSignUp}>
             <div className="form-group">
               <label for="first__name">First Name</label>
               <input
@@ -85,12 +108,7 @@ const SignUp = () => {
               />
             </div>
             <div class="form__button">
-              <button
-                type="submit"
-                class="btn-xs"
-                value="Submit"
-                onSubmit={handleLogin}
-              >
+              <button type="submit" class="btn-xs" value="Submit">
                 CREATE
               </button>
               <span className="form__link">
