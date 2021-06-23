@@ -1,20 +1,13 @@
 import React, { useState } from "react";
-import { NavLink } from "react-router-dom";
+import { NavLink, useHistory } from "react-router-dom";
 import Header from "./Header";
 import "./Login.css";
 
 const Login = () => {
-  const [firstName, setFirstName] = useState("");
-  const [lastName, setLastName] = useState("");
+  const history = useHistory();
   const [email, setEmail] = useState("");
   const [password, setPassword] = useState("");
 
-  const handleNameChange = (e) => {
-    setFirstName(e.target.value);
-  };
-  const handleLastNameChange = (e) => {
-    setLastName(e.target.value);
-  };
   const handleEmailChange = (e) => {
     setEmail(e.target.value);
   };
@@ -22,12 +15,35 @@ const Login = () => {
     setPassword(e.target.value);
   };
   const handleLogin = (e) => {
-    return [email, password];
+    e.preventDefault();
+    const postURL = "http://localhost:4000/auth/sign_in"; //Our previously set up route in the backend
+    fetch(postURL, {
+      method: "POST",
+      headers: {
+        Accept: "application/json",
+        "Content-Type": "application/json",
+      },
+      body: JSON.stringify({
+        // We should keep the fields consistent for managing this data later
+        email: email,
+        password: password,
+      }),
+    })
+      .then((res) => {
+        if (res.status === 200) {
+          history.push("/");
+          console.log(res);
+        } else {
+          const error = new Error(res.error);
+          throw error;
+        }
+      })
+      .catch((err) => {
+        console.error(err);
+        alert("Error logging in please try again");
+      });
   };
 
-  console.log(firstName, lastName, email, password);
-
-  console.log(handleLogin());
   return (
     <div className="login">
       <Header />
@@ -39,7 +55,7 @@ const Login = () => {
         <br></br>
         <br></br>
         <div className="login__form__container">
-          <form>
+          <form onSubmit={handleLogin}>
             <div className="form-group">
               <label for="email">Email</label>
               <input
@@ -63,12 +79,7 @@ const Login = () => {
               />
             </div>
             <div class="form__button">
-              <button
-                type="submit"
-                class="btn-xs"
-                value="Submit"
-                onSubmit={handleLogin}
-              >
+              <button type="submit" class="btn-xs" value="Submit">
                 SIGN IN
               </button>
               <span className="form__link">
@@ -82,7 +93,7 @@ const Login = () => {
           </form>
         </div>
       </div>
-      <div className="login__container__2">
+      {/* <div className="login__container__2">
         <p className="login__reset__password">RESET PASSWORD</p>
         <div className="login__form__container">
           <form>
@@ -109,7 +120,7 @@ const Login = () => {
             </div>
           </form>
         </div>
-      </div>
+      </div> */}
     </div>
   );
 };
