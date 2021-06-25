@@ -5,5 +5,9 @@
 }
 
 #cardlarge__image {
-  object-fit: contain;
+  object-fit: cover;
+}
+
+#cardlarge__small {
+  object-fit: cover;
 }
