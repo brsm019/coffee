@@ -11,3 +11,51 @@
 #cardlarge__small {
   object-fit: cover;
 }
+
+.cardLarge__feature__logo {
+  display: block;
+  /* margin-left: auto;
+  margin-right: auto; */
+  background-image: url(//cdn.shopify.com/s/files/1/0017/1562/t/18/assets/sqmile-svg-featured-red.svg?v=1676192…);
+  background-size: cover;
+  /* margin-bottom: 42px; */
+  height: 84px;
+  width: 84px;
+}
+
+.cardLarge__login__line {
+  text-align: center;
+  color: white;
+}
+
+.cardLarge__text {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  margin-top: 5%;
+}
+
+.mask {
+  background-color: rgba(0, 0, 0, 0) !important;
+  border-radius: 5px !important;
+  width: 97% !important;
+  left: 1vw !important;
+}
+
+.cardLarge__offer {
+  background-color: rgb(230, 230, 230);
+  border-radius: 50%;
+  height: 40px;
+  width: 40px;
+  text-align: center;
+}
+
+.cardLarge__price {
+  padding-top: 15px;
+  top: 50px;
+  display: inline-block;
+  font-size: 0.5rem;
+  font-weight: bold;
+  color: black;
+}
