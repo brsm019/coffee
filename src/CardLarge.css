@@ -55,6 +55,8 @@
   margin: 0;
   text-shadow: 1px 1px 0.2px rgba(83, 83, 83, 0.1);
   font-size: 45px;
+  text-transform: uppercase;
+  letter-spacing: 1px;
 }
 
 .cardLarge__subtitle {
@@ -64,6 +66,8 @@
   margin: 0;
   text-shadow: 1px 1px 0.2px rgba(83, 83, 83, 0.1);
   font-size: 17px;
+  text-transform: uppercase;
+  letter-spacing: 2px;
 }
 
 .cardLarge__offer {

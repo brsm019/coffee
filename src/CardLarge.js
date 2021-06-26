@@ -61,9 +61,9 @@ const CardLarge = () => {
 
       <CardNew />
 
-      <CardNew />
+      {/* <CardNew /> */}
 
-      <div class="col-lg-3 col-md-6 col-sm-6 mb-4 mb-lg-0">
+      {/* <div class="col-lg-3 col-md-6 col-sm-6 mb-4 mb-lg-0">
         <img
           id="cardlarge__small"
           src="https://external-content.duckduckgo.com/iu/?u=https%3A%2F%2Fwww.publicdomainpictures.net%2Fpictures%2F30000%2Fvelka%2Fplain-white-background.jpg&f=1&nofb=1"
@@ -76,7 +76,7 @@ const CardLarge = () => {
           class="w-100 shadow-sm rounded mb-4"
           alt=""
         />
-      </div>
+      </div> */}
     </>
   );
 };
