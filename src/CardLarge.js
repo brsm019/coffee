@@ -23,46 +23,49 @@ const CardLarge = () => {
           id="cardlarge__image"
           alt=""
         />
-        <div class="mask" style={{ backgroundColor: "rgba(0, 0, 0, 0.6)" }}>
-          <div class="cardLarge__text">
-            <div class="cardLarge__feature__logo"></div>
-            <div class="cardLarge__login__line">-----------------</div>
-            <h1 class="text-white mb-0">Can you see me?</h1>
-            <div class="cardLarge__login__line">-----------------</div>
-            <p class="text-white mb-0">Seasonal Espresso</p>
-            <div class="cardLarge__offer">
-              <span class="cardLarge__price">£11.00</span>
+
+        <a href="https://www.google.com/">
+          <div class="mask">
+            <div class="cardLarge__text">
+              <div class="cardLarge__feature__logo"></div>
+              <div class="cardLarge__login__line">-----------------</div>
+              <h1 class="cardLarge__title">Red Brick</h1>
+              <div class="cardLarge__login__line">-----------------</div>
+              <p class="cardLarge__subtitle">Seasonal Espresso</p>
+              <div class="cardLarge__offer">
+                <span class="cardLarge__price">£11.00</span>
+              </div>
             </div>
           </div>
-        </div>
+        </a>
       </div>
 
       <div class="col-lg-3 col-md-6 col-sm-6 mb-4 mb-lg-0">
         <img
           id="cardlarge__small"
-          src="https://mdbootstrap.com/img/Photos/Horizontal/Nature/4-col/img%20(18).jpg"
-          class="w-100 h-50 shadow-1-strong rounded mb-4"
+          src="https://external-content.duckduckgo.com/iu/?u=https%3A%2F%2Fwww.publicdomainpictures.net%2Fpictures%2F30000%2Fvelka%2Fplain-white-background.jpg&f=1&nofb=1"
+          class="w-100 h-50 shadow-sm rounded mb-4"
           alt=""
         />
 
         <img
           id="cardlarge__small"
-          src="https://mdbootstrap.com/img/Photos/Horizontal/Nature/4-col/img%20(18).jpg"
-          class="w-100 shadow-1-strong rounded mb-4"
+          src="https://external-content.duckduckgo.com/iu/?u=https%3A%2F%2Fwww.publicdomainpictures.net%2Fpictures%2F30000%2Fvelka%2Fplain-white-background.jpg&f=1&nofb=1"
+          class="w-100 shadow-sm rounded mb-4"
           alt=""
         />
       </div>
       <div class="col-lg-3 col-md-6 col-sm-6 mb-4 mb-lg-0">
         <img
           id="cardlarge__small"
-          src="https://mdbootstrap.com/img/Photos/Horizontal/Nature/4-col/img%20(18).jpg"
-          class="w-100 h-50 shadow-1-strong rounded mb-4"
+          src="https://external-content.duckduckgo.com/iu/?u=https%3A%2F%2Fwww.publicdomainpictures.net%2Fpictures%2F30000%2Fvelka%2Fplain-white-background.jpg&f=1&nofb=1"
+          class="w-100 h-50 shadow-sm rounded mb-4"
           alt=""
         />
         <img
           id="cardlarge__small"
-          src="https://mdbootstrap.com/img/Photos/Horizontal/Nature/4-col/img%20(18).jpg"
-          class="w-100 shadow-1-strong rounded mb-4"
+          src="https://external-content.duckduckgo.com/iu/?u=https%3A%2F%2Fwww.publicdomainpictures.net%2Fpictures%2F30000%2Fvelka%2Fplain-white-background.jpg&f=1&nofb=1"
+          class="w-100 shadow-sm rounded mb-4"
           alt=""
         />
       </div>
