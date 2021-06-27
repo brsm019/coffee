@@ -1,5 +1,5 @@
 import React from "react";
-import "./CardNew.css";
+import "./CardMedium.css";
 
 /* 
 
@@ -12,31 +12,33 @@ create template for smaller images
 
 */
 
-const CardNew = () => {
+const CardMedium = ({ image, link, title, subtitle, price, subColor }) => {
   return (
     <>
       <div class="col-lg-3 col-md-6 col-sm-6 mb-4 mb-lg-0">
         <img
-          src="https://external-content.duckduckgo.com/iu/?u=https%3A%2F%2Fwww.publicdomainpictures.net%2Fpictures%2F30000%2Fvelka%2Fplain-white-background.jpg&f=1&nofb=1"
+          src={image}
           class="w-100 h-100 shadow-sm rounded mb-4"
-          id="cardNew__image"
+          id="cardMedium__image"
           alt=""
         />
 
-        <a href="https://www.google.com/">
+        <a href={link}>
           <div class="mask">
-            <div class="cardNew__text">
-              <div class="cardNew__login__line">
+            <div class="cardMedium__text">
+              <div class="cardMedium__login__line">
                 ❂ ❂ ❂ ❂ ❂ ❂ ❂ ❂ ❂ ❂ ❂ ❂ ❂ ❂ ❂ ❂ ❂ ❂ ❂ ❂ ❂ ❂ ❂ ❂ ❂ ❂ ❂ ❂ ❂ ❂ ❂ ❂
               </div>
-              <h1 class="cardNew__title">Sweetshop</h1>
-              <div class="cardNew__login__line">
+              <h1 class="cardMedium__title">{title}</h1>
+              <div class="cardMedium__login__line">
                 {" "}
                 ❂ ❂ ❂ ❂ ❂ ❂ ❂ ❂ ❂ ❂ ❂ ❂ ❂ ❂ ❂ ❂ ❂ ❂ ❂ ❂ ❂ ❂ ❂ ❂ ❂ ❂ ❂ ❂ ❂ ❂ ❂ ❂
               </div>
-              <p class="cardNew__subtitle">Seasonal Espresso</p>
-              <div class="cardNew__offer">
-                <span class="cardNew__price">£11.00</span>
+              <p class="cardMedium__subtitle" style={{ color: subColor }}>
+                {subtitle}
+              </p>
+              <div class="cardMedium__offer">
+                <span class="cardMedium__price">{price}</span>
               </div>
             </div>
           </div>
@@ -46,4 +48,4 @@ const CardNew = () => {
   );
 };
 
-export default CardNew;
+export default CardMedium;
