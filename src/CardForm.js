@@ -28,7 +28,7 @@ const CardForm = () => {
           <CardMedium
             image="https://external-content.duckduckgo.com/iu/?u=https%3A%2F%2Fwww.publicdomainpictures.net%2Fpictures%2F30000%2Fvelka%2Fplain-white-background.jpg&f=1&nofb=1"
             link="www.google.com"
-            title="Decap Espresso"
+            title="Decaf"
             subtitle="Espresso"
             price="£13.50"
             subColor="#99080c"
@@ -63,7 +63,7 @@ const CardForm = () => {
           <CardSmall
             image="https://external-content.duckduckgo.com/iu/?u=https%3A%2F%2Fwww.publicdomainpictures.net%2Fpictures%2F30000%2Fvelka%2Fplain-white-background.jpg&f=1&nofb=1"
             link="www.google.com"
-            title="Filtered Blend"
+            title="Filtered Bean"
             subtitle="Seasonal Filter"
             price="£12.50"
             subColor="#99080c"
@@ -90,7 +90,7 @@ const CardForm = () => {
           <CardLarge
             image="https://cdn.shopify.com/s/files/1/0017/1562/products/Light-10_1024x1024.jpg?v=1600088640"
             link="www.google.com"
-            title="Clever Dripper"
+            title="Smart Dripper"
             subtitle=""
             price="£16.00"
           />
