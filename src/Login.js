@@ -7,6 +7,9 @@ const Login = () => {
   const history = useHistory();
   const [email, setEmail] = useState("");
   const [password, setPassword] = useState("");
+  const [login, setLogin] = useState(false);
+  const [auth, setAuth] = useState(false);
+  const [accessToken, setAccessToken] = useState("");
 
   const handleEmailChange = (e) => {
     setEmail(e.target.value);
@@ -30,19 +33,30 @@ const Login = () => {
       }),
     })
       .then((res) => {
-        if (res.status === 200) {
+        res.json().then((result, err) => {
+          console.log(result);
+          setLogin(true);
+          setAuth(true);
+          setAccessToken(result.token);
+          localStorage.setItem(
+            "login",
+            JSON.stringify({
+              login: true,
+              auth: true,
+              token: result.token,
+            })
+          );
           history.push("/");
-          console.log(res);
-        } else {
-          const error = new Error(res.error);
-          throw error;
-        }
+        });
       })
       .catch((err) => {
         console.error(err);
         alert("Error logging in please try again");
       });
   };
+  console.log({ login });
+  console.log({ auth });
+  console.log({ accessToken });
 
   return (
     <div className="login">

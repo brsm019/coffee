@@ -1,7 +1,8 @@
-let mongoose = require("mongoose"),
-  jwt = require("jsonwebtoken"),
-  bcrypt = require("bcrypt"),
-  User = mongoose.model("User");
+require("dotenv").config();
+let mongoose = require("mongoose");
+let jwt = require("jsonwebtoken");
+let bcrypt = require("bcrypt");
+let User = mongoose.model("User");
 
 exports.register = function (req, res) {
   let newUser = new User(req.body);
@@ -30,16 +31,11 @@ exports.sign_in = function (req, res) {
           message: "Authentication failed. Invalid user or password.",
         });
       }
+      let accessToken = jwt.sign({ user }, process.env.ACCESS_TOKEN_SECRET);
+
       return res.json({
-        token: jwt.sign(
-          {
-            email: user.email,
-            firstName: user.fullName,
-            lastName: user.lastName,
-            _id: user._id,
-          },
-          "RESTFULAPIs"
-        ),
+        token: accessToken,
+        user: user,
       });
     }
   );
