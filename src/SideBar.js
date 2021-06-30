@@ -8,12 +8,10 @@ import {
 import Cart from "./Cart";
 import Home from "./Home";
 import Login from "./Login";
+import PrivateRoute from "./PrivateRoute";
 import ShopEquipment from "./ShopEquipment";
-// import TopBar from "./TopBar";
 import "./SideBar.css";
 import SignUp from "./SignUp";
-
-//Need to make the two navbars communicate with each other so pages aren't overlaying each other
 
 const routes = [
   {
@@ -77,8 +75,6 @@ const routes = [
   },
 ];
 
-//dev
-
 const SideBar = () => {
   return (
     <Router>
@@ -127,43 +123,24 @@ const SideBar = () => {
                 MY CART
               </NavLink>
             </li>
-            {/* <br></br>
-            <br></br>
-            <br></br>
-            <br></br>
-            <br></br>
-            <br></br>
-            <br></br>
-            <br></br>
-            <br></br>
-            <br></br>
-            <br></br>
-            <span className="sidebar__list2">
-              <NavLink
-                to="/login"
-                className="sidebar__link"
-                id="footer__size"
-                activeClassName="sidebar__active"
-              >
-                LOGIN
-              </NavLink>
-            </span>
-            <span className="sidebar__list3">
-              <NavLink
-                to="/signup"
-                className="sidebar__link"
-                id="footer__size"
-                activeClassName="sidebar__active"
-              >
-                SIGN UP
-              </NavLink>
-            </span> */}
           </ul>
           <div className="sidebar__footer">
-          <h6 className="sidebar__footer__title">Square Mile<br></br>Coffee Roasters</h6>
-          <a className="sidebar__footer__link" href="mailto:testing@squaremiletest.com">webshop@squaremiletest.com</a>
-          <br></br>
-          <a className="sidebar__footer__link" href="mailto:testing@squaremiletest.com">info@squaremiletest.com</a>
+            <h6 className="sidebar__footer__title">
+              Square Mile<br></br>Coffee Roasters
+            </h6>
+            <a
+              className="sidebar__footer__link"
+              href="mailto:testing@squaremiletest.com"
+            >
+              webshop@squaremiletest.com
+            </a>
+            <br></br>
+            <a
+              className="sidebar__footer__link"
+              href="mailto:testing@squaremiletest.com"
+            >
+              info@squaremiletest.com
+            </a>
           </div>
 
           <Switch>
@@ -173,7 +150,7 @@ const SideBar = () => {
                 path={route.path}
                 exact={route.exact}
                 children={<route.sidebar />}
-              />
+              ></Route>
             ))}
           </Switch>
         </div>
@@ -187,7 +164,7 @@ const SideBar = () => {
                 path={route.path}
                 exact={route.exact}
                 children={<route.main />}
-              />
+              ></Route>
             ))}
           </Switch>
         </div>
@@ -197,5 +174,3 @@ const SideBar = () => {
 };
 
 export default SideBar;
-
-//test

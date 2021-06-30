@@ -3,6 +3,10 @@ import { NavLink, useHistory } from "react-router-dom";
 import Header from "./Header";
 import "./Login.css";
 
+// <Redirect to="/SignUp"
+/* <Redirect
+              to={{ pathname: "/signup", state: { from: props.location } }} */
+
 const Login = () => {
   const history = useHistory();
   const [email, setEmail] = useState("");
@@ -38,15 +42,12 @@ const Login = () => {
           setLogin(true);
           setAuth(true);
           setAccessToken(result.token);
-          localStorage.setItem(
-            "login",
-            JSON.stringify({
-              login: true,
-              auth: true,
-              token: result.token,
-            })
-          );
-          history.push("/");
+          localStorage.setItem("token", {
+            token: result.token,
+          });
+          localStorage.setItem("auth", true);
+
+          // history.push("/");
         });
       })
       .catch((err) => {
@@ -57,6 +58,12 @@ const Login = () => {
   console.log({ login });
   console.log({ auth });
   console.log({ accessToken });
+
+  const handleLogout = () => {
+    localStorage.removeItem("token");
+    localStorage.removeItem("auth");
+    localStorage.removeItem("login");
+  };
 
   return (
     <div className="login">
@@ -105,6 +112,7 @@ const Login = () => {
               </span>
             </div>
           </form>
+          <button onClick={handleLogout}>Logout forTesting</button>
         </div>
       </div>
       {/* <div className="login__container__2">

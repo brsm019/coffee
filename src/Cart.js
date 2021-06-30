@@ -1,13 +1,37 @@
 import React, { useState } from "react";
 import "./Cart.css";
 import Header from "./Header";
+import { NavLink, useHistory } from "react-router-dom";
 import axios from "axios";
 
+//Need to make pages only accessible when logged in - Just cart
+//Go into cart, see if you can access localstorage from there
+//If not, create useReducer, context api and pass login state
+//if(login){render page}else{redirect to login screen}
+
+//Create 404 page for random routes that aren't specified
+//Create PrivateRoute file, pass in localStorage information, as seen in this page
+
+/* 
+
+By clicking login without any credentials, it sets auth and login to true?
+Need to use token, watch video on it
+Get router working first
+
+*/
+
 const Cart = () => {
+  const history = useHistory();
   const [name, setName] = useState("");
   const [address, setAddress] = useState("");
   const [info, setInfo] = useState("");
   const [peeps, setPeeps] = useState([]);
+
+  const rememberMe = localStorage.getItem("auth") === "true";
+  let login = localStorage.getItem("login");
+  let auth = localStorage.getItem("auth") === "true";
+  console.log({ rememberMe });
+  console.log({ auth });
 
   const handleName = (e) => {
     setName(e.target.value);
@@ -45,9 +69,13 @@ const Cart = () => {
     setPeeps(response.data);
   };
 
-  console.log(peeps);
-  console.log(name, address, info);
-
+  // console.log(peeps);
+  // console.log(name, address, info);
+  // console.log({ auth });
+  // if (auth !== true) {
+  //   history.push("/login");
+  // }
+  console.log({ auth });
   return (
     <div className="cart">
       <Header />
