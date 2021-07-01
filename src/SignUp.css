@@ -1,0 +1,95 @@
+.signup__container {
+  box-shadow: 5px 5px 5px rgb(0 0 0 / 1%);
+  background-color: white;
+  width: 65%;
+  max-width: 550px;
+  min-width: 400px;
+  margin: auto;
+  margin-top: 20px;
+  padding: 2em;
+}
+
+.signup__header {
+  font-family: "TradeGothic", "Helvetica Neue", Helvetica, Arial, sans-serif;
+  text-align: center;
+  color: black;
+  margin: 5px 0px;
+}
+
+.signup__line {
+  text-align: center;
+  color: rgb(104, 104, 104, 0.35);
+}
+
+.signup__form__container {
+  text-align: center;
+  margin: auto;
+}
+
+.form-group {
+  margin: 0.5em 5em;
+  text-align: left;
+}
+
+.form-group label {
+  font-family: "gentium", Georgia, Times, "Times New Roman", serif;
+  font-style: italic;
+  font-size: 14px;
+  color: #7b7b7b;
+}
+
+input.form-control:focus {
+  box-shadow: none;
+  background-color: whitesmoke;
+}
+
+.form-control {
+  border: 1px solid #d0d0d0 !important;
+  height: 30px;
+  background-color: whitesmoke;
+}
+
+.form__button {
+  font-family: "TradeGothic", "Helvetica Neue", Helvetica, Arial, sans-serif;
+  align-content: left;
+  display: flex;
+  margin: 1em 5em;
+}
+
+.btn-xs {
+  background-color: #960c14;
+  color: white;
+  font-weight: bold;
+  font-size: 12px;
+  padding: 5px 15px;
+  border: none;
+}
+
+.form__login {
+  padding: 0px 5px;
+  font-size: small;
+  color: #7b7b7b;
+  text-decoration: none;
+  border: none;
+}
+.form__login:hover {
+  padding: 0px 5px;
+  font-size: small;
+  color: #a7a7a7;
+  text-decoration: none;
+  border: none;
+}
+
+.form__button > button {
+  border: none;
+  outline: none;
+  cursor: pointer;
+}
+
+.form__link {
+  font-family: "gentium", Georgia, Times, "Times New Roman", serif;
+}
+
+.form__link > a {
+  text-decoration: none;
+}

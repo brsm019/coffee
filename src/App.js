@@ -1,12 +1,13 @@
 import React from "react";
 import "./App.css";
 import Home from "./Home";
-import Sidebar from "./Sidebar";
+import SideBar from "./SideBar";
 
 function App() {
   return (
     <div className="app">
-      <Sidebar />
+      <SideBar />
+
       {/* <Home /> */}
     </div>
   );
