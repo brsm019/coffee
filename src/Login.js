@@ -5,15 +5,12 @@ import "./Login.css";
 
 // <Redirect to="/SignUp"
 /* <Redirect
-              to={{ pathname: "/signup", state: { from: props.location } }} */
+              to={{ pathname: "/signup", state: { from: props.location } }} aa*/
 
 const Login = () => {
   const history = useHistory();
   const [email, setEmail] = useState("");
   const [password, setPassword] = useState("");
-  const [login, setLogin] = useState(false);
-  const [auth, setAuth] = useState(false);
-  const [accessToken, setAccessToken] = useState("");
 
   const handleEmailChange = (e) => {
     setEmail(e.target.value);
@@ -31,21 +28,21 @@ const Login = () => {
         "Content-Type": "application/json",
       },
       body: JSON.stringify({
-        // We should keep the fields consistent for managing this data later
         email: email,
         password: password,
       }),
     })
       .then((res) => {
         res.json().then((result, err) => {
-          console.log(result);
-          setLogin(true);
-          setAuth(true);
-          setAccessToken(result.token);
-          localStorage.setItem("token", {
-            token: result.token,
-          });
-          localStorage.setItem("auth", true);
+          if (err) return err.message;
+          console.log({ result });
+          localStorage.setItem(
+            "token",
+            JSON.stringify({
+              token: result.token,
+            })
+          );
+          localStorage.setItem("auth", JSON.stringify({ auth: result.auth }));
 
           // history.push("/");
         });
@@ -55,9 +52,7 @@ const Login = () => {
         alert("Error logging in please try again");
       });
   };
-  console.log({ login });
-  console.log({ auth });
-  console.log({ accessToken });
+  console.log(localStorage.getItem("auth"));
 
   const handleLogout = () => {
     localStorage.removeItem("token");
