@@ -5,7 +5,7 @@ import "./Login.css";
 
 // <Redirect to="/SignUp"
 /* <Redirect
-              to={{ pathname: "/signup", state: { from: props.location } }} */
+              to={{ pathname: "/signup", state: { from: props.location } }} aa*/
 
 const Login = () => {
   const history = useHistory();
