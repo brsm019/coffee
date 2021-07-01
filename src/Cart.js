@@ -27,10 +27,7 @@ const Cart = () => {
   const [info, setInfo] = useState("");
   const [peeps, setPeeps] = useState([]);
 
-  const rememberMe = localStorage.getItem("auth") === "true";
-  let login = localStorage.getItem("login");
-  let auth = localStorage.getItem("auth") === "true";
-  console.log({ rememberMe });
+  let auth = localStorage.getItem("auth") === '{"auth":true}';
   console.log({ auth });
 
   const handleName = (e) => {
@@ -75,7 +72,7 @@ const Cart = () => {
   // if (auth !== true) {
   //   history.push("/login");
   // }
-  console.log({ auth });
+
   return (
     <div className="cart">
       <Header />

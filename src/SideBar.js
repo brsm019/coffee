@@ -12,68 +12,79 @@ import PrivateRoute from "./PrivateRoute";
 import ShopEquipment from "./ShopEquipment";
 import "./SideBar.css";
 import SignUp from "./SignUp";
+let auth = localStorage.getItem("auth") === "true";
 
-const routes = [
-  {
-    path: "/signup",
-    sidebar: () => <div></div>,
-    main: () => (
-      <div>
-        <SignUp />
-      </div>
-    ),
-  },
-  {
-    path: "/",
-    exact: true,
-    sidebar: () => <div></div>,
-    main: () => (
-      <div>
-        <Home />
-      </div>
-    ),
-  },
-  {
-    path: "/equipment",
-    exact: true,
-    sidebar: () => <div></div>,
-    main: () => (
-      <div>
-        <ShopEquipment />
-      </div>
-    ),
-  },
-  {
-    path: "/mycart",
-    exact: true,
-    sidebar: () => <div></div>,
-    main: () => (
-      <div>
-        <Cart />
-      </div>
-    ),
-  },
-  {
-    path: "/login",
-    exact: true,
-    sidebar: () => <div></div>,
-    main: () => (
-      <div>
-        <Login />
-      </div>
-    ),
-  },
-  {
-    path: "/equipment",
-    exact: true,
-    sidebar: () => <div></div>,
-    main: () => (
-      <div>
-        <SignUp />
-      </div>
-    ),
-  },
-];
+/* 
+
+You are not authenticating the user properly. auth is set as a piece of state that can be set to 
+true when the login button is clicked without credentials, Need to make another request to server
+to /profile to authenticate the user, pass response into localStorage and use that instead.
+
+*/
+
+let routes =
+  // auth ?
+  [
+    {
+      path: "/signup",
+      sidebar: () => <div></div>,
+      main: () => (
+        <div>
+          <SignUp />
+        </div>
+      ),
+    },
+    {
+      path: "/",
+      exact: true,
+      sidebar: () => <div></div>,
+      main: () => (
+        <div>
+          <Home />
+        </div>
+      ),
+    },
+    {
+      path: "/equipment",
+      exact: true,
+      sidebar: () => <div></div>,
+      main: () => (
+        <div>
+          <ShopEquipment />
+        </div>
+      ),
+    },
+    {
+      path: "/mycart",
+      exact: true,
+      sidebar: () => <div></div>,
+      main: () => (
+        <div>
+          <Cart />
+        </div>
+      ),
+    },
+    {
+      path: "/login",
+      exact: true,
+      sidebar: () => <div></div>,
+      main: () => (
+        <div>
+          <Login />
+        </div>
+      ),
+    },
+    {
+      path: "/equipment",
+      exact: true,
+      sidebar: () => <div></div>,
+      main: () => (
+        <div>
+          <SignUp />
+        </div>
+      ),
+    },
+  ];
 
 const SideBar = () => {
   return (
