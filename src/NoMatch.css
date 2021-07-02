@@ -1,0 +1,19 @@
+.nomatch__container {
+  color: black;
+  position: absolute;
+  width: 85%;
+  height: 70%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+.nomatch__title {
+}
+.nomatch__subtitle {
+}
+.nomatch__paragraph {
+  width: 400px;
+  text-align: center;
+  margin-top: 15px;
+}

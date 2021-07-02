@@ -9,7 +9,7 @@ import {
 import Cart from "./Cart";
 import Home from "./Home";
 import Login from "./Login";
-import PrivateRoute from "./PrivateRoute";
+import NoMatch from "./NoMatch";
 import ShopEquipment from "./ShopEquipment";
 import "./SideBar.css";
 import SignUp from "./SignUp";
@@ -75,6 +75,14 @@ let routes = [
       </div>
     ),
   },
+  {
+    sidebar: () => <div></div>,
+    main: () => (
+      <div>
+        <NoMatch />
+      </div>
+    ),
+  },
 ];
 
 let unAuthedRoute = [
@@ -101,14 +109,11 @@ let authenticatedRoutes = auth ? routes : unAuthedRoutes;
 // console.log({ unAuthedRoutes });
 // console.log({ authenticatedRoutes });
 
-//So close, this bit above
-
 const SideBar = () => {
   return (
     <Router>
       <div className="sidebar" style={{ display: "flex" }}>
         <div className="sidebar__content">
-          <button>Re Render</button>
           <div class="sidebar__logo">
             <a href="/" title="title">
               <img
