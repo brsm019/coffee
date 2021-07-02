@@ -25,7 +25,7 @@ const CardLarge = ({ image, link, title, subtitle, price }) => {
       />
 
       <NavLink
-        to="/product"
+        to={link}
         className="sidebar__link"
         activeClassName="sidebar__active"
         exact

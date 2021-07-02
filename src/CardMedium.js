@@ -1,5 +1,6 @@
 import React from "react";
 import "./CardMedium.css";
+import { NavLink } from "react-router-dom";
 
 /* 
 
@@ -23,7 +24,12 @@ const CardMedium = ({ image, link, title, subtitle, price, subColor }) => {
           alt=""
         />
 
-        <a href={link}>
+        <NavLink
+          to={link}
+          className="sidebar__link"
+          activeClassName="sidebar__active"
+          exact
+        >
           <div class="mask">
             <div class="cardMedium__text">
               <div class="cardMedium__login__line">
@@ -42,7 +48,7 @@ const CardMedium = ({ image, link, title, subtitle, price, subColor }) => {
               </div>
             </div>
           </div>
-        </a>
+        </NavLink>
       </div>
     </>
   );
