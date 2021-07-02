@@ -2,7 +2,7 @@ import React from "react";
 import "./CardLarge.css";
 import CardMedium from "./CardMedium";
 import SignUp from "./SignUp";
-
+import { NavLink } from "react-router-dom";
 /* 
 
 TO DO:
@@ -24,7 +24,12 @@ const CardLarge = ({ image, link, title, subtitle, price }) => {
         alt=""
       />
 
-      <a href={link}>
+      <NavLink
+        to="/product"
+        className="sidebar__link"
+        activeClassName="sidebar__active"
+        exact
+      >
         <div class="mask">
           <div class="cardLarge__text">
             <div class="cardLarge__feature__logo"></div>
@@ -37,7 +42,7 @@ const CardLarge = ({ image, link, title, subtitle, price }) => {
             </div>
           </div>
         </div>
-      </a>
+      </NavLink>
     </div>
   );
 };

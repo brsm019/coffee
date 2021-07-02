@@ -1,7 +1,7 @@
 import React from "react";
 import "./PictureCard.css";
 
-const PictureCard = () => {
+const PictureCard = ({ image }) => {
   return (
     <>
       <img
