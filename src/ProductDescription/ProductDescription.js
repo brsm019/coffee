@@ -8,49 +8,73 @@ import PictureCard from "./PictureCard.js";
 import InfoCard1 from "./InfoCard1.js";
 import InfoCard2 from "./InfoCard2.js";
 import Footer from "../Footer/Footer";
-const ProductDescription = () => {
+const ProductDescription = ({
+  title,
+  subtitle,
+  subColor,
+  price,
+  image,
+  title1,
+  title2,
+  title3,
+  title4,
+  title5,
+  title6,
+  title7,
+  title8,
+  subtitle1,
+  subtitle2,
+  subtitle3,
+  subtitle4,
+  subtitle5,
+  subtitle6,
+  subtitle7,
+  subtitle8,
+  preTitle,
+  title9,
+  title10,
+  title11,
+  info,
+}) => {
   return (
     <>
       <Header />
       <div class="productDescription__container">
         <div className="productDescription__grouping">
           <AddToCartCard
-            title="Red Brick"
-            subtitle="Seasonal Espresso"
-            subColor="#99080c"
-            price="11.00"
+            title={title}
+            subtitle={subtitle}
+            subColor={subColor}
+            price={price}
           />
-          <PictureCard image="https://external-content.duckduckgo.com/iu/?u=https%3A%2F%2Fdenverbeverage.com%2Fwp-content%2Fuploads%2F2019%2F03%2FMocha_Cappuccino_2048x.jpg&f=1&nofb=1" />
+          <PictureCard image={image} />
         </div>
 
         <div className="productDescription__grouping">
           <InfoCard1
-            title1="2/3"
-            title2="1/3"
-            title3="Country"
-            title4="Country"
-            title5="Region"
-            title6="Region"
-            title7="Process"
-            title8="Process"
-            subtitle1="CORDILLERA DEL FEUO"
-            subtitle2="SUKE QUTO"
-            subtitle3="COSTA RICA"
-            subtitle4="ETHIOPIA"
-            subtitle5="WEST VALLEY"
-            subtitle6="GUJI"
-            subtitle7="WHITE HONEY"
-            subtitle8="WASHED"
+            title1={title1}
+            title2={title2}
+            title3={title3}
+            title4={title4}
+            title5={title5}
+            title6={title6}
+            title7={title7}
+            title8={title8}
+            subtitle1={subtitle1}
+            subtitle2={subtitle2}
+            subtitle3={subtitle3}
+            subtitle4={subtitle4}
+            subtitle5={subtitle5}
+            subtitle6={subtitle6}
+            subtitle7={subtitle7}
+            subtitle8={subtitle8}
           />
           <InfoCard2
-            preTitle="Tasting Notes"
-            title1="Cherry"
-            title2="Milk Chocolate"
-            title3="Praline"
-            info="As the crops change, so do the components of our Red Brick,
-          highlighting harvest cycles and celebrating the seasonality of coffee.
-          We've combined the great fruit qualities from each component, and
-          allowed the sweetness to shine."
+            preTitle={preTitle}
+            title9={title9}
+            title10={title10}
+            title11={title11}
+            info={info}
           />
         </div>
         <Footer />

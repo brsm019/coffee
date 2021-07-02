@@ -12,14 +12,14 @@ const CardForm = () => {
         <>
           <CardLarge
             image="https://external-content.duckduckgo.com/iu/?u=https%3A%2F%2Fdenverbeverage.com%2Fwp-content%2Fuploads%2F2019%2F03%2FMocha_Cappuccino_2048x.jpg&f=1&nofb=1"
-            link="www.google.com"
+            link="/redbrick"
             title="Red Brick"
             subtitle="Seasonal Espresso"
             price="£11.00"
           />
           <CardMedium
             image="https://external-content.duckduckgo.com/iu/?u=https%3A%2F%2Fwww.publicdomainpictures.net%2Fpictures%2F30000%2Fvelka%2Fplain-white-background.jpg&f=1&nofb=1"
-            link="www.google.com"
+            link="/sweetshop"
             title="Sweetshop"
             subtitle="Seasonal Espresso"
             price="£16.00"
