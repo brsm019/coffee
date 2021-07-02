@@ -1,0 +1,36 @@
+.infoCard2__container {
+  background-color: white;
+  display: inline-flex;
+  width: 40%;
+  height: 100%;
+  max-width: 380px;
+  width: 380px;
+}
+
+.infoCard2__wrapper {
+  padding: 0px 80px;
+}
+.infoCard2__pretitle {
+  color: darkgray;
+  font-style: italic;
+  font-size: smaller;
+  text-align: center;
+}
+.infoCard2__title {
+  color: black;
+  font-size: x-large;
+  text-transform: uppercase;
+  font-weight: bold;
+  text-align: center;
+  padding-bottom: 10px;
+}
+
+.infoCard2__title__span {
+  color: #99080c;
+}
+.infoCard2__description {
+  color: darkgray;
+  font-size: smaller;
+  line-height: inherit;
+  text-align: center;
+}

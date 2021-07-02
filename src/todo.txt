@@ -20,7 +20,11 @@ When created clicked without entering anything into fields, show astericks on al
 When created clicked without entering anything do not show successful message
 
 Home Page:
+Footer
 
 Shop Equipment Page:
 
 My Cart Page:
+
+Sidebar:
+When scroll the page, sidebar isn't sticky, same with top bar

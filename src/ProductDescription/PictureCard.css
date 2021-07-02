@@ -1,0 +1,6 @@
+.pictureCard__container {
+  height: 100%;
+  width: 40%;
+  width: 380px;
+  object-fit: cover;
+}

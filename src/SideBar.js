@@ -11,6 +11,7 @@ import Home from "./Home";
 import Login from "./Login";
 import NoMatch from "./NoMatch";
 import ShopEquipment from "./ShopEquipment";
+import ProductDescription from "./ProductDescription/ProductDescription";
 import "./SideBar.css";
 import SignUp from "./SignUp";
 let auth = localStorage.getItem("auth") === '{"auth":true}';
@@ -73,6 +74,16 @@ let routes = [
       <div>
         <SignUp />
       </div>
+    ),
+  },
+  {
+    path: "/product",
+    exact: true,
+    sidebar: () => <div></div>,
+    main: () => (
+      <>
+        <ProductDescription />
+      </>
     ),
   },
   {

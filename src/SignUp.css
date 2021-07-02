@@ -63,6 +63,15 @@ input.form-control:focus {
   font-size: 12px;
   padding: 5px 15px;
   border: none;
+  transition: background-color 0.8s;
+}
+.btn-xs:hover {
+  background-color: #5e070c;
+  color: white;
+  font-weight: bold;
+  font-size: 12px;
+  padding: 5px 15px;
+  border: none;
 }
 
 .form__login {
