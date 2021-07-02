@@ -1,9 +1,10 @@
-import React from "react";
+import React, { useEffect, useState } from "react";
 import {
   BrowserRouter as Router,
   Switch,
   Route,
   NavLink,
+  Redirect,
 } from "react-router-dom";
 import Cart from "./Cart";
 import Home from "./Home";
@@ -12,85 +13,102 @@ import PrivateRoute from "./PrivateRoute";
 import ShopEquipment from "./ShopEquipment";
 import "./SideBar.css";
 import SignUp from "./SignUp";
-let auth = localStorage.getItem("auth") === "true";
+let auth = localStorage.getItem("auth") === '{"auth":true}';
 
-/* 
+let routes = [
+  {
+    path: "/signup",
+    sidebar: () => <div></div>,
+    main: () => (
+      <div>
+        <SignUp />
+      </div>
+    ),
+  },
+  {
+    path: "/",
+    exact: true,
+    sidebar: () => <div></div>,
+    main: () => (
+      <div>
+        <Home />
+      </div>
+    ),
+  },
+  {
+    path: "/equipment",
+    exact: true,
+    sidebar: () => <div></div>,
+    main: () => (
+      <div>
+        <ShopEquipment />
+      </div>
+    ),
+  },
+  {
+    path: "/mycart",
+    exact: true,
+    sidebar: () => <div></div>,
+    main: () => (
+      <div>
+        <Cart />
+      </div>
+    ),
+  },
+  {
+    path: "/login",
+    exact: true,
+    sidebar: () => <div></div>,
+    main: () => (
+      <div>
+        <Login />
+      </div>
+    ),
+  },
+  {
+    path: "/equipment",
+    exact: true,
+    sidebar: () => <div></div>,
+    main: () => (
+      <div>
+        <SignUp />
+      </div>
+    ),
+  },
+];
 
-You are not authenticating the user properly. auth is set as a piece of state that can be set to 
-true when the login button is clicked without credentials, Need to make another request to server
-to /profile to authenticate the user, pass response into localStorage and use that instead.
+let unAuthedRoute = [
+  {
+    path: "/mycart",
+    exact: true,
+    sidebar: () => <div></div>,
+    main: () => (
+      <div>
+        <Cart />
+        <Redirect to="/login" />
+      </div>
+    ),
+  },
+];
 
-*/
+let unAuthedRoutes = routes.map(
+  (obj) => unAuthedRoute.find((o) => o.path === obj.path) || obj
+);
 
-let routes =
-  // auth ?
-  [
-    {
-      path: "/signup",
-      sidebar: () => <div></div>,
-      main: () => (
-        <div>
-          <SignUp />
-        </div>
-      ),
-    },
-    {
-      path: "/",
-      exact: true,
-      sidebar: () => <div></div>,
-      main: () => (
-        <div>
-          <Home />
-        </div>
-      ),
-    },
-    {
-      path: "/equipment",
-      exact: true,
-      sidebar: () => <div></div>,
-      main: () => (
-        <div>
-          <ShopEquipment />
-        </div>
-      ),
-    },
-    {
-      path: "/mycart",
-      exact: true,
-      sidebar: () => <div></div>,
-      main: () => (
-        <div>
-          <Cart />
-        </div>
-      ),
-    },
-    {
-      path: "/login",
-      exact: true,
-      sidebar: () => <div></div>,
-      main: () => (
-        <div>
-          <Login />
-        </div>
-      ),
-    },
-    {
-      path: "/equipment",
-      exact: true,
-      sidebar: () => <div></div>,
-      main: () => (
-        <div>
-          <SignUp />
-        </div>
-      ),
-    },
-  ];
+let authenticatedRoutes = auth ? routes : unAuthedRoutes;
+// console.log({ auth });
+// console.log({ routes });
+// console.log({ unAuthedRoutes });
+// console.log({ authenticatedRoutes });
+
+//So close, this bit above
 
 const SideBar = () => {
   return (
     <Router>
       <div className="sidebar" style={{ display: "flex" }}>
         <div className="sidebar__content">
+          <button>Re Render</button>
           <div class="sidebar__logo">
             <a href="/" title="title">
               <img
@@ -155,7 +173,7 @@ const SideBar = () => {
           </div>
 
           <Switch>
-            {routes.map((route, index) => (
+            {authenticatedRoutes.map((route, index) => (
               <Route
                 key={index}
                 path={route.path}
@@ -169,7 +187,7 @@ const SideBar = () => {
             renders the first one that matches the current URL. */}
         <div style={{ flex: 1, padding: "" }} className="sidebar__pages">
           <Switch>
-            {routes.map((route, index) => (
+            {authenticatedRoutes.map((route, index) => (
               <Route
                 key={index}
                 path={route.path}
