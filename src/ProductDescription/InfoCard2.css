@@ -1,6 +1,7 @@
 .infoCard2__container {
   background-color: white;
   display: inline-flex;
+  align-items: center;
   width: 40%;
   height: 100%;
   max-width: 380px;
@@ -33,4 +34,10 @@
   font-size: smaller;
   line-height: inherit;
   text-align: center;
+}
+
+@media screen and (max-width: 992px) {
+  .infoCard2__container {
+    padding: 25px 0px;
+  }
 }

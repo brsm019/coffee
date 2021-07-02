@@ -1,15 +1,11 @@
 .infoCard1__container {
   background-color: white;
-  display: inline-flex;
+  display: inline-grid;
   align-items: center;
   width: 40%;
   height: 100%;
   width: 380px;
 }
-
-/* .infoCard1__wrapper {
-  padding-top: 30px;
-} */
 
 .infoCard1__grouping {
   display: flex;
@@ -35,4 +31,11 @@
   color: black;
   font-weight: bold;
   text-transform: uppercase;
+}
+
+@media screen and (max-width: 992px) {
+  .infoCard1__container {
+    padding: 25px;
+    margin-bottom: 2px;
+  }
 }
