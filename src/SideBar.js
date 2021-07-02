@@ -71,9 +71,9 @@ let routes = [
     exact: true,
     sidebar: () => <div></div>,
     main: () => (
-      <div>
+      <>
         <SignUp />
-      </div>
+      </>
     ),
   },
   {
@@ -123,7 +123,7 @@ let authenticatedRoutes = auth ? routes : unAuthedRoutes;
 const SideBar = () => {
   return (
     <Router>
-      <div className="sidebar" style={{ display: "flex" }}>
+      <div className="sidebar" style={{ display: "flex", height: "100%" }}>
         <div className="sidebar__content">
           <div class="sidebar__logo">
             <a href="/" title="title">
