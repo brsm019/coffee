@@ -1,0 +1,38 @@
+.infoCard1__container {
+  background-color: white;
+  display: inline-flex;
+  align-items: center;
+  width: 40%;
+  height: 100%;
+  width: 380px;
+}
+
+/* .infoCard1__wrapper {
+  padding-top: 30px;
+} */
+
+.infoCard1__grouping {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+}
+
+.infoCard1__group {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 0.3em 2em;
+}
+
+.infoCard1__title {
+  color: darkgrey;
+  font-style: italic;
+  font-size: smaller;
+  margin-bottom: -3px;
+}
+
+.infoCard1_subtitle {
+  color: black;
+  font-weight: bold;
+  text-transform: uppercase;
+}
