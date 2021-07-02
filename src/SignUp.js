@@ -1,6 +1,7 @@
 import React, { useState } from "react";
 import { NavLink } from "react-router-dom";
 import Header from "./Header";
+import Footer from "./Footer/Footer";
 import "./SignUp.css";
 const SignUp = () => {
   const [firstName, setFirstName] = useState("");
@@ -48,78 +49,81 @@ const SignUp = () => {
   };
 
   return (
-    <div className="signup">
+    <>
       <Header />
-      <div className="signup__container">
-        <div className="signup__line">-----------------</div>
-        <h1 className="signup__header">REGISTER</h1>
-        <div className="signup__line">-----------------</div>
-        <br></br>
-        <br></br>
-        <br></br>
-        <div className="signup__form__container">
-          <form onSubmit={handleSignUp}>
-            <div className="form-group">
-              <label for="first__name">First Name</label>
-              <input
-                type="text"
-                class="form-control"
-                id="first__name"
-                name="first name"
-                value={firstName}
-                onChange={handleNameChange}
-              />
-            </div>
-            <div className="form-group">
-              <label for="last__name">Last Name</label>
-              <input
-                type="text"
-                class="form-control"
-                id="last__name"
-                name="last name"
-                value={lastName}
-                onChange={handleLastNameChange}
-              />
-            </div>
-            <div className="form-group">
-              <label for="email">Email</label>
-              <input
-                type="text"
-                class="form-control"
-                id="email"
-                name="email"
-                value={email}
-                onChange={handleEmailChange}
-              />
-            </div>
-            <div className="form-group">
-              <label for="password">Password</label>
-              <input
-                type="password"
-                class="form-control"
-                id="password"
-                name="password"
-                value={password}
-                onChange={handlePasswordChange}
-              />
-            </div>
-            <div class="form__button">
-              <button type="submit" class="btn-xs" value="Submit">
-                CREATE
-              </button>
-              <span className="form__link">
-                <NavLink to="/login">
-                  <i className="form__login">
-                    or <em>Login</em>
-                  </i>
-                </NavLink>
-              </span>
-            </div>
-            <p class="form__success__message">{message}</p>
-          </form>
+      <div className="signup__wrapper">
+        <div className="signup__container">
+          <div className="signup__line">-----------------</div>
+          <h1 className="signup__header">REGISTER</h1>
+          <div className="signup__line">-----------------</div>
+          <br></br>
+          <br></br>
+          <br></br>
+          <div className="signup__form__container">
+            <form onSubmit={handleSignUp}>
+              <div className="form-group">
+                <label for="first__name">First Name</label>
+                <input
+                  type="text"
+                  class="form-control"
+                  id="first__name"
+                  name="first name"
+                  value={firstName}
+                  onChange={handleNameChange}
+                />
+              </div>
+              <div className="form-group">
+                <label for="last__name">Last Name</label>
+                <input
+                  type="text"
+                  class="form-control"
+                  id="last__name"
+                  name="last name"
+                  value={lastName}
+                  onChange={handleLastNameChange}
+                />
+              </div>
+              <div className="form-group">
+                <label for="email">Email</label>
+                <input
+                  type="text"
+                  class="form-control"
+                  id="email"
+                  name="email"
+                  value={email}
+                  onChange={handleEmailChange}
+                />
+              </div>
+              <div className="form-group">
+                <label for="password">Password</label>
+                <input
+                  type="password"
+                  class="form-control"
+                  id="password"
+                  name="password"
+                  value={password}
+                  onChange={handlePasswordChange}
+                />
+              </div>
+              <div class="form__button">
+                <button type="submit" class="btn-xs" value="Submit">
+                  CREATE
+                </button>
+                <span className="form__link">
+                  <NavLink to="/login">
+                    <i className="form__login">
+                      or <em>Login</em>
+                    </i>
+                  </NavLink>
+                </span>
+              </div>
+              <p class="form__success__message">{message}</p>
+            </form>
+          </div>
         </div>
+        <Footer />
       </div>
-    </div>
+    </>
   );
 };
 

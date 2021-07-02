@@ -1,6 +1,7 @@
 import React, { useState } from "react";
 import { NavLink, useHistory } from "react-router-dom";
 import Header from "./Header";
+import Footer from "./Footer/Footer";
 import "./Login.css";
 
 // <Redirect to="/SignUp"
@@ -138,6 +139,7 @@ const Login = () => {
           </form>
         </div>
       </div> */}
+      <Footer />
     </div>
   );
 };
