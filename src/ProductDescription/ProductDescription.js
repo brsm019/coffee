@@ -5,6 +5,7 @@ import AddToCartCard from "./AddToCartCard.js";
 import PictureCard from "./PictureCard.js";
 import InfoCard1 from "./InfoCard1.js";
 import InfoCard2 from "./InfoCard2.js";
+import Footer from "../Footer/Footer";
 const ProductDescription = () => {
   return (
     <>
@@ -19,6 +20,7 @@ const ProductDescription = () => {
           <InfoCard1 />
           <InfoCard2 />
         </div>
+        <Footer />
       </div>
     </>
   );
