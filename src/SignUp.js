@@ -7,6 +7,7 @@ const SignUp = () => {
   const [lastName, setLastName] = useState("");
   const [email, setEmail] = useState("");
   const [password, setPassword] = useState("");
+  const [message, setMessage] = useState("");
 
   const handleNameChange = (e) => {
     setFirstName(e.target.value);
@@ -22,12 +23,6 @@ const SignUp = () => {
   };
 
   console.log(firstName, lastName, email, password);
-
-  /*   TODO: Work out how to verify JWT token on client side and log in - just get console log of information:
-      username with hashed password to begin with.
-      Then work out how to only show certain pages based on the user being signed in - like the cart.
-
-*/
 
   const handleSignUp = (e) => {
     e.preventDefault();
@@ -47,6 +42,7 @@ const SignUp = () => {
       }),
     }).then(() => {
       // Once posted, the user will be notified
+      setMessage("Account successfully created!");
       console.log("You have been added to the system!");
     });
   };
@@ -119,6 +115,7 @@ const SignUp = () => {
                 </NavLink>
               </span>
             </div>
+            <p class="form__success__message">{message}</p>
           </form>
         </div>
       </div>

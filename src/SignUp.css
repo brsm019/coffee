@@ -93,3 +93,8 @@ input.form-control:focus {
 .form__link > a {
   text-decoration: none;
 }
+
+.form__success__message {
+  color: #a7a7a7;
+  font-size: 15px;
+}
