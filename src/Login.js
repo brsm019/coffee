@@ -35,7 +35,7 @@ const Login = () => {
       .then((res) => {
         res.json().then((result, err) => {
           if (err) return err.message;
-          console.log({ result });
+          console.log(result);
           localStorage.setItem(
             "token",
             JSON.stringify({
@@ -43,8 +43,8 @@ const Login = () => {
             })
           );
           localStorage.setItem("auth", JSON.stringify({ auth: result.auth }));
-
-          // history.push("/");
+          history.push("/");
+          history.go(0);
         });
       })
       .catch((err) => {

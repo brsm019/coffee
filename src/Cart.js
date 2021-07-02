@@ -28,6 +28,7 @@ const Cart = () => {
   const [peeps, setPeeps] = useState([]);
 
   let auth = localStorage.getItem("auth") === '{"auth":true}';
+
   console.log({ auth });
 
   const handleName = (e) => {
