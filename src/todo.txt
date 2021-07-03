@@ -1,7 +1,6 @@
 TODO:
 
 Priority:
-Need to link all cofee's to their own pages
 Footer needs to be at the bottom
 Add to basket button
 Create cart component
