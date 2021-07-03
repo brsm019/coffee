@@ -36,6 +36,7 @@ exports.sign_in = function (req, res) {
       return res.json({
         token: accessToken,
         user: user,
+        auth: true,
       });
     }
   );

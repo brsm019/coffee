@@ -19,7 +19,7 @@ const CardForm = () => {
           />
           <CardMedium
             image="https://external-content.duckduckgo.com/iu/?u=https%3A%2F%2Fwww.publicdomainpictures.net%2Fpictures%2F30000%2Fvelka%2Fplain-white-background.jpg&f=1&nofb=1"
-            link="/sweetshop"
+            link="/sweet-shop"
             title="Sweetshop"
             subtitle="Seasonal Espresso"
             price="£16.00"
@@ -27,7 +27,7 @@ const CardForm = () => {
           />
           <CardMedium
             image="https://external-content.duckduckgo.com/iu/?u=https%3A%2F%2Fwww.publicdomainpictures.net%2Fpictures%2F30000%2Fvelka%2Fplain-white-background.jpg&f=1&nofb=1"
-            link="www.google.com"
+            link="/decaf-espresso"
             title="Decaf"
             subtitle="Espresso"
             price="£13.50"
@@ -38,7 +38,7 @@ const CardForm = () => {
         <>
           <CardSmall
             image="https://external-content.duckduckgo.com/iu/?u=https%3A%2F%2Fwww.publicdomainpictures.net%2Fpictures%2F30000%2Fvelka%2Fplain-white-background.jpg&f=1&nofb=1"
-            link="www.google.com"
+            link="/sasaba"
             title="Sasaba"
             subtitle="Ethiopian Espresso"
             price="£13.50"
@@ -46,7 +46,7 @@ const CardForm = () => {
           />
           <CardSmall
             image="https://external-content.duckduckgo.com/iu/?u=https%3A%2F%2Fwww.publicdomainpictures.net%2Fpictures%2F30000%2Fvelka%2Fplain-white-background.jpg&f=1&nofb=1"
-            link="www.google.com"
+            link="/la-floresta"
             title="La Floresta"
             subtitle="Columbian Espresso"
             price="£15.50"
@@ -54,7 +54,7 @@ const CardForm = () => {
           />
           <CardSmall
             image="https://external-content.duckduckgo.com/iu/?u=https%3A%2F%2Fwww.publicdomainpictures.net%2Fpictures%2F30000%2Fvelka%2Fplain-white-background.jpg&f=1&nofb=1"
-            link="www.google.com"
+            link="/adela-reyes"
             title="Adela Reyes"
             subtitle="Ethiopian Espresso"
             price="£15.50"
@@ -62,18 +62,18 @@ const CardForm = () => {
           />
           <CardSmall
             image="https://external-content.duckduckgo.com/iu/?u=https%3A%2F%2Fwww.publicdomainpictures.net%2Fpictures%2F30000%2Fvelka%2Fplain-white-background.jpg&f=1&nofb=1"
-            link="www.google.com"
+            link="/filtered-bean"
             title="Filtered Bean"
             subtitle="Seasonal Filter"
             price="£12.50"
-            subColor="#99080c"
+            subColor="#007442"
           />
         </>
 
         <>
           <CardMedium
             image="https://external-content.duckduckgo.com/iu/?u=https%3A%2F%2Fwww.publicdomainpictures.net%2Fpictures%2F30000%2Fvelka%2Fplain-white-background.jpg&f=1&nofb=1"
-            link="www.google.com"
+            link="/el-diamante"
             title="El Diamante"
             subtitle="Peru"
             price="£14.00"
@@ -81,7 +81,7 @@ const CardForm = () => {
           />
           <CardMedium
             image="https://external-content.duckduckgo.com/iu/?u=https%3A%2F%2Fwww.publicdomainpictures.net%2Fpictures%2F30000%2Fvelka%2Fplain-white-background.jpg&f=1&nofb=1"
-            link="www.google.com"
+            link="/dis-palo"
             title="Dis Palo"
             subtitle="Columbia Espresso"
             price="£14.00"
@@ -89,17 +89,17 @@ const CardForm = () => {
           />
           <CardLarge
             image="https://cdn.shopify.com/s/files/1/0017/1562/products/Light-10_1024x1024.jpg?v=1600088640"
-            link="www.google.com"
+            link="/smart-dripper"
             title="Smart Dripper"
             subtitle=""
-            price="£16.00"
+            price="£23.00"
           />
         </>
 
         <>
           <CardSmall
             image="https://external-content.duckduckgo.com/iu/?u=https%3A%2F%2Fwww.publicdomainpictures.net%2Fpictures%2F30000%2Fvelka%2Fplain-white-background.jpg&f=1&nofb=1"
-            link="www.google.com"
+            link="/bookkisa"
             title="Bookkisa"
             subtitle="Ethiopia Espresso"
             price="£16.00"
@@ -107,26 +107,26 @@ const CardForm = () => {
           />
           <CardSmall
             image="https://external-content.duckduckgo.com/iu/?u=https%3A%2F%2Fwww.publicdomainpictures.net%2Fpictures%2F30000%2Fvelka%2Fplain-white-background.jpg&f=1&nofb=1"
-            link="www.google.com"
-            title="Aronas"
-            subtitle="Seasonal Espresso"
-            price="£14.50"
+            link="/el-dasto"
+            title="EL DASTO"
+            subtitle="COLUMBIA"
+            price="£14.00"
             subColor="#0d57079a"
           />
           <CardSmall
             image="https://external-content.duckduckgo.com/iu/?u=https%3A%2F%2Fwww.publicdomainpictures.net%2Fpictures%2F30000%2Fvelka%2Fplain-white-background.jpg&f=1&nofb=1"
-            link="www.google.com"
+            link="/peretu"
             title="Peretu"
             subtitle="Peruvian Espresso"
-            price="£13.50"
+            price="£15.00"
             subColor="#0d57079a"
           />
           <CardSmall
             image="https://external-content.duckduckgo.com/iu/?u=https%3A%2F%2Fwww.publicdomainpictures.net%2Fpictures%2F30000%2Fvelka%2Fplain-white-background.jpg&f=1&nofb=1"
-            link="www.google.com"
+            link="/lultrina"
             title="Lultrina"
             subtitle="Columbian Espresso"
-            price="£13.50"
+            price="£13.00"
             subColor="#0d57079a"
           />
         </>
