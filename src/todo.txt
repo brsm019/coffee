@@ -10,6 +10,7 @@ Read through article on global state
 Files you are working in:
 Login.js
 Header.js
+Create a new branch when working on this section.
 
 Footer needs to be at the bottom
 Add to basket button
