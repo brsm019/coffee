@@ -1,6 +1,16 @@
 TODO:
 
 Priority:
+
+Create reducer page and have the add to cart button dispatch a function that adds to global state.
+
+>>>Got Global State to work, but found bug - When refresh page either with refresh button or .history, the state
+disappears, need to use localStorage when setting state?? Information opened on browser.
+Read through article on global state
+Files you are working in:
+Login.js
+Header.js
+
 Footer needs to be at the bottom
 Add to basket button
 Create cart component

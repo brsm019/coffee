@@ -3,15 +3,18 @@ import { NavLink, useHistory } from "react-router-dom";
 import Header from "./Header";
 import Footer from "./Footer/Footer";
 import "./Login.css";
+import { useStateValue } from "./GlobalState/StateProvider";
 
 // <Redirect to="/SignUp"
 /* <Redirect
               to={{ pathname: "/signup", state: { from: props.location } }} aa*/
 
 const Login = () => {
+  const [state, dispatch] = useStateValue();
   const history = useHistory();
   const [email, setEmail] = useState("");
   const [password, setPassword] = useState("");
+  const [name, setName] = useState("");
 
   const handleEmailChange = (e) => {
     setEmail(e.target.value);
@@ -44,8 +47,21 @@ const Login = () => {
             })
           );
           localStorage.setItem("auth", JSON.stringify({ auth: result.auth }));
-          history.push("/");
-          history.go(0);
+          localStorage.setItem(
+            "name",
+            JSON.stringify({ name: result.user.firstName })
+          );
+
+          setName(result.user.firstName);
+          //Dispatch user's name into global state
+          dispatch({
+            type: "SET_USER",
+            user: result.user.firstName,
+          });
+          // setTimeout(function () {
+          //   history.push("/");
+          //   history.go(0);
+          // }, 1000);
         });
       })
       .catch((err) => {
@@ -54,11 +70,15 @@ const Login = () => {
       });
   };
   console.log(localStorage.getItem("auth"));
+  console.log(localStorage.getItem("name"));
+  console.log({ name });
+  console.log({ state });
 
   const handleLogout = () => {
     localStorage.removeItem("token");
     localStorage.removeItem("auth");
     localStorage.removeItem("login");
+    localStorage.removeItem("name");
   };
 
   return (

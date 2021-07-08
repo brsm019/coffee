@@ -84,6 +84,7 @@ let routes = [
       <>
         <ProductDescription
           //addToCart
+          id="1"
           title="Red Brick"
           subtitle="Seasonal Espresso"
           subColor="#99080c"
@@ -128,6 +129,7 @@ let routes = [
       <>
         <ProductDescription
           //addToCart
+          id="2"
           title="Sweetshop"
           subtitle="Seasonal Espresso"
           subColor="#99080c"
@@ -169,6 +171,7 @@ let routes = [
       <>
         <ProductDescription
           //addToCart
+          id="3"
           title="SASABA"
           subtitle="ETHIOPIA ESPRESSO"
           subColor="#99080c"
@@ -210,6 +213,7 @@ let routes = [
       <>
         <ProductDescription
           //addToCart
+          id="4"
           title="LA FLORESTA"
           subtitle="COLOMBIA ESPRESSO"
           subColor="#99080c"
@@ -251,6 +255,7 @@ let routes = [
       <>
         <ProductDescription
           //addToCart
+          id="5"
           title="ADELA REYES"
           subtitle="ETHIOPIAN ESPRESSO"
           subColor="#99080c"
@@ -292,6 +297,7 @@ let routes = [
       <>
         <ProductDescription
           //addToCart
+          id="6"
           title="Decaf Espresso"
           subtitle="Espresso"
           subColor="#99080c"
@@ -333,6 +339,7 @@ let routes = [
       <>
         <ProductDescription
           //addToCart
+          id="7"
           title="Filtered Bean"
           subtitle="Seasonal Filter"
           subColor="#007442"
@@ -374,6 +381,7 @@ let routes = [
       <>
         <ProductDescription
           //addToCart
+          id="8"
           title="EL DIAMANTE"
           subtitle="Seasonal Blend"
           subColor="#007442"
@@ -415,6 +423,7 @@ let routes = [
       <>
         <ProductDescription
           //addToCart
+          id="9"
           title="DIS PALO"
           subtitle="Columbia Espresso"
           subColor="#007442"
@@ -456,6 +465,7 @@ let routes = [
       <>
         <ProductDescription
           //addToCart
+          id="10"
           title="SMART DRIPPER"
           // subtitle="Columbia Espresso"
           subColor="#007442"
@@ -497,6 +507,7 @@ let routes = [
       <>
         <ProductDescription
           //addToCart
+          id="11"
           title="BOOKKISA"
           subtitle="ETHIOPIA"
           subColor="#007442"
@@ -538,6 +549,7 @@ let routes = [
       <>
         <ProductDescription
           //addToCart
+          id="12"
           title="EL DASTO"
           subtitle="COLUMBIA"
           subColor="#007442"
@@ -579,6 +591,7 @@ let routes = [
       <>
         <ProductDescription
           //addToCart
+          id="13"
           title="PERETU"
           subtitle="PERU"
           subColor="#007442"
@@ -620,6 +633,7 @@ let routes = [
       <>
         <ProductDescription
           //addToCart
+          id="14"
           title="LULTRINA"
           subtitle="COLUMBIA"
           subColor="#007442"
