@@ -1,7 +1,24 @@
 import React from "react";
 import "./AddToCartCard.css";
+import { useStateValue } from "../GlobalState/StateProvider";
 
-const AddToCartCard = ({ title, subtitle, subColor, price }) => {
+const AddToCartCard = ({ id, title, subtitle, subColor, price }) => {
+  const [state, dispatch] = useStateValue();
+  console.log(useStateValue());
+  const addToBasket = () => {
+    dispatch({
+      type: "ADD_TO_BASKET",
+      item: {
+        id,
+        title,
+        subtitle,
+        price,
+      },
+    });
+  };
+
+  console.log(state);
+
   return (
     <div class="addToCartCard__container">
       <div class="addToCartCard__text">
@@ -20,7 +37,12 @@ const AddToCartCard = ({ title, subtitle, subColor, price }) => {
           <span class="addToCartCard__price">£{price}</span>
         </div>
         <div class="form__button">
-          <button type="submit" class="btn-xs" value="Submit">
+          <button
+            type="submit"
+            class="btn-xs"
+            value="Submit"
+            onClick={addToBasket}
+          >
             ADD TO CART
           </button>
         </div>
