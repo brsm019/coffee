@@ -1,23 +1,31 @@
 TODO:
 
+>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>
 Priority:
 
-Create reducer page and have the add to cart button dispatch a function that adds to global state./
+Create reducer page and have the add to cart button dispatch a function that adds to global state. DONE
 
->>>Got Global State to work, but found bug - When refresh page either with refresh button or .history, the state
-disappears, need to use localStorage when setting state?? Information opened on browser.
-Read through article on global state
-Files you are working in:
-Login.js
-Header.js
-Create a new branch when working on this section.
+>>>Got Global State to work, but found bug - When refresh page either with refresh button or .history, the state DONE
+disappears, need to use localStorage when setting state?? Information opened on browser. DONE
+Files you are working in: DONE
+Login.js DONE
+Header.js DONE
+Create a new branch when working on this section. DONE
 
-Persisting name state through local storage.
+Persisting name state through local storage. DONE
+
+Connect 'Add to Cart' button for each component to global state, get it to update total in header instantly.
+Build out the cart page.
+
+Create cart functionality using either stripe payments or paypal
+
+>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>
 
 Footer needs to be at the bottom
 Add to basket button
 Create cart component
 Create a global state to pass basket information to cart and also update, number of items, total amount 
+
 
 
 Other:
@@ -29,7 +37,7 @@ When logged in, change account signup to users first name and change login to lo
 Add logout button that redirects to homepage
 
 Register Page:
-When created clicked without entering anything into fields, show astericks on all fields and chnage their colour
+When created clicked without entering anything into fields, show astericks on all fields and change their colour
 When created clicked without entering anything do not show successful message
 
 Home Page:
