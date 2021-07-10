@@ -112,7 +112,7 @@ const Login = () => {
                 SIGN IN
               </button>
               <span className="form__link">
-                <NavLink to="/login">
+                <NavLink to="/signup">
                   <i className="form__login">
                     or <em>Register</em>
                   </i>
