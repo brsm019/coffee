@@ -34,3 +34,29 @@
 #header__cart {
   text-decoration: underline;
 }
+
+.header__loggedIn {
+  font-family: "gentium", Georgia, Times, "Times New Roman", serif;
+  font-weight: lighter;
+  padding-right: 0.9rem;
+  padding-top: 0.15em;
+  color: #464646;
+  text-decoration: none;
+  font-style: italic;
+  line-height: 13px;
+  font-size: 13px;
+}
+
+.header__logOut {
+  font-family: "gentium", Georgia, Times, "Times New Roman", serif;
+  font-weight: lighter;
+  padding-right: 0.9rem;
+  padding-top: 0.45em;
+  color: #464646;
+  text-decoration: none;
+  font-style: italic;
+  line-height: 14px;
+  font-size: 13px;
+  border: none;
+  background: none;
+}

@@ -58,10 +58,9 @@ const Login = () => {
             type: "SET_USER",
             user: result.user.firstName,
           });
-          // setTimeout(function () {
-          //   history.push("/");
-          //   history.go(0);
-          // }, 1000);
+
+          history.push("/");
+          history.go(0);
         });
       })
       .catch((err) => {
