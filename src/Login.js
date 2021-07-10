@@ -73,13 +73,6 @@ const Login = () => {
   console.log({ name });
   console.log({ state });
 
-  const handleLogout = () => {
-    localStorage.removeItem("token");
-    localStorage.removeItem("auth");
-    localStorage.removeItem("login");
-    localStorage.removeItem("name");
-  };
-
   return (
     <div className="login">
       <Header />
@@ -127,37 +120,8 @@ const Login = () => {
               </span>
             </div>
           </form>
-          <button onClick={handleLogout}>Logout forTesting</button>
         </div>
       </div>
-      {/* <div className="login__container__2">
-        <p className="login__reset__password">RESET PASSWORD</p>
-        <div className="login__form__container">
-          <form>
-            <div className="form-group">
-              <label for="email">Email</label>
-              <input
-                type="text"
-                class="form-control"
-                id="email"
-                name="email"
-                value={email}
-                onChange={handleEmailChange}
-              />
-            </div>
-            <div class="form__button">
-              <button
-                type="submit"
-                class="btn-xs"
-                value="Submit"
-                onSubmit={handleLogin}
-              >
-                SUBMIT
-              </button>
-            </div>
-          </form>
-        </div>
-      </div> */}
       <Footer />
     </div>
   );
