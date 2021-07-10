@@ -2,7 +2,7 @@ TODO:
 
 Priority:
 
-Create reducer page and have the add to cart button dispatch a function that adds to global state.
+Create reducer page and have the add to cart button dispatch a function that adds to global state./
 
 >>>Got Global State to work, but found bug - When refresh page either with refresh button or .history, the state
 disappears, need to use localStorage when setting state?? Information opened on browser.
@@ -11,6 +11,8 @@ Files you are working in:
 Login.js
 Header.js
 Create a new branch when working on this section.
+
+Persisting name state through local storage.
 
 Footer needs to be at the bottom
 Add to basket button
