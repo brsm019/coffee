@@ -1,0 +1,38 @@
+.cart__container {
+  box-shadow: 5px 5px 5px rgb(0 0 0 / 1%);
+  background-color: white;
+  width: 65%;
+  max-width: 550px;
+  min-width: 400px;
+  margin: auto;
+  margin-top: 20px;
+  padding: 2em;
+}
+
+.cart__header {
+  font-family: "TradeGothic", "Helvetica Neue", Helvetica, Arial, sans-serif;
+  text-align: center;
+  color: black;
+  margin: 5px 0px;
+}
+
+.cart__line {
+  text-align: center;
+  color: rgb(104, 104, 104, 0.35);
+}
+
+.cart__table__container {
+  text-align: center;
+  margin: auto;
+}
+
+.cart__table__title {
+  font-weight: 900;
+  font-size: 15px;
+  color: darkgray;
+}
+
+.cart__table__row {
+  display: flex;
+  justify-content: space-between;
+}

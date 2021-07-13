@@ -15,11 +15,20 @@ Create a new branch when working on this section. DONE
 Persisting name state through local storage. DONE
 
 Connect 'Add to Cart' button for each component to global state, get it to update total in header instantly.
-Build out the cart page.
+Build out the cart page. DONE
+
+Currently building out checkout page - Need to create a table instead of using flexbox. Look into creating table with
+bootstrap to speed up process.
+
+Add Subtotal to page.
+
+Continue to checkout/payment page.
 
 Create cart functionality using either stripe payments or paypal
 
 >>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>
+
+Reorganise files into folders
 
 Footer needs to be at the bottom
 Add to basket button
