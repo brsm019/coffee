@@ -1,92 +1,40 @@
-import React, { useState } from "react";
+import React from "react";
 import "./Cart.css";
+import CheckoutProduct from "./CheckoutProduct";
+import Footer from "./Footer/Footer";
 import Header from "./Header";
-import { NavLink, useHistory } from "react-router-dom";
-import axios from "axios";
-
-//Create 404 page for random routes that aren't specified
+import { useStateValue } from "./GlobalState/StateProvider";
 
 const Cart = () => {
-  const history = useHistory();
-  const [name, setName] = useState("");
-  const [address, setAddress] = useState("");
-  const [info, setInfo] = useState("");
-  const [peeps, setPeeps] = useState([]);
-
-  let auth = localStorage.getItem("auth") === '{"auth":true}';
-
-  console.log({ auth });
-
-  const handleName = (e) => {
-    setName(e.target.value);
-  };
-  const handleAddress = (e) => {
-    setAddress(e.target.value);
-  };
-  const handleInfo = (e) => {
-    setInfo(e.target.value);
-  };
-
-  const handleSubmit = () => {
-    const postURL = "http://localhost:4000/api/test/"; //Our previously set up route in the backend
-    fetch(postURL, {
-      method: "POST",
-      headers: {
-        Accept: "application/json",
-        "Content-Type": "application/json",
-      },
-      body: JSON.stringify({
-        // We should keep the fields consistent for managing this data later
-        name: name,
-        address: address,
-        info: info,
-      }),
-    }).then(() => {
-      // Once posted, the user will be notified
-      alert("You have been added to the system!");
-    });
-  };
-
-  const handleClick = async () => {
-    const getURL = "http://localhost:4000/api/test";
-    const response = await axios.get(getURL);
-    setPeeps(response.data);
-  };
-
-  // console.log(peeps);
-  // console.log(name, address, info);
-  // console.log({ auth });
-  // if (auth !== true) {
-  //   history.push("/login");
-  // }
+  const [{ basket, user }, dispatch] = useStateValue();
 
   return (
     <div className="cart">
       <Header />
-      <h1>Cart This</h1>
-      <div>
-        <form onSubmit={handleSubmit}>
-          <label>Name</label>
-          <input value={name} onChange={handleName} />
-          <label>Address</label>
-          <input value={address} onChange={handleAddress} />
-          <label>Info</label>
-          <input value={info} onChange={handleInfo} />
-          <button type="submit">Enter</button>
-        </form>
+      <div className="cart__container">
+        <div className="cart__line">-----------------</div>
+        <h1 className="cart__header">Checkout</h1>
+        <div className="cart__line">-----------------</div>
+        <br></br>
+        <br></br>
+        <br></br>
+        <div className="cart__table__row">
+          <p className="cart__table__title">ITEM TITLE</p>
+          <p className="cart__table__title">PRICE</p>
+          <p className="cart__table__title">DELETE</p>
+        </div>
+        <div className="cart__table__container">
+          {basket.map((item) => (
+            <CheckoutProduct
+              key={item.id}
+              id={item.id}
+              title={item.title}
+              price={item.price}
+            />
+          ))}
+        </div>
       </div>
-      <button onClick={handleClick}>Get all peeps</button>
-      <div>
-        {peeps.map((peep) => {
-          return (
-            <ul key={peep._id} style={{ color: "black" }}>
-              <li>{peep.name}</li>
-              <li>{peep.address}</li>
-              <li>{peep.info}</li>
-            </ul>
-          );
-        })}
-      </div>
+      <Footer />
     </div>
   );
 };

@@ -1,20 +1,28 @@
 import React from "react";
 import "./AddToCartCard.css";
 import { useStateValue } from "../GlobalState/StateProvider";
+import { name } from "../GlobalState/reducer";
+import { useHistory } from "react-router";
 
 const AddToCartCard = ({ id, title, subtitle, subColor, price }) => {
   const [state, dispatch] = useStateValue();
+  const history = useHistory();
+
+  console.log(name);
+
   console.log(useStateValue());
   const addToBasket = () => {
-    dispatch({
-      type: "ADD_TO_BASKET",
-      item: {
-        id,
-        title,
-        subtitle,
-        price,
-      },
-    });
+    name
+      ? dispatch({
+          type: "ADD_TO_BASKET",
+          item: {
+            id,
+            title,
+            subtitle,
+            price,
+          },
+        })
+      : history.push("/login");
   };
 
   console.log(state);
