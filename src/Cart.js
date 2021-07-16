@@ -24,7 +24,7 @@ const Cart = () => {
         <div className="cart__line">-----------------</div>
         <h1 className="cart__header">MY CART</h1>
         <div className="cart__line line2">-----------------</div>
-        <table>
+        <table className="cart__table">
           <tbody>
             <tr className="cart__heading">
               <th class="cart__titleItemHeading">Item Title</th>
