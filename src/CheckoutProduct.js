@@ -14,18 +14,19 @@ const CheckoutProduct = forwardRef(({ id, title, price }, ref) => {
   };
 
   return (
-    <div className="checkoutProduct" ref={ref}>
-      <div className="checkoutProduct__info">
-        <p className="checkoutProduct__title">{title}</p>
-        <p className="checkoutProduct__price">
-          <small>£</small>
-          <strong>{price}</strong>
-        </p>
-        <button onClick={removeFromBasket}>
-          <TiDeleteOutline size="30px" color="darkgray" />
-        </button>
-      </div>
-    </div>
+    <>
+      <tr className="checkoutProduct__row">
+        <td className="checkoutProduct__title" ref={ref}>
+          {title}
+        </td>
+        <td className="checkoutProduct__price">£{price}</td>
+        <td className="checkoutProduct__delete">
+          <button onClick={removeFromBasket}>
+            <TiDeleteOutline size="30px" color="darkgray" />
+          </button>
+        </td>
+      </tr>
+    </>
   );
 });
 
