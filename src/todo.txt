@@ -3,25 +3,6 @@ TODO:
 >>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>
 Priority:
 
-Create reducer page and have the add to cart button dispatch a function that adds to global state. DONE
-
->>>Got Global State to work, but found bug - When refresh page either with refresh button or .history, the state DONE
-disappears, need to use localStorage when setting state?? Information opened on browser. DONE
-Files you are working in: DONE
-Login.js DONE
-Header.js DONE
-Create a new branch when working on this section. DONE
-
-Persisting name state through local storage. DONE
-
-Connect 'Add to Cart' button for each component to global state, get it to update total in header instantly.
-Build out the cart page. DONE
-
-Currently building out checkout page - Need to create a table instead of using flexbox. Look into creating table with
-bootstrap to speed up process. DONE
-
-Add Subtotal to page. DONE
-
 Continue to checkout/payment page.
 
 Create cart functionality using either stripe payments or paypal
@@ -30,9 +11,7 @@ Create cart functionality using either stripe payments or paypal
 
 Reorganise files into folders
 
-Footer needs to be at the bottom. DONE
-Add to basket button. DONE
-Create cart component. DONE
+Footer needs to be at the bottom of all pages - Shop coffee/ home and shop equipment
 Create a global state to pass basket information to cart and also update, number of items, total amount. DONE
 
 
@@ -50,11 +29,6 @@ When created clicked without entering anything into fields, show astericks on al
 When created clicked without entering anything do not show successful message
 
 Home Page:
-
-
-Shop Equipment Page:
-
-My Cart Page:
 
 Sidebar:
 When scroll the page, sidebar isn't sticky, same with top bar

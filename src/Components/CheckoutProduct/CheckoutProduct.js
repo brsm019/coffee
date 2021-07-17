@@ -1,6 +1,6 @@
 import React, { forwardRef } from "react";
 import "./CheckoutProduct.css";
-import { useStateValue } from "./GlobalState/StateProvider";
+import { useStateValue } from "../../GlobalState/StateProvider";
 import { TiDeleteOutline } from "react-icons/ti";
 
 const CheckoutProduct = forwardRef(({ id, title, price }, ref) => {

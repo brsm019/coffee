@@ -1,9 +1,9 @@
 import React from "react";
 import "./Cart.css";
-import CheckoutProduct from "./CheckoutProduct";
-import Footer from "./Footer/Footer";
-import Header from "./Header";
-import { useStateValue } from "./GlobalState/StateProvider";
+import CheckoutProduct from "../Components/CheckoutProduct/CheckoutProduct";
+import Footer from "../Components/Footer/Footer";
+import Header from "../Components/Header/Header";
+import { useStateValue } from "../GlobalState/StateProvider";
 
 const Cart = () => {
   const [{ basket, user, getBasketTotal }, dispatch] = useStateValue();
@@ -86,6 +86,14 @@ const Cart = () => {
             </tr>
           </tbody>
         </table>
+        <button
+          type="submit"
+          class="btn-xs"
+          value="Submit"
+          style={{ float: "right" }}
+        >
+          CHECKOUT
+        </button>
       </div>
       <Footer />
     </div>

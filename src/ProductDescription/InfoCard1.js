@@ -2,6 +2,7 @@ import React from "react";
 import "./InfoCard1.css";
 
 const InfoCard1 = ({
+  description,
   title1,
   title2,
   title3,
@@ -18,21 +19,33 @@ const InfoCard1 = ({
   subtitle6,
   subtitle7,
   subtitle8,
+  width,
+  hidden,
+  eq,
 }) => {
   return (
     <div class="infoCard1__container">
       <div class="infoCard1__wrapper">
-        <div class="infoCard1__grouping">
-          <div class="infoCard1__group">
-            <p class="infoCard1__title">{title1}</p>
+        {/* <div class="infoCard1__description">
+          <p class="infoCard1__descriptionDetail">{description}</p>
+        </div> */}
+        <div class={`infoCard1__grouping `}>
+          <div
+            class={`infoCard1__group ${eq && "infoCard1__group__eq1"}`}
+            style={{ width: { width } }}
+          >
+            <p class={`infoCard1__title ${eq && "infoCard1__title__eq"}`}>
+              {title1}
+            </p>
             <p class="infoCard1_subtitle">{subtitle1}</p>
           </div>
-          <div class="infoCard1__group">
+          <div class={`infoCard1__group ${eq && "infoCard1__group__eq2"}`}>
             <p class="infoCard1__title">{title2}</p>
             <p class="infoCard1_subtitle">{subtitle2}</p>
           </div>
         </div>
-        <div class="infoCard1__grouping">
+        {/* **********HIDDEN********** */}
+        <div class={`infoCard1__grouping`} style={{ display: hidden }}>
           <div class="infoCard1__group">
             <p class="infoCard1__title">{title3}</p>
             <p class="infoCard1_subtitle">{subtitle3}</p>
@@ -42,7 +55,8 @@ const InfoCard1 = ({
             <p class="infoCard1_subtitle">{subtitle4}</p>
           </div>
         </div>
-        <div class="infoCard1__grouping">
+        {/* **********HIDDEN********** */}
+        <div class={`infoCard1__grouping`} style={{ display: hidden }}>
           <div class="infoCard1__group">
             <p class="infoCard1__title">{title5}</p>
             <p class="infoCard1_subtitle">{subtitle5}</p>
@@ -52,7 +66,8 @@ const InfoCard1 = ({
             <p class="infoCard1_subtitle">{subtitle6}</p>
           </div>
         </div>
-        <div class="infoCard1__grouping">
+        {/* **********HIDDEN********** */}
+        <div class={`infoCard1__grouping`} style={{ display: hidden }}>
           <div class="infoCard1__group">
             <p class="infoCard1__title">{title7}</p>
             <p class="infoCard1_subtitle">{subtitle7}</p>

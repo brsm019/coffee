@@ -2,16 +2,17 @@
 
 import React from "react";
 import "./ProductDescription.css";
-import Header from "../Header";
+import Header from "../Components/Header/Header";
 import AddToCartCard from "./AddToCartCard.js";
 import PictureCard from "./PictureCard.js";
 import InfoCard1 from "./InfoCard1.js";
 import InfoCard2 from "./InfoCard2.js";
-import Footer from "../Footer/Footer";
+import Footer from "../Components/Footer/Footer";
 
 const ProductDescription = ({
   id,
   title,
+  description,
   subtitle,
   subColor,
   price,
@@ -33,10 +34,15 @@ const ProductDescription = ({
   subtitle7,
   subtitle8,
   preTitle,
+  preTitle2,
   title9,
   title10,
   title11,
   info,
+  info2,
+  width,
+  hidden,
+  eq,
 }) => {
   return (
     <>
@@ -55,6 +61,7 @@ const ProductDescription = ({
 
         <div className="productDescription__grouping">
           <InfoCard1
+            description={description}
             title1={title1}
             title2={title2}
             title3={title3}
@@ -71,13 +78,20 @@ const ProductDescription = ({
             subtitle6={subtitle6}
             subtitle7={subtitle7}
             subtitle8={subtitle8}
+            width={width}
+            hidden={hidden}
+            eq={eq}
           />
           <InfoCard2
             preTitle={preTitle}
+            preTitle2={preTitle2}
             title9={title9}
             title10={title10}
             title11={title11}
             info={info}
+            info2={info2}
+            hidden={hidden}
+            eq={eq}
           />
         </div>
         <Footer />

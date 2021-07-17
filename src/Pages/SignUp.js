@@ -1,7 +1,7 @@
 import React, { useState } from "react";
 import { NavLink } from "react-router-dom";
-import Header from "./Header";
-import Footer from "./Footer/Footer";
+import Header from "../Components/Header/Header";
+import Footer from "../Components/Footer/Footer";
 import "./SignUp.css";
 const SignUp = () => {
   const [firstName, setFirstName] = useState("");

@@ -1,4 +1,4 @@
-import React, { useEffect, useState } from "react";
+import React from "react";
 import {
   BrowserRouter as Router,
   Switch,
@@ -11,7 +11,7 @@ import Home from "./Home";
 import Login from "./Login";
 import NoMatch from "./NoMatch";
 import ShopEquipment from "./ShopEquipment";
-import ProductDescription from "./ProductDescription/ProductDescription";
+import ProductDescription from "../ProductDescription/ProductDescription";
 import "./SideBar.css";
 import SignUp from "./SignUp";
 let auth = localStorage.getItem("auth") === '{"auth":true}';
@@ -663,6 +663,403 @@ let routes = [
           title10="FUDGE"
           title11="BLACKCURRENT"
           info="A light, blonde blend that brings together the tones of apricot, fudge and blackcurrent to create a wonderful experience."
+        />
+      </>
+    ),
+  },
+  {
+    path: "/wilfa-grinder",
+    exact: true,
+    sidebar: () => <div></div>,
+    main: () => (
+      <>
+        <ProductDescription
+          //addToCart
+          id="15"
+          title="WILFA SVART GRINDER"
+          subtitle=""
+          price="130.00"
+          image="https://cdn.shopify.com/s/files/1/0017/1562/files/wilfa_feat1.jpg?v=9595446469403274234"
+          title1="Perfect for grinding coffee to use with your Aeropress, Chemex, V60 or other home filter brewers. The burr grinder features easy to use grind adjustment that's built right into the 250g hopper and a timed grinding option so that you can easily grind the same amount of coffee beans each time (which we love). It's also quick to dismantle, making it easy to keep nice and clean. Please note, comes with an adaptor for UK plug sockets."
+          preTitle="WILFA COFFEE GRINDER SPECS"
+          preTitle2="PLEASE NOTE - WE OFFER FREE SHIPPING ON ALL UK ORDERS."
+          info="UV protected 250g hopper capacity. Measures 170 x 285 x 130mm for a small footprint. Cool running, slow speed DC motor ensures delicate aroma compounds aren't lost during grinding."
+          info2=""
+          width="none"
+          hidden="none"
+          eq="true"
+        />
+      </>
+    ),
+  },
+  {
+    path: "/fellow-kettle",
+    exact: true,
+    sidebar: () => <div></div>,
+    main: () => (
+      <>
+        <ProductDescription
+          //addToCart
+          id="16"
+          title="FELLOW STAGG EKG ELECTRIC KETTLE"
+          subtitle=""
+          price="145.00"
+          image="https://cdn.shopify.com/s/files/1/0017/1562/files/Stag_EKG_feat.jpg?v=835009315080376446"
+          title1="Looking to upgrade your brewing kit? Beautiful and functional, The Stagg EKG electric kettle by Fellow the answer! With its clever, counterbalanced wishbone handle, the Stag EKG sits on a compact base and features - a precision pour spout, variable temperature control, 60 minute hold time, and LCD display. The best part? Stagg looks fantastic on a shelf, making it a welcome addition to any kitchen."
+          preTitle="KEY FEATURES"
+          preTitle2="PLEASE NOTE - WE OFFER FREE SHIPPING ON ALL UK ORDERS."
+          info="Accurate temperature control to within 1 degree using a PID controller
+
+Fast heat time
+
+A 60-minute hold mode that will keep the kettle warm
+
+Brew Stopwatch
+
+Temperature mode using either celsius or Fahrenheit"
+          info2=""
+          width="none"
+          hidden="none"
+          eq="true"
+        />
+      </>
+    ),
+  },
+  {
+    path: "/pullman-tamper",
+    exact: true,
+    sidebar: () => <div></div>,
+    main: () => (
+      <>
+        <ProductDescription
+          //addToCart
+          id="17"
+          title="PULLMAN OAK TAMPER"
+          subtitle=""
+          price="100.00"
+          image="https://cdn.shopify.com/s/files/1/0017/1562/products/SQM-143_1080x1080_dce57860-ce38-4cb5-b0c1-8e29de96e44a_large.jpg?v=1614614119"
+          title1="Weighty and sturdy, but beautifully elegant, the Pullman is the tamper of choice for many on our team. With an ergonomically shaped oak handle, choose between the BigStep or Original base for even pressure and delicious espresso."
+          preTitle="Original Base - Diameter 58.40mm"
+          preTitle2="BigStep Base - Diameter 58.55mm"
+          info="The Pullman original base is a precision-machined stainless steel tamper base with TrueTamp rings for a consistent and level tamp. With a synthetic rubber compression zone for maximum comfort, making delicious espresso was never this easy."
+          info2="Covering a large surface area within the basket, the stepped edge of the BigStep reduces vacuum potential when tamping."
+          width="none"
+          hidden="none"
+          eq="true"
+        />
+      </>
+    ),
+  },
+  {
+    path: "/fellow-pitcher",
+    exact: true,
+    sidebar: () => <div></div>,
+    main: () => (
+      <>
+        <ProductDescription
+          //addToCart
+          id="18"
+          title="FELLOW EDDY MILK PITCHER"
+          subtitle=""
+          price="50.00"
+          image="https://cdn.shopify.com/s/files/1/0017/1562/products/SQM-072_1080x1080_ce9bb5aa-af32-4841-9ea5-0c1fe8d2ab4f_large.jpg?v=1614614613"
+          title1="A beautiful, yet wonderfully handy object, the 12 oz graphite Eddy Milk Pitcher spins silky smooth micro-foam, thanks to its tapered body. Like writing with a fine-tip fountain pen, its uniquely sharp crease and fluted spout allow for a precise pour while its open-ended ribbon handle offers a comfortable grip for greater control and on point latte art."
+          preTitle="FEATURES"
+          preTitle2="WE OFFER COMPLIMENTARY SHIPPING ON ALL UK ORDERS"
+          info="Measurement Aid
+Fluted spout for ultimate precision.
+Sharp Crease
+Ribbon Handle
+Tapered Body"
+          info2=""
+          width="none"
+          hidden="none"
+          eq="true"
+        />
+      </>
+    ),
+  },
+  {
+    path: "/pullman-tool",
+    exact: true,
+    sidebar: () => <div></div>,
+    main: () => (
+      <>
+        <ProductDescription
+          //addToCart
+          id="19"
+          title="PULLMAN CHISEL REDISTRIBUTION TOOL"
+          subtitle=""
+          price="125.00"
+          image="https://cdn.shopify.com/s/files/1/0017/1562/products/pullman_chisel_life_1_large.jpg?v=1614614379"
+          title1="The quickest way to more balanced and higher extraction is an evenly dense coffee-puck. As a part of the Pullman system, the Chisel redistribution tool helps you even out your puck surface before tamping for the most consistently delicious results."
+          preTitle=""
+          preTitle2=""
+          info=""
+          info2=""
+          width="none"
+          hidden="none"
+          eq="true"
+        />
+      </>
+    ),
+  },
+  {
+    path: "/pullman-black",
+    exact: true,
+    sidebar: () => <div></div>,
+    main: () => (
+      <>
+        <ProductDescription
+          //addToCart
+          id="20"
+          title="PULLMAN BLACK TAMPER"
+          subtitle=""
+          price="90.00"
+          image="https://cdn.shopify.com/s/files/1/0017/1562/products/SQM-133_1080x1080_74ac975f-e7c2-49f1-91b5-d7465b086caf_large.jpg?v=1614614285"
+          title1="Weighty and sturdy, but beautifully elegant, the Pullman is the tamper of choice for many on our team. With an ergonomically shaped black aluminium handle, choose between the BigStep or Original base for even pressure and delicious espresso."
+          preTitle="Original Base - Diameter 58.40mm"
+          preTitle2="BigStep Base - Diameter 58.55mm"
+          info="The Pullman original base is a precision-machined stainless steel tamper base with TrueTamp rings for a consistent and level tamp. With a synthetic rubber compression zone for maximum comfort, making delicious espresso was never this easy."
+          info2="Covering a large surface area within the basket, the stepped edge of the BigStep reduces vacuum potential when tamping."
+          width="none"
+          hidden="none"
+          eq="true"
+        />
+      </>
+    ),
+  },
+  {
+    path: "/pullman-basket",
+    exact: true,
+    sidebar: () => <div></div>,
+    main: () => (
+      <>
+        <ProductDescription
+          //addToCart
+          id="21"
+          title="PULLMAN BASKET"
+          subtitle=""
+          price="20.00"
+          image="https://cdn.shopify.com/s/files/1/0017/1562/products/SQM-164_1080x1080_a1db6a5c-e97e-4a99-ac99-a89fee06025c_large.jpg?v=1614614742"
+          title1="At 58mm in diameter, the Pullman basket is the perfect fit for the Pullman tamper. With 876 precision cut holes for maximised extraction, the baskets are available in two sizes;
+17 - 19g or 20 - 22g."
+          preTitle="FEATURES"
+          preTitle2=""
+          info="876 precision cut holes (143 more than the industry standard)
+Fits big base tampers perfectly
+Smaller hole diameter
+Maximise your extraction
+Polished, no burrs, no scratches, no misshaped holes"
+          info2=""
+          width="none"
+          hidden="none"
+          eq="true"
+        />
+      </>
+    ),
+  },
+  {
+    path: "/ridgeless-basket",
+    exact: true,
+    sidebar: () => <div></div>,
+    main: () => (
+      <>
+        <ProductDescription
+          //addToCart
+          id="22"
+          title="PULLMAN RIDGELESS VST BASKET"
+          subtitle=""
+          price="28.00"
+          image="https://cdn.shopify.com/s/files/1/0017/1562/products/Dark-19_large.jpg?v=1529935146"
+          title1="This is the espresso machine basket developed by VST. 
+
+Each basket has been designed and created in such a way that it guarantees a size, distribution and shape of holes perfectly suited to extract the chosen amount of coffee. 
+
+In essence, this means that you can now grind finely enough to properly extract your dose of coffee, while still maintaining a desirable flow rate and brew time of approximately 25-30 seconds.
+
+There is more information here."
+          preTitle=""
+          preTitle2=""
+          info=""
+          info2=""
+          width="none"
+          hidden="none"
+          eq="true"
+        />
+      </>
+    ),
+  },
+  {
+    path: "/wilfa-brewer",
+    exact: true,
+    sidebar: () => <div></div>,
+    main: () => (
+      <>
+        <ProductDescription
+          //addToCart
+          id="23"
+          title="WILFA CLASSIC+ BREWER"
+          subtitle=""
+          price="150.00"
+          image="https://cdn.shopify.com/s/files/1/0017/1562/products/Hero_00d0bf74-0854-4f5a-b832-0dd7a4e1c439_large.jpg?v=1600090686"
+          title1="We've been looking for the perfect electric filter coffee brewer to stock for a long time and feel we have finally found it with the Wilfa Classic+ Brewer. Perfect for the home or office the Classic+ can produce 1-10 cups of tasty coffee in around 5 minutes. 
+
+With a brewing capacity of 1 Litre, accurate brewing temperature, adjustable flow brewing cone with shut off valve, cleaning indicator and a hot plate to keep brew warm in the glass decanter, this really is an all-around great brewer. "
+          preTitle="WILFA CLASSIC+ BREWER SPECS"
+          preTitle2=""
+          info="Measuring 550 x 170 x 332mm for a relatively small countertop footprint. Die-cast aluminium body construction with black finish and glass server.
+
+Compatible with the Filtropa papers, not included."
+          info2=""
+          width="none"
+          hidden="none"
+          eq="true"
+        />
+      </>
+    ),
+  },
+  {
+    path: "/v60-kit",
+    exact: true,
+    sidebar: () => <div></div>,
+    main: () => (
+      <>
+        <ProductDescription
+          //addToCart
+          id="24"
+          title="V60 SIMPLY GLASS BREWING KIT"
+          subtitle=""
+          price="32.00"
+          image="https://cdn.shopify.com/s/files/1/0017/1562/files/SQM-042_square_1.jpg?v=15493489480238712228"
+          title1="WOffering everything you need to brew delicious coffee, the Hario V60 Simply Glass Brewing Kit is a stylish and practical addition to any kitchen.
+
+Versatile with a 1-4 cup capacity, the box includes a 2 cup Glass Dripper, V60 Glass Server, V60 filters and a measuring spoon."
+          preTitle="PLEASE NOTE - WE OFFER FREE SHIPPING ON ALL UK ORDERS."
+          preTitle2=""
+          info=""
+          info2=""
+          width="none"
+          hidden="none"
+          eq="true"
+        />
+      </>
+    ),
+  },
+  {
+    path: "/hario-scale",
+    exact: true,
+    sidebar: () => <div></div>,
+    main: () => (
+      <>
+        <ProductDescription
+          //addToCart
+          id="25"
+          title="HARIO DRIP SCALE"
+          subtitle=""
+          price="55.00"
+          image="https://cdn.shopify.com/s/files/1/0017/1562/products/Light-3_large.jpg?v=1583490548"
+          title1="The Hario Drip Scale is the perfect partner for brewing delicious coffee at home. Accurate scales and the built in timer ensure you keep within your brew parameters.
+
+Scales measure in 0.1 gram increments up to 200 grams, 0.5 gram increments up to 500 grams, then 1 gram increments from 500 grams - 2000 grams."
+          preTitle=""
+          preTitle2="PLEASE NOTE - WE OFFER FREE SHIPPING ON ALL UK ORDERS."
+          info="Touch sensitive buttons and hold to reset functions improve usability and unit will automatically power off after 5 minutes of no use."
+          info2=""
+          width="none"
+          hidden="none"
+          eq="true"
+        />
+      </>
+    ),
+  },
+  {
+    path: "/stagg-kettle",
+    exact: true,
+    sidebar: () => <div></div>,
+    main: () => (
+      <>
+        <ProductDescription
+          //addToCart
+          id="26"
+          title="FELLOW STAGG POUR-OVER KETTLE"
+          subtitle=""
+          price="70.00"
+          image="https://cdn.shopify.com/s/files/1/0017/1562/products/Stag_silver_large.jpg?v=1605176113"
+          title1="Beautiful and functional, The Stagg Pour-Over Kettle by Fellow is a must-have addition to your brewing set-up.
+
+Thanks to a clever, counterbalanced wishbone handle a steady, consistent pour is virtually guaranteed. Easy to read, its built-in brew thermometer will improve your pour-over brews no end.
+
+The best part? Stagg looks fantastic on a shelf, making it a welcome addition to any kitchen."
+          preTitle="OPLEASE NOTE SHIPPING IS INCLUDED ON ALL UK EQUIPMENT ORDERS."
+          preTitle2=""
+          info=""
+          info2=""
+          width="none"
+          hidden="none"
+          eq="true"
+        />
+      </>
+    ),
+  },
+  {
+    path: "/huskee-cup",
+    exact: true,
+    sidebar: () => <div></div>,
+    main: () => (
+      <>
+        <ProductDescription
+          //addToCart
+          id="27"
+          title="HUSKEE CUP"
+          subtitle=""
+          price="14.00"
+          image="https://cdn.shopify.com/s/files/1/0017/1562/products/Huskee4_large.jpg?v=1600089337"
+          title1="The Huskee Cup is the reusable product you have been searching for to minimise your waste for takeaway and travel coffee. A beautifully designed cup with sustainability at its heart utilising coffee husk, an organic waste material produced from the milling of coffee. 
+
+The materials thermal properties keep your drink hot while the fins provide grip and protect your hand from heat. The Huskee Cup is in it for the long haul allowing you many years of constant use; it won’t crack or chip easily and is dishwasher safe."
+          preTitle=""
+          preTitle2="PLEASE NOTE - WE OFFER FREE SHIPPING ON ALL UK ORDERS."
+          info="Cups come with ventilated lid with an ideal flow rate for drinking on the go.
+
+Available in 6oz (170ml) or 8oz (227ml) sizes in charcoal or natural.
+
+Approved food safe, BPA free polypropylene mixed with coffee husk."
+          info2=""
+          width="none"
+          hidden="none"
+          eq="true"
+        />
+      </>
+    ),
+  },
+  {
+    path: "/aerobie-aeropress",
+    exact: true,
+    sidebar: () => <div></div>,
+    main: () => (
+      <>
+        <ProductDescription
+          //addToCart
+          id="28"
+          title="AEROBIE AEROPRESS"
+          subtitle=""
+          price="30.00"
+          image="https://cdn.shopify.com/s/files/1/0017/1562/products/AeroPressInsta_large.jpg?v=1619621450"
+          title1="The full immersion AeroPress by Aerobie™ is a simple and easy to use brewing technique giving a lovely clean cup with little fuss. Whether using it at home or whilst travelling it is a perfect partner to brew with.
+
+Comes with 350 paper filters which need a good rinse before brewing, stirrer, measure and funnel. 
+
+Ground coffee should be finer than french press but coarser than espresso, and of course freshly ground.
+
+Experiment with different brewing techniques and water temperature's to get the best results."
+          preTitle="PLEASE NOTE - WE OFFER FREE SHIPPING ON ALL UK ORDERS."
+          preTitle2=""
+          info=""
+          info2=""
+          width="none"
+          hidden="none"
+          eq="true"
         />
       </>
     ),

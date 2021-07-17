@@ -7,11 +7,31 @@
   width: 380px;
 }
 
+.infoCard1__description {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  text-align: center;
+}
+.infoCard1__descriptionDetail {
+  color: black;
+  font-size: smaller;
+  margin-bottom: -3px;
+}
+
 .infoCard1__grouping {
   display: flex;
   flex-direction: row;
   justify-content: space-between;
   text-align: center;
+}
+
+.infoCard1__grouping__eq {
+  justify-content: cente;
+}
+
+.infoCard1__grouping__hidden {
+  visibility: hidden;
 }
 
 .infoCard1__group {
@@ -22,11 +42,24 @@
   width: 50%;
 }
 
+.infoCard1__group__eq1 {
+  width: 100%;
+}
+.infoCard1__group__eq2 {
+  padding: 0px !important;
+  width: 0%;
+}
+
 .infoCard1__title {
   color: darkgrey;
   font-style: italic;
   font-size: smaller;
   margin-bottom: -3px;
+}
+.infoCard1__title__eq {
+  color: black !important;
+  font-weight: 300;
+  font-style: normal;
 }
 
 .infoCard1_subtitle {
@@ -40,4 +73,8 @@
     padding: 25px;
     margin-bottom: 2px;
   }
+}
+
+.hidden {
+  visibility: hidden;
 }

@@ -1,11 +1,12 @@
 import React from "react";
-import Header from "./Header";
+import CardFormEQ from "../Components/Card/CardFormEQ";
+import Header from "../Components/Header/Header";
 
 const ShopEquipment = () => {
   return (
     <div>
       <Header />
-      <h4>Buy some equipment</h4>
+      <CardFormEQ />
     </div>
   );
 };
