@@ -1,8 +1,8 @@
 import React from "react";
 import { Link, useHistory } from "react-router-dom";
 import "./Header.css";
-import { useStateValue } from "./GlobalState/StateProvider";
-import { getBasketTotal } from "./GlobalState/reducer";
+import { useStateValue } from "../../GlobalState/StateProvider";
+import { getBasketTotal } from "../../GlobalState/reducer";
 
 const Header = () => {
   const history = useHistory();

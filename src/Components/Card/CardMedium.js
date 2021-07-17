@@ -13,7 +13,15 @@ create template for smaller images
 
 */
 
-const CardMedium = ({ image, link, title, subtitle, price, subColor }) => {
+const CardMedium = ({
+  image,
+  link,
+  textColor,
+  title,
+  subtitle,
+  price,
+  subColor,
+}) => {
   return (
     <>
       <div class="col-lg-3 col-md-6 col-sm-6 mb-4 mb-lg-0">
@@ -32,11 +40,13 @@ const CardMedium = ({ image, link, title, subtitle, price, subColor }) => {
         >
           <div class="mask">
             <div class="cardMedium__text">
-              <div class="cardMedium__login__line">
+              <div class="cardMedium__login__line" style={{ color: textColor }}>
                 ❂ ❂ ❂ ❂ ❂ ❂ ❂ ❂ ❂ ❂ ❂ ❂ ❂ ❂ ❂ ❂ ❂ ❂ ❂ ❂ ❂ ❂ ❂ ❂ ❂ ❂ ❂ ❂ ❂ ❂ ❂ ❂
               </div>
-              <h1 class="cardMedium__title">{title}</h1>
-              <div class="cardMedium__login__line">
+              <h1 class="cardMedium__title" style={{ color: textColor }}>
+                {title}
+              </h1>
+              <div class="cardMedium__login__line" style={{ color: textColor }}>
                 {" "}
                 ❂ ❂ ❂ ❂ ❂ ❂ ❂ ❂ ❂ ❂ ❂ ❂ ❂ ❂ ❂ ❂ ❂ ❂ ❂ ❂ ❂ ❂ ❂ ❂ ❂ ❂ ❂ ❂ ❂ ❂ ❂ ❂
               </div>

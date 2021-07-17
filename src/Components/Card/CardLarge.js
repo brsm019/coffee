@@ -1,20 +1,9 @@
 import React from "react";
 import "./CardLarge.css";
 import CardMedium from "./CardMedium";
-import SignUp from "./SignUp";
 import { NavLink } from "react-router-dom";
-/* 
 
-TO DO:
-Need to change image background
-make text responsive 
-Add link to new page or create a popup or buy now, need to decide
-
-create template for smaller images
-
-*/
-
-const CardLarge = ({ image, link, title, subtitle, price }) => {
+const CardLarge = ({ image, link, textColor, title, subtitle, price }) => {
   return (
     <div class="col-lg-6 col-md-12 col-sm-12 mb-4 mb-lg-0">
       <img
@@ -33,9 +22,13 @@ const CardLarge = ({ image, link, title, subtitle, price }) => {
         <div class="mask">
           <div class="cardLarge__text">
             <div class="cardLarge__feature__logo"></div>
-            <div class="cardLarge__login__line">-----------------</div>
+            <div class="cardLarge__login__line" style={{ color: textColor }}>
+              ❂ ❂ ❂ ❂ ❂ ❂ ❂ ❂ ❂ ❂ ❂ ❂ ❂ ❂ ❂ ❂ ❂ ❂ ❂ ❂ ❂ ❂ ❂ ❂ ❂ ❂ ❂ ❂ ❂ ❂ ❂ ❂
+            </div>
             <h1 class="cardLarge__title">{title}</h1>
-            <div class="cardLarge__login__line">-----------------</div>
+            <div class="cardLarge__login__line" style={{ color: textColor }}>
+              ❂ ❂ ❂ ❂ ❂ ❂ ❂ ❂ ❂ ❂ ❂ ❂ ❂ ❂ ❂ ❂ ❂ ❂ ❂ ❂ ❂ ❂ ❂ ❂ ❂ ❂ ❂ ❂ ❂ ❂ ❂ ❂
+            </div>
             <p class="cardLarge__subtitle">{subtitle}</p>
             <div class="cardLarge__offer">
               <span class="cardLarge__price">{price}</span>

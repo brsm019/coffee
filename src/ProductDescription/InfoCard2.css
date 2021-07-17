@@ -17,6 +17,13 @@
   font-size: smaller;
   text-align: center;
 }
+
+.infoCard2__pretitle__eq {
+  font-style: normal;
+  color: black;
+  font-weight: 600;
+}
+
 .infoCard2__title {
   color: black;
   font-size: x-large;
@@ -29,11 +36,17 @@
 .infoCard2__title__span {
   color: #99080c;
 }
+
 .infoCard2__description {
   color: darkgray;
   font-size: smaller;
   line-height: inherit;
   text-align: center;
+}
+
+.infoCard2__description__eq {
+  color: black !important;
+  font-weight: 300;
 }
 
 @media screen and (max-width: 992px) {

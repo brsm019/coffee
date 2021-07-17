@@ -1,9 +1,9 @@
 import React, { useState } from "react";
 import { NavLink, useHistory } from "react-router-dom";
-import Header from "./Header";
-import Footer from "./Footer/Footer";
+import Header from "../Components/Header/Header";
+import Footer from "../Components/Footer/Footer";
 import "./Login.css";
-import { useStateValue } from "./GlobalState/StateProvider";
+import { useStateValue } from "../GlobalState/StateProvider";
 
 // <Redirect to="/SignUp"
 /* <Redirect

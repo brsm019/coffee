@@ -12,7 +12,15 @@ create template for smaller images
 
 */
 
-const CardSmall = ({ image, link, title, subtitle, price, subColor }) => {
+const CardSmall = ({
+  image,
+  link,
+  textColor,
+  title,
+  subtitle,
+  price,
+  subColor,
+}) => {
   return (
     <div
       id="cardSmall__contain"
@@ -28,11 +36,13 @@ const CardSmall = ({ image, link, title, subtitle, price, subColor }) => {
       <a href={link}>
         <div class="mask">
           <div class="cardSmall__text">
-            <div class="cardSmall__login__line">
+            <div class="cardSmall__login__line" style={{ color: textColor }}>
               ❂ ❂ ❂ ❂ ❂ ❂ ❂ ❂ ❂ ❂ ❂ ❂ ❂ ❂ ❂ ❂ ❂ ❂ ❂ ❂ ❂ ❂ ❂ ❂ ❂ ❂ ❂ ❂ ❂ ❂ ❂ ❂
             </div>
-            <h1 class="cardSmall__title">{title}</h1>
-            <div class="cardSmall__login__line">
+            <h1 class="cardSmall__title" style={{ color: textColor }}>
+              {title}
+            </h1>
+            <div class="cardSmall__login__line" style={{ color: textColor }}>
               {" "}
               ❂ ❂ ❂ ❂ ❂ ❂ ❂ ❂ ❂ ❂ ❂ ❂ ❂ ❂ ❂ ❂ ❂ ❂ ❂ ❂ ❂ ❂ ❂ ❂ ❂ ❂ ❂ ❂ ❂ ❂ ❂ ❂
             </div>
