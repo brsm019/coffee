@@ -6,6 +6,10 @@ Priority:
 Continue to checkout/payment page.
 
 Create cart functionality using either stripe payments or paypal
+Need to use a custom payment flow as opposed to set amount. Read up and implement
+Create successful payment page
+Create cancel page when cancelling payment
+
 
 >>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>
 
