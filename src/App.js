@@ -7,8 +7,6 @@ function App() {
   return (
     <div className="app">
       <SideBar />
-
-      {/* <Home /> */}
     </div>
   );
 }

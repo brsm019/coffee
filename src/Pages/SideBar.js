@@ -1,4 +1,6 @@
 import React from "react";
+import { loadStripe } from "@stripe/stripe-js";
+import { Elements } from "@stripe/react-stripe-js";
 import {
   BrowserRouter as Router,
   Switch,
@@ -12,9 +14,14 @@ import Login from "./Login";
 import NoMatch from "./NoMatch";
 import ShopEquipment from "./ShopEquipment";
 import ProductDescription from "../ProductDescription/ProductDescription";
+import CheckoutForm from "./CheckoutForm";
 import "./SideBar.css";
 import SignUp from "./SignUp";
 let auth = localStorage.getItem("auth") === '{"auth":true}';
+
+const promise = loadStripe(
+  "pk_test_51IyCkCGDpXfgd5NmOHuT8e4kjdQzVsiCukFamLb38M3B7U6wO2Dny52ihaIBs73pfIrhvgl3FzmtSqRqfiNzwtjO00PBSfGMJE"
+);
 
 let routes = [
   {
@@ -1061,6 +1068,18 @@ Experiment with different brewing techniques and water temperature's to get the 
           hidden="none"
           eq="true"
         />
+      </>
+    ),
+  },
+  {
+    path: "/checkout",
+    exact: true,
+    sidebar: () => <div></div>,
+    main: () => (
+      <>
+        <Elements stripe={promise}>
+          <CheckoutForm />
+        </Elements>
       </>
     ),
   },

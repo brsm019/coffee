@@ -5,10 +5,13 @@ Priority:
 
 Continue to checkout/payment page.
 
-Create cart functionality using either stripe payments or paypal
+Create cart functionality using stripe payments
 Need to use a custom payment flow as opposed to set amount. Read up and implement
 Create successful payment page
 Create cancel page when cancelling payment
+
+*** CURRENT ISSUE - Stripe is not able to create a client secret, still as string
+doesn't fetch stripe info, as if the fetch create-payment-intent doesn't run
 
 
 >>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>
