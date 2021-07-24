@@ -50,6 +50,16 @@ const Cart = () => {
             </tr>
           </tbody>
         </table>
+        <form action="/create-checkout-session" method="POST">
+          <button
+            type="submit"
+            class="btn-xs"
+            value="Submit"
+            style={{ float: "right" }}
+          >
+            CHECKOUT
+          </button>
+        </form>
       </div>
       <Footer />
     </div>
@@ -86,14 +96,16 @@ const Cart = () => {
             </tr>
           </tbody>
         </table>
-        <button
-          type="submit"
-          class="btn-xs"
-          value="Submit"
-          style={{ float: "right" }}
-        >
-          CHECKOUT
-        </button>
+        <form action="/create-checkout-session" method="POST">
+          <button
+            type="submit"
+            class="btn-xs"
+            value="Submit"
+            style={{ float: "right" }}
+          >
+            CHECKOUT
+          </button>
+        </form>
       </div>
       <Footer />
     </div>

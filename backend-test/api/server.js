@@ -5,7 +5,6 @@ let port = process.env.PORT || 4000;
 let User = require("./models/userModels");
 let jwt = require("jsonwebtoken");
 const cors = require("cors");
-app.use(cors());
 
 const mongoose = require("mongoose");
 mongoose.set("useNewUrlParser", true);
@@ -27,6 +26,8 @@ const db = mongoose.connection;
 db.on("error", (error) => console.error(error));
 db.once("open", () => console.log("Connected to Database"));
 
+app.use(cors());
+app.use(express.static("."));
 app.use(express.urlencoded({ extended: true }));
 app.use(express.json());
 
