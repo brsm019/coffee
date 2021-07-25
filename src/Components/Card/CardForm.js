@@ -131,7 +131,6 @@ const CardForm = () => {
           />
         </>
       </div>
-      ;
     </div>
   );
 };
