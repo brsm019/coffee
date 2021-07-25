@@ -58,7 +58,7 @@ exports.checkout = async function (req, res) {
   // Create a PaymentIntent with the order amount and currency
   const paymentIntent = await stripe.paymentIntents.create({
     amount: price,
-    currency: "usd",
+    currency: "gbp",
   });
 
   res.send({
