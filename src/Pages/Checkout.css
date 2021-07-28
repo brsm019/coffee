@@ -7,7 +7,7 @@
   margin: auto;
   margin-top: 20px;
   padding: 2em;
-  padding-bottom: 65px;
+  padding-bottom: 1px;
 }
 
 .checkout__header {
@@ -60,4 +60,15 @@ button#submit:hover {
   font-size: 12px;
   padding: 5px 15px;
   border: none;
+}
+
+input#checkout__email__address {
+  margin-bottom: 40px;
+}
+
+p.result-message {
+  justify-content: center;
+  text-align: center;
+  padding-top: 80px;
+  color: darkgreen;
 }

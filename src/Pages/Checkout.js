@@ -3,8 +3,16 @@ import { CardElement, useStripe, useElements } from "@stripe/react-stripe-js";
 import { useStateValue } from "../GlobalState/StateProvider";
 import Header from "../Components/Header/Header";
 import "./Checkout.css";
+import { useHistory } from "react-router-dom";
 
 export default function Checkout() {
+  const emptyBasket = () => {
+    dispatch({
+      type: "EMPTY_BASKET",
+    });
+  };
+
+  const history = useHistory();
   const [{ basket, user, getBasketTotal }, dispatch] = useStateValue();
 
   console.log({ basket });
@@ -21,6 +29,7 @@ export default function Checkout() {
   const [processing, setProcessing] = useState("");
   const [disabled, setDisabled] = useState(true);
   const [clientSecret, setClientSecret] = useState("");
+  const [email, setEmail] = useState("");
   const stripe = useStripe();
   const elements = useElements();
 
@@ -74,6 +83,7 @@ export default function Checkout() {
     setProcessing(true);
 
     const payload = await stripe.confirmCardPayment(clientSecret, {
+      receipt_email: email,
       payment_method: {
         card: elements.getElement(CardElement),
       },
@@ -97,41 +107,56 @@ export default function Checkout() {
         <h1 className="checkout__header">PAYMENT</h1>
         <div className="checkout__line line2">-----------------</div>
         <h3 className="checkout__header">£{total}</h3>
-        <form
-          id="payment-form"
-          className="checkout__payment__form"
-          onSubmit={handleSubmit}
-        >
-          <CardElement
-            id="card-element"
-            options={cardStyle}
-            onChange={handleChange}
-          />
-          <button disabled={processing || disabled || succeeded} id="submit">
-            <span id="button-text">
-              {processing ? (
-                <div className="spinner" id="spinner"></div>
-              ) : (
-                "PAY NOW"
-              )}
-            </span>
-          </button>
-          {/* Show any error that happens when processing the payment */}
-          {error && (
-            <div className="card-error" role="alert">
-              {error}
-            </div>
-          )}
-          {/* Show a success message upon completion */}
+        <div className="form-group">
+          <form
+            id="payment-form"
+            className="checkout__payment__form"
+            onSubmit={handleSubmit}
+          >
+            <label for="email__address">Email Address</label>
+            <input
+              type="text"
+              class="form-control"
+              id="checkout__email__address"
+              value={email}
+              onChange={(e) => setEmail(e.target.value)}
+              placeholder="Enter email address"
+            />
+            <CardElement
+              id="card-element"
+              options={cardStyle}
+              onChange={handleChange}
+            />
+            <button disabled={processing || disabled || succeeded} id="submit">
+              <span id="button-text">
+                {processing ? (
+                  <div className="spinner" id="spinner"></div>
+                ) : (
+                  "PAY NOW"
+                )}
+              </span>
+            </button>
+            {/* Show any error that happens when processing the payment */}
+            {error && (
+              <div className="card-error" role="alert">
+                {error}
+              </div>
+            )}
+            {/* Show a success message upon completion */}
+          </form>
+        </div>
+        <div>
           <p className={succeeded ? "result-message" : "result-message hidden"}>
-            Payment succeeded, see the result in your
-            <a href={`https://dashboard.stripe.com/test/payments`}>
-              {" "}
-              Stripe dashboard.
-            </a>{" "}
-            Refresh the page to pay again.
+            Payment successful!
           </p>
-        </form>
+          <p>
+            {succeeded &&
+              setTimeout(() => {
+                emptyBasket();
+                history.push("/");
+              }, 2000)}
+          </p>
+        </div>
       </div>
     </div>
   );
