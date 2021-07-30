@@ -4,8 +4,10 @@ import CheckoutProduct from "../Components/CheckoutProduct/CheckoutProduct";
 import Footer from "../Components/Footer/Footer";
 import Header from "../Components/Header/Header";
 import { useStateValue } from "../GlobalState/StateProvider";
+import { NavLink, useHistory } from "react-router-dom";
 
 const Cart = () => {
+  const history = useHistory();
   const [{ basket, user, getBasketTotal }, dispatch] = useStateValue();
 
   console.log({ basket });
@@ -16,6 +18,10 @@ const Cart = () => {
     basket?.reduce((amount, item) => parseInt(item.price) + amount, 0);
   console.log(cartTotal(basket));
   let total = cartTotal(basket);
+
+  const onSubmit = () => {
+    history.push("/checkout");
+  };
 
   return total === 0 ? (
     <div className="cart">
@@ -50,16 +56,15 @@ const Cart = () => {
             </tr>
           </tbody>
         </table>
-        <form action="/create-checkout-session" method="POST">
-          <button
-            type="submit"
-            class="btn-xs"
-            value="Submit"
-            style={{ float: "right" }}
-          >
-            CHECKOUT
-          </button>
-        </form>
+        <button
+          onClick={onSubmit}
+          type="submit"
+          class="btn-xs"
+          value="Submit"
+          style={{ float: "right" }}
+        >
+          CHECKOUT
+        </button>
       </div>
       <Footer />
     </div>
@@ -96,16 +101,16 @@ const Cart = () => {
             </tr>
           </tbody>
         </table>
-        <form action="/create-checkout-session" method="POST">
-          <button
-            type="submit"
-            class="btn-xs"
-            value="Submit"
-            style={{ float: "right" }}
-          >
-            CHECKOUT
-          </button>
-        </form>
+
+        <button
+          onClick={onSubmit}
+          type="submit"
+          class="btn-xs"
+          value="Submit"
+          style={{ float: "right" }}
+        >
+          CHECKOUT
+        </button>
       </div>
       <Footer />
     </div>

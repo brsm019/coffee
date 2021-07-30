@@ -12,6 +12,7 @@ import Login from "./Login";
 import NoMatch from "./NoMatch";
 import ShopEquipment from "./ShopEquipment";
 import ProductDescription from "../ProductDescription/ProductDescription";
+import Checkout from "./Checkout";
 import "./SideBar.css";
 import SignUp from "./SignUp";
 let auth = localStorage.getItem("auth") === '{"auth":true}';
@@ -1061,6 +1062,16 @@ Experiment with different brewing techniques and water temperature's to get the 
           hidden="none"
           eq="true"
         />
+      </>
+    ),
+  },
+  {
+    path: "/checkout",
+    exact: true,
+    sidebar: () => <div></div>,
+    main: () => (
+      <>
+        <Checkout />
       </>
     ),
   },

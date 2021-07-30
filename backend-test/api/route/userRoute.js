@@ -6,5 +6,5 @@ module.exports = function (app) {
     .post(userController.loginRequired, userController.profile);
   app.route("/auth/register").post(userController.register);
   app.route("/auth/sign_in").post(userController.sign_in);
-  app.route("/create-checkout-session").post(userController.checkout);
+  app.route("/create-payment-intent").post(userController.checkout);
 };
