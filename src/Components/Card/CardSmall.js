@@ -1,16 +1,6 @@
 import React from "react";
 import "./CardSmall.css";
-
-/* 
-
-TO DO:
-Need to change image background
-make text responsive 
-Add link to new page or create a popup or buy now, need to decide
-
-create template for smaller images
-
-*/
+import { NavLink } from "react-router-dom";
 
 const CardSmall = ({
   image,
@@ -33,7 +23,12 @@ const CardSmall = ({
         alt=""
       />
 
-      <a href={link}>
+      <NavLink
+        to={link}
+        className="sidebar__link"
+        activeClassName="sidebar__active"
+        exact
+      >
         <div class="mask">
           <div class="cardSmall__text">
             <div class="cardSmall__login__line" style={{ color: textColor }}>
@@ -54,7 +49,7 @@ const CardSmall = ({
             </div>
           </div>
         </div>
-      </a>
+      </NavLink>
     </div>
   );
 };
