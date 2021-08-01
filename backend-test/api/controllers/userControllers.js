@@ -54,7 +54,7 @@ const calculateOrderAmount = (items) => {
 
 exports.checkout = async function (req, res) {
   const price = req.body.priceTotal * 100;
-  console.log({ price });
+  // console.log({ price });
   // Create a PaymentIntent with the order amount and currency
   const paymentIntent = await stripe.paymentIntents.create({
     amount: price,
