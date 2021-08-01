@@ -10,13 +10,13 @@ const Cart = () => {
   const history = useHistory();
   const [{ basket, user, getBasketTotal }, dispatch] = useStateValue();
 
-  console.log({ basket });
-  console.log({ user });
-  console.log({ getBasketTotal });
+  // console.log({ basket });
+  // console.log({ user });
+  // console.log({ getBasketTotal });
 
   let cartTotal = (basket) =>
     basket?.reduce((amount, item) => parseInt(item.price) + amount, 0);
-  console.log(cartTotal(basket));
+  // console.log(cartTotal(basket));
   let total = cartTotal(basket);
 
   const onSubmit = () => {

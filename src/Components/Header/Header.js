@@ -11,11 +11,11 @@ const Header = () => {
   let name = localStorage.getItem("name");
   const [{ user, basket }, dispatch] = useStateValue();
 
-  console.log(JSON.parse(name));
+  // console.log(JSON.parse(name));
   let username = JSON.parse(name); // from local store
 
-  console.log({ basket });
-  console.log(basket.length);
+  // console.log({ basket });
+  // console.log(basket.length);
 
   const getBasket = (basket) => {
     return basket?.reduce((amount, item) => parseInt(item.price) + amount, 0);

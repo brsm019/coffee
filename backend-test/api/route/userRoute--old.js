@@ -69,7 +69,7 @@ const newRouter = function (collection) {
 
   // Route for creating new registration
   router.post("/register", async (req, res) => {
-    console.log(req.body);
+    // console.log(req.body);
     const {
       firstName,
       lastName,
@@ -78,7 +78,7 @@ const newRouter = function (collection) {
     } = req.body;
 
     const password = await bcrypt.hash(plainTextPassword, 10);
-    console.log(password);
+    // console.log(password);
 
     try {
       const response = await User.insertOne({
@@ -91,9 +91,9 @@ const newRouter = function (collection) {
       //   res.json(result.ops[0]);
       //   console.log(result);
       // });
-      console.log("New collection created", response);
+      // console.log("New collection created", response);
     } catch (error) {
-      console.log(error);
+      // console.log(error);
       return res.json({ status: error });
     }
   });

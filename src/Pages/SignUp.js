@@ -47,7 +47,7 @@ const SignUp = () => {
     setPassword(e.target.value);
   };
 
-  console.log(firstName, lastName, email, password);
+  // console.log(firstName, lastName, email, password);
 
   // function handleSignUp(data) {
   //   // display form data on success
