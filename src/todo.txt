@@ -24,9 +24,7 @@ When created clicked without entering anything do not show successful message DO
 
 Change the logo and some of pics to own
 
-Remove react app
-Add favicon
-Add metadata
+
 
 DEPLOY
 
