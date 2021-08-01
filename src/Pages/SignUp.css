@@ -60,7 +60,7 @@ input.form-control:focus {
   font-family: "TradeGothic", "Helvetica Neue", Helvetica, Arial, sans-serif;
   align-content: left;
   display: flex;
-  margin: 1em 5em;
+  margin: 2em 5em;
 }
 
 .btn-xs {
@@ -113,4 +113,8 @@ input.form-control:focus {
 .form__success__message {
   color: #a7a7a7;
   font-size: 15px;
+}
+
+.invalid-feedback {
+  min-width: 260px;
 }

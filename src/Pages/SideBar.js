@@ -178,7 +178,7 @@ let routes = [
           subColor="#99080c"
           price="13.50"
           //PictureCard
-          image="https://cdn.shopify.com/s/files/1/0017/1562/products/Coffee-SQUARE_b6cb8e3a-c8d2-4f8c-ba25-6e723925fa5f_large.jpg?v=1623073637"
+          image="https://images.unsplash.com/photo-1495474472287-4d71bcdd2085?ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&ixlib=rb-1.2.1&auto=format&fit=crop&w=2850&q=80"
           //InfoCard1
           title1="Weight"
           title2="Varieties"
@@ -220,7 +220,7 @@ let routes = [
           subColor="#99080c"
           price="15.50"
           //PictureCard
-          image="https://cdn.shopify.com/s/files/1/0017/1562/products/Coffee-SQUARE_ed05c73a-df70-4b52-b4d1-e2cd09308c5b_large.jpg?v=1622819214"
+          image="https://images.unsplash.com/photo-1512568400610-62da28bc8a13?ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&ixlib=rb-1.2.1&auto=format&fit=crop&w=668&q=80"
           //InfoCard1
           title1="Weight"
           title2="Varieties"
@@ -262,7 +262,7 @@ let routes = [
           subColor="#99080c"
           price="15.50"
           //PictureCard
-          image="https://external-content.duckduckgo.com/iu/?u=https%3A%2F%2Fdenverbeverage.com%2Fwp-content%2Fuploads%2F2019%2F03%2FMocha_Cappuccino_2048x.jpg&f=1&nofb=1"
+          image="https://images.unsplash.com/photo-1442512595331-e89e73853f31?ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&ixlib=rb-1.2.1&auto=format&fit=crop&w=1350&q=80"
           //InfoCard1
           title1="Weight"
           title2="Varieties"
@@ -369,7 +369,7 @@ let routes = [
           title9="ORANGE"
           title10="MILK CHOCOLATE"
           title11="ALMOND"
-          info="Built on the same concept as our Red Brick Espresso Blend, The Filter Blend is seasonal, versatile and classic Square Mile. Clean, balanced and medium-bodied; a kind, welcoming coffee to wake-up to The Filter Blend offers the perfect all-day every-day brew and embodies all we love about speciality coffee. An absolute delight, you’ll want to keep a bag in the cupboard to always have delicious coffee in the house."
+          info="Built on the same concept as our Red Brick Espresso Blend, The Filter Blend is seasonal, versatile and classic Colmore Row. Clean, balanced and medium-bodied; a kind, welcoming coffee to wake-up to The Filter Blend offers the perfect all-day every-day brew and embodies all we love about speciality coffee. An absolute delight, you’ll want to keep a bag in the cupboard to always have delicious coffee in the house."
         />
       </>
     ),
@@ -388,7 +388,7 @@ let routes = [
           subColor="#007442"
           price="14.00"
           //PictureCard
-          image="https://cdn.shopify.com/s/files/1/0017/1562/products/Coffee-SQUARE_712ed7a9-2b42-4fe9-851d-846baff044ff_large.jpg?v=1618407214"
+          image="https://images.unsplash.com/photo-1497636577773-f1231844b336?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=668&q=80"
           //InfoCard1
           title1="Weight"
           title2="Varieties"
@@ -411,7 +411,7 @@ let routes = [
           title9="TANGERINE"
           title10="HONEY"
           title11="ALMOND"
-          info="Built on the same concept as our Red Brick Espresso Blend, The Filter Blend is seasonal, versatile and classic Square Mile. Clean, balanced and medium-bodied; a kind, welcoming coffee to wake-up to The Filter Blend offers the perfect all-day every-day brew and embodies all we love about speciality coffee. An absolute delight, you’ll want to keep a bag in the cupboard to always have delicious coffee in the house."
+          info="Built on the same concept as our Red Brick Espresso Blend, The Filter Blend is seasonal, versatile and classic Colmore Row. Clean, balanced and medium-bodied; a kind, welcoming coffee to wake-up to The Filter Blend offers the perfect all-day every-day brew and embodies all we love about speciality coffee. An absolute delight, you’ll want to keep a bag in the cupboard to always have delicious coffee in the house."
         />
       </>
     ),
@@ -430,7 +430,7 @@ let routes = [
           subColor="#007442"
           price="14.00"
           //PictureCard
-          image="https://cdn.shopify.com/s/files/1/0017/1562/products/Coffee-SQUARE_712ed7a9-2b42-4fe9-851d-846baff044ff_large.jpg?v=1618407214"
+          image="https://images.unsplash.com/photo-1514066558159-fc8c737ef259?ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&ixlib=rb-1.2.1&auto=format&fit=crop&w=668&q=80"
           //InfoCard1
           title1="Weight"
           title2="Varieties"
@@ -453,7 +453,7 @@ let routes = [
           title9="HONEY"
           title10="STRAWBERRY"
           title11="CHOCOLATE"
-          info="Built on the same concept as our Red Brick Espresso Blend, The Dis Palo is seasonal, versatile and classic Square Mile. Clean, balanced and medium-bodied; a kind, welcoming coffee to wake-up to The Filter Blend offers the perfect all-day every-day brew and embodies all we love about speciality coffee. An absolute delight, you’ll want to keep a bag in the cupboard to always have delicious coffee in the house."
+          info="Built on the same concept as our Red Brick Espresso Blend, The Dis Palo is seasonal, versatile and classic Colmore Row. Clean, balanced and medium-bodied; a kind, welcoming coffee to wake-up to The Filter Blend offers the perfect all-day every-day brew and embodies all we love about speciality coffee. An absolute delight, you’ll want to keep a bag in the cupboard to always have delicious coffee in the house."
         />
       </>
     ),
@@ -514,7 +514,7 @@ let routes = [
           subColor="#007442"
           price="16.00"
           //PictureCard
-          image="https://cdn.shopify.com/s/files/1/0017/1562/products/Coffee-SQUARE_46cf7ab0-a55f-4b14-92f8-75a91d38d74b_large.jpg?v=1623427231"
+          image="https://images.unsplash.com/photo-1461023058943-07fcbe16d735?ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&ixlib=rb-1.2.1&auto=format&fit=crop&w=1350&q=80"
           //InfoCard1
           title1="Weight"
           title2="Varieties"
@@ -598,7 +598,7 @@ let routes = [
           subColor="#007442"
           price="15.00"
           //PictureCard
-          image="https://images.unsplash.com/photo-1509785307050-d4066910ec1e?ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&ixlib=rb-1.2.1&auto=format&fit=crop&w=928&q=80"
+          image="https://images.unsplash.com/photo-1517668808822-9ebb02f2a0e6?ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&ixlib=rb-1.2.1&auto=format&fit=crop&w=1355&q=80"
           //InfoCard1
           title1="Weight"
           title2="Varieties"
@@ -1118,8 +1118,8 @@ const SideBar = () => {
             <a href="/" title="title">
               <img
                 className="sidebar__logo__img"
-                src="https://cdn.shopify.com/s/files/1/0017/1562/t/18/assets/sqmile-img-logo-transparent@2x@2x.png?v=1623381581665049233"
-                alt="Square Mile Coffee Roasters"
+                src="https://external-content.duckduckgo.com/iu/?u=http%3A%2F%2Fclipart-library.com%2Fimages_k%2Ftransparent-coffee%2Ftransparent-coffee-23.png&f=1&nofb=1"
+                alt="Colmore Row Coffee Roasters"
               />
             </a>
           </div>
@@ -1160,20 +1160,20 @@ const SideBar = () => {
           </ul>
           <div className="sidebar__footer">
             <h6 className="sidebar__footer__title">
-              Square Mile<br></br>Coffee Roasters
+              Colmore Row<br></br>Coffee Roasters
             </h6>
             <a
               className="sidebar__footer__link"
-              href="mailto:testing@squaremiletest.com"
+              href="mailto:testing@colmorerowtest.com"
             >
-              webshop@squaremiletest.com
+              webshop@colmorerowtest.com
             </a>
             <br></br>
             <a
               className="sidebar__footer__link"
-              href="mailto:testing@squaremiletest.com"
+              href="mailto:testing@colmorerowtest.com"
             >
-              info@squaremiletest.com
+              info@colmorerowtest.com
             </a>
           </div>
 
