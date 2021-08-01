@@ -19,8 +19,8 @@ Sidebar:
 When scroll the page, sidebar isn't sticky, same with top bar
 
 Register Page:
-When created clicked without entering anything into fields, show astericks on all fields and change their colour
-When created clicked without entering anything do not show successful message
+When created clicked without entering anything into fields, show astericks on all fields and change their colour DONE
+When created clicked without entering anything do not show successful message DONE
 
 Change the logo and some of pics to own
 

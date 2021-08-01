@@ -97,3 +97,20 @@
   color: #f5f4f0;
   background-color: #f5f4f0;
 }
+
+@media screen and (max-width: 1200px) {
+  .cardLarge__title {
+    font-size: 35px;
+  }
+}
+@media screen and (max-width: 575px) {
+  .cardLarge__title {
+    font-size: 25px;
+  }
+  .cardLarge__subtitle {
+    font-size: 10px;
+  }
+  .cardLarge__feature__logo {
+    display: none;
+  }
+}

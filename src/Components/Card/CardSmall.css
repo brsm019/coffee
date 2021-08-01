@@ -59,10 +59,11 @@
     sans-serif;
   color: black;
   margin: 0;
-  font-size: 25px !important;
+  font-size: 25px;
   text-transform: uppercase;
   padding: 10px 0px;
   text-align: center;
+  max-width: 162px;
 }
 
 .cardSmall__subtitle {
@@ -100,4 +101,13 @@
 .cardSmall__small {
   color: #f5f4f0;
   background-color: #f5f4f0;
+}
+
+@media screen and (max-width: 1200px) {
+  .cardSmall__title {
+    font-size: 19px;
+  }
+  .cardSmall__subtitle {
+    font-size: 10px;
+  }
 }

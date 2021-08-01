@@ -5,16 +5,13 @@ import Footer from "../Components/Footer/Footer";
 import "./Login.css";
 import { useStateValue } from "../GlobalState/StateProvider";
 
-// <Redirect to="/SignUp"
-/* <Redirect
-              to={{ pathname: "/signup", state: { from: props.location } }} aa*/
-
 const Login = () => {
   const [state, dispatch] = useStateValue();
   const history = useHistory();
   const [email, setEmail] = useState("");
   const [password, setPassword] = useState("");
   const [name, setName] = useState("");
+  const [error, setError] = useState(false);
 
   const handleEmailChange = (e) => {
     setEmail(e.target.value);
@@ -64,8 +61,8 @@ const Login = () => {
         });
       })
       .catch((err) => {
+        setError(true);
         console.error(err);
-        alert("Error logging in please try again");
       });
   };
   console.log(localStorage.getItem("auth"));
@@ -100,12 +97,15 @@ const Login = () => {
               <label for="password">Password</label>
               <input
                 type="password"
-                class="form-control"
+                className={`form-control ${error === true ? "is-invalid" : ""}`}
                 id="password"
                 name="password"
                 value={password}
                 onChange={handlePasswordChange}
               />
+              <div className="invalid-feedback">
+                {"Email or password is incorrect"}
+              </div>
             </div>
             <div class="form__button">
               <button type="submit" class="btn-xs" value="Submit">

@@ -25,6 +25,8 @@
 .addToCartCard__title {
   color: black;
   padding-top: 12px;
+  padding-left: 10px;
+  padding-right: 10px;
   text-transform: uppercase;
   letter-spacing: -2px;
   text-align: center;
