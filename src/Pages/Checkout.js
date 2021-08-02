@@ -4,6 +4,7 @@ import { useStateValue } from "../GlobalState/StateProvider";
 import Header from "../Components/Header/Header";
 import "./Checkout.css";
 import { useHistory } from "react-router-dom";
+import Footer from "../Components/Footer/Footer";
 
 export default function Checkout() {
   const emptyBasket = () => {
@@ -158,6 +159,7 @@ export default function Checkout() {
           </p>
         </div>
       </div>
+      <Footer />
     </div>
   );
 }

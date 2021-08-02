@@ -17,6 +17,8 @@ MLP
 
 Makes sure unique identifier is working
 
+If nothing is in the cart, can't go to the payment page
+
 Login:
 When click sign in, get it to return to previous route it was on rather than navigating to home page
 Create reset password form below login section
