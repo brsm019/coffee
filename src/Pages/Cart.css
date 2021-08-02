@@ -27,7 +27,8 @@
 }
 
 .cart__table {
-  margin: auto 0;
+  width: 50%;
+  margin: auto;
 }
 
 .cart__heading {
@@ -41,7 +42,7 @@
   font-weight: 900;
   color: darkgray;
   text-transform: uppercase;
-  min-width: 20vw;
+  min-width: 12vw;
 }
 
 .cart__priceHeading {
@@ -68,4 +69,20 @@
 
 .subtotal__price {
   padding: 0px 10px;
+}
+
+@media screen and (max-width: 1200px) {
+  .cart__table {
+    width: 50%;
+    margin: auto;
+  }
+
+  .cart__titleItemHeading {
+    padding: 15px 0px;
+    font-size: small;
+    font-weight: 900;
+    color: darkgray;
+    text-transform: uppercase;
+    min-width: 20vw;
+  }
 }
