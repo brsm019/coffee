@@ -4,6 +4,12 @@ TODO:
 
 Priority:
 
+Create a .env file, pass all private content into there
+
+Set up mongo and stripe ready for deployment
+
+Create a .gitignore
+
 DEPLOY
 
 Refactor
