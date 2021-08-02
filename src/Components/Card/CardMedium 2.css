@@ -38,7 +38,7 @@
   width: 100%;
 }
 
-.mask {
+.maskMedium {
   background-color: rgba(0, 0, 0, 0) !important;
   border-radius: 5px !important;
   width: 97% !important;
@@ -46,7 +46,7 @@
   transition: background-color 0.5s;
 }
 
-.mask:hover {
+.maskMedium:hover {
   background-color: rgba(250, 250, 250, 0.3) !important;
 }
 

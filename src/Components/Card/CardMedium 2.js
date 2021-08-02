@@ -24,7 +24,7 @@ const CardMedium = ({ image, link, title, subtitle, price, subColor }) => {
         />
 
         <a href={link}>
-          <div class="mask">
+          <div class="maskMedium">
             <div class="cardMedium__text">
               <div class="cardMedium__login__line">
                 ❂ ❂ ❂ ❂ ❂ ❂ ❂ ❂ ❂ ❂ ❂ ❂ ❂ ❂ ❂ ❂ ❂ ❂ ❂ ❂ ❂ ❂ ❂ ❂ ❂ ❂ ❂ ❂ ❂ ❂ ❂ ❂

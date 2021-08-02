@@ -41,8 +41,8 @@
 .mask {
   background-color: rgba(0, 0, 0, 0) !important;
   border-radius: 5px !important;
-  width: 97% !important;
-  left: 1vw !important;
+  width: 100% !important;
+  left: 0vw !important;
   transition: background-color 0.5s;
 }
 
@@ -100,7 +100,7 @@
 
 @media screen and (max-width: 1200px) {
   .cardLarge__title {
-    font-size: 35px;
+    font-size: 32px;
   }
 }
 @media screen and (max-width: 575px) {
@@ -112,5 +112,18 @@
   }
   .cardLarge__feature__logo {
     display: none;
+  }
+}
+
+@media screen and (max-width: 991px) {
+  .mask {
+    width: 97% !important;
+    left: 1.1vw !important;
+  }
+}
+@media screen and (max-width: 500px) {
+  .mask {
+    width: 97% !important;
+    left: 2.1vw !important;
   }
 }
