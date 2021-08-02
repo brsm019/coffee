@@ -4,27 +4,18 @@ TODO:
 
 Priority:
 
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
 DEPLOY
+
+Refactor
+
+Add Tests
 
 >>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>
 
 
 MLP
+
+Makes sure unique identifier is working
 
 Login:
 When click sign in, get it to return to previous route it was on rather than navigating to home page
@@ -33,6 +24,9 @@ Create reset password form below login section
 Checkout:
 Create cancel page when cancelling payment
 Add address fields
+
+Login:
+Change Password
 
 Mobile Friendly:
 Add a burger menu for smaller screens
