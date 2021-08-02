@@ -1,7 +1,5 @@
 require("dotenv").config();
-const stripe = require("stripe")(
-  "sk_test_51IyCkCGDpXfgd5Nm8stgabBNB4bOptc2b96cvfgUqIaEbz4iXB3ZbJklfhy4h01VCFfADOrsENbk43iPK0i745Yp00dDk7iiLu"
-);
+const stripe = require("stripe")(process.env.STRIPE_LIVE_KEY);
 let mongoose = require("mongoose");
 let jwt = require("jsonwebtoken");
 let bcrypt = require("bcrypt");
@@ -45,16 +43,8 @@ exports.sign_in = function (req, res) {
   );
 };
 
-const calculateOrderAmount = (items) => {
-  // Replace this constant with a calculation of the order's amount
-  // Calculate the order total on the server to prevent
-  // people from directly manipulating the amount on the client
-  return 1400;
-};
-
 exports.checkout = async function (req, res) {
   const price = req.body.priceTotal * 100;
-  // console.log({ price });
   // Create a PaymentIntent with the order amount and currency
   const paymentIntent = await stripe.paymentIntents.create({
     amount: price,

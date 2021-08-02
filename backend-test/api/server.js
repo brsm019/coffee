@@ -10,14 +10,9 @@ const mongoose = require("mongoose");
 mongoose.set("useNewUrlParser", true);
 mongoose.set("useFindAndModify", false);
 mongoose.set("useCreateIndex", true);
-// const option = {
-//   socketTimeoutMS: 30000,
-//   keepAlive: true,
-//   reconnectTries: 30000,
-// };
 
-// const mongoURI = process.env.MONGODB_URI;
-mongoose.connect("mongodb://localhost:27017/Accounts", {
+const mongoURI = process.env.MONGODB_URI;
+mongoose.connect(mongoURI, {
   useUnifiedTopology: true,
   useNewUrlParser: true,
 });
