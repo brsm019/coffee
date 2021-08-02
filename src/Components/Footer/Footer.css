@@ -7,6 +7,7 @@
 .footer__section {
   border-top: 1px solid rgb(181, 181, 181, 0.6);
   border-right: 1px solid rgb(181, 181, 181, 0.6);
+  border-left: 1px solid rgb(181, 181, 181, 0.6);
   flex-basis: 100%;
 }
 
