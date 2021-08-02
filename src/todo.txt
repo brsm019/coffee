@@ -12,6 +12,8 @@ Create a .gitignore
 
 DEPLOY
 
+Comment code
+
 Refactor
 
 Add Tests
@@ -20,6 +22,10 @@ Add Tests
 
 
 MLP
+
+Stripe success / failure page
+
+Add cartTotal to global state - refactor
 
 Makes sure unique identifier is working
 
