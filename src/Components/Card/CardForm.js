@@ -4,6 +4,7 @@ import CardLarge from "./CardLarge";
 import "./CardForm.css";
 import CardMedium from "./CardMedium";
 import CardSmall from "./CardSmall";
+import Footer from "../Footer/Footer";
 
 const CardForm = () => {
   return (
@@ -131,6 +132,7 @@ const CardForm = () => {
           />
         </>
       </div>
+      <Footer />
     </div>
   );
 };

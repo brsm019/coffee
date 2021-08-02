@@ -18,10 +18,10 @@ const Header = () => {
   // console.log(basket.length);
 
   const getBasket = (basket) => {
-    return basket?.reduce((amount, item) => parseInt(item.price) + amount, 0);
+    return basket?.reduce((amount, item) => parseFloat(item.price) + amount, 0);
   };
 
-  let totalBasket = name ? getBasket(basket) : "0";
+  let totalBasket = name ? getBasket(basket).toFixed(2) : "0";
   let basketCount = name ? ("0" + basket.length).slice(-2) : "00";
 
   const handleLogout = () => {

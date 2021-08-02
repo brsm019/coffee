@@ -20,7 +20,7 @@ export default function Checkout() {
   // console.log({ getBasketTotal });
 
   let cartTotal = (basket) =>
-    basket?.reduce((amount, item) => parseInt(item.price) + amount, 0);
+    basket?.reduce((amount, item) => parseFloat(item.price) + amount, 0);
   // console.log(cartTotal(basket));
   let total = cartTotal(basket).toFixed(2);
   // console.log({ total });
