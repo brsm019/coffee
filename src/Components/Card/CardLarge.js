@@ -1,9 +1,20 @@
-import React from "react";
+import React, { useState, useEffect } from "react";
 import "./CardLarge.css";
-import CardMedium from "./CardMedium";
 import { NavLink } from "react-router-dom";
 
 const CardLarge = ({ image, link, textColor, title, subtitle, price }) => {
+  const [width, setWidth] = useState(window.innerWidth);
+
+  const breakpoint = 575;
+
+  useEffect(() => {
+    const handleWindowResize = () => setWidth(window.innerWidth);
+    window.addEventListener("resize", handleWindowResize);
+
+    // Return a function from the effect that removes the event listener
+    return () => window.removeEventListener("resize", handleWindowResize);
+  }, []);
+
   return (
     <div class="col-lg-6 col-md-12 col-sm-12 mb-4 mb-lg-0">
       <img
@@ -21,7 +32,14 @@ const CardLarge = ({ image, link, textColor, title, subtitle, price }) => {
       >
         <div class="mask">
           <div class="cardLarge__text">
-            <div class="cardLarge__feature__logo"></div>
+            <div
+              class={
+                width == breakpoint || width < breakpoint
+                  ? `cardLarge__feature__logo hidden`
+                  : `cardLarge__feature__logo `
+              }
+              // style={{ display: smallWidthDisplay }}
+            ></div>
             <div class="cardLarge__login__line" style={{ color: textColor }}>
               ❂ ❂ ❂ ❂ ❂ ❂ ❂ ❂ ❂ ❂ ❂ ❂ ❂ ❂ ❂ ❂ ❂ ❂ ❂ ❂ ❂ ❂ ❂ ❂ ❂ ❂ ❂ ❂ ❂ ❂ ❂ ❂
             </div>

@@ -16,7 +16,7 @@
 
 .sidebar__logo {
   text-align: center;
-  padding-top: 40%;
+  padding-top: 20%;
   padding-bottom: 10%;
 }
 
@@ -25,6 +25,8 @@
   width: 100%;
   object-fit: contain;
   height: auto;
+  filter: invert(100%) sepia(0%) saturate(7500%) hue-rotate(116deg)
+    brightness(109%) contrast(109%);
 }
 
 .sidebar__break {
