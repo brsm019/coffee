@@ -1,5 +1,8 @@
 .header {
   display: flex;
+  position: sticky;
+  top: 0px;
+  z-index: 100;
   justify-content: flex-end;
   width: 97%;
   margin: 0px 1.5%;
@@ -59,4 +62,16 @@
   font-size: 13px;
   border: none;
   background: none;
+}
+
+@media screen and (max-width: 454px) {
+  .header {
+    width: 100%;
+    padding-left: 12px;
+  }
+  .header__item,
+  .header__logOut,
+  .header__loggedIn {
+    padding-top: 0em;
+  }
 }

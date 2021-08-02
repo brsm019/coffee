@@ -6,7 +6,8 @@
 }
 
 .sidebar__content {
-  position: relative;
+  position: sticky;
+  top: 0;
   padding: 10px;
   width: 20%;
   height: 100vh;

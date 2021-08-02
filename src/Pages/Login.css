@@ -4,6 +4,7 @@
   width: 65%;
   max-width: 550px;
   min-width: 400px;
+  min-height: 53vh;
   margin: auto;
   margin-top: 20px;
   padding: 2em;
@@ -45,4 +46,10 @@
   text-transform: uppercase;
   letter-spacing: 0px;
   margin: 0.5em 5.7em;
+}
+
+.bottom {
+  height: 220px;
+  display: block;
+  visibility: hidden;
 }

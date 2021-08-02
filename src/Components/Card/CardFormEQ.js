@@ -4,6 +4,7 @@ import CardLarge from "./CardLarge";
 import "./CardFormEQ.css";
 import CardMedium from "./CardMedium";
 import CardSmall from "./CardSmall";
+import Footer from "../Footer/Footer";
 
 const CardFormEQ = () => {
   return (
@@ -143,7 +144,7 @@ const CardFormEQ = () => {
           />
         </>
       </div>
-      ;
+      <Footer />
     </div>
   );
 };

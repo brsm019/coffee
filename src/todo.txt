@@ -4,25 +4,18 @@ TODO:
 
 Priority:
 
-Make sure password is not being shown in console when entered for either log in or sign up:
-"Chrome found the password you just used in a data breach."
 
-Footer needs to be at the bottom of all pages - Shop coffee/ home and shop equipment
 
-Change CSS for home and equipment so the titles don't go outside the card container
 
-Make site mobile friendly, change the css for header - add media queries for smaller screens
 
-Price of products when 13.50 or 12.50, Subtotal = 13 or 12
 
-Sidebar:
-When scroll the page, sidebar isn't sticky, same with top bar
 
-Register Page:
-When created clicked without entering anything into fields, show astericks on all fields and change their colour DONE
-When created clicked without entering anything do not show successful message DONE
 
-Change the logo and some of pics to own
+
+
+
+
+
 
 
 

@@ -15,6 +15,7 @@ import ProductDescription from "../ProductDescription/ProductDescription";
 import Checkout from "./Checkout";
 import "./SideBar.css";
 import SignUp from "./SignUp";
+import { v4 as uuidv4 } from "uuid";
 let auth = localStorage.getItem("auth") === '{"auth":true}';
 
 let routes = [
@@ -85,7 +86,7 @@ let routes = [
       <>
         <ProductDescription
           //addToCart
-          id="1"
+          id={uuidv4()}
           title="Red Brick"
           subtitle="Seasonal Espresso"
           subColor="#99080c"
@@ -130,7 +131,7 @@ let routes = [
       <>
         <ProductDescription
           //addToCart
-          id="2"
+          id={uuidv4()}
           title="Sweetshop"
           subtitle="Seasonal Espresso"
           subColor="#99080c"
@@ -172,7 +173,7 @@ let routes = [
       <>
         <ProductDescription
           //addToCart
-          id="3"
+          id={uuidv4()}
           title="SASABA"
           subtitle="ETHIOPIA ESPRESSO"
           subColor="#99080c"
@@ -214,7 +215,7 @@ let routes = [
       <>
         <ProductDescription
           //addToCart
-          id="4"
+          id={uuidv4()}
           title="LA FLORESTA"
           subtitle="COLOMBIA ESPRESSO"
           subColor="#99080c"
@@ -256,7 +257,7 @@ let routes = [
       <>
         <ProductDescription
           //addToCart
-          id="5"
+          id={uuidv4()}
           title="ADELA REYES"
           subtitle="ETHIOPIAN ESPRESSO"
           subColor="#99080c"
@@ -298,7 +299,7 @@ let routes = [
       <>
         <ProductDescription
           //addToCart
-          id="6"
+          id={uuidv4()}
           title="Decaf Espresso"
           subtitle="Espresso"
           subColor="#99080c"
@@ -340,7 +341,7 @@ let routes = [
       <>
         <ProductDescription
           //addToCart
-          id="7"
+          id={uuidv4()}
           title="Filtered Bean"
           subtitle="Seasonal Filter"
           subColor="#007442"
@@ -382,7 +383,7 @@ let routes = [
       <>
         <ProductDescription
           //addToCart
-          id="8"
+          id={uuidv4()}
           title="EL DIAMANTE"
           subtitle="Seasonal Blend"
           subColor="#007442"
@@ -424,7 +425,7 @@ let routes = [
       <>
         <ProductDescription
           //addToCart
-          id="9"
+          id={uuidv4()}
           title="DIS PALO"
           subtitle="Columbia Espresso"
           subColor="#007442"
@@ -466,7 +467,7 @@ let routes = [
       <>
         <ProductDescription
           //addToCart
-          id="10"
+          id={uuidv4()}
           title="SMART DRIPPER"
           // subtitle="Columbia Espresso"
           subColor="#007442"
@@ -508,7 +509,7 @@ let routes = [
       <>
         <ProductDescription
           //addToCart
-          id="11"
+          id={uuidv4()}
           title="BOOKKISA"
           subtitle="ETHIOPIA"
           subColor="#007442"
@@ -550,7 +551,7 @@ let routes = [
       <>
         <ProductDescription
           //addToCart
-          id="12"
+          id={uuidv4()}
           title="EL DASTO"
           subtitle="COLUMBIA"
           subColor="#007442"
@@ -592,7 +593,7 @@ let routes = [
       <>
         <ProductDescription
           //addToCart
-          id="13"
+          id={uuidv4()}
           title="PERETU"
           subtitle="PERU"
           subColor="#007442"
@@ -634,7 +635,7 @@ let routes = [
       <>
         <ProductDescription
           //addToCart
-          id="14"
+          id={uuidv4()}
           title="LULTRINA"
           subtitle="COLUMBIA"
           subColor="#007442"
@@ -676,7 +677,7 @@ let routes = [
       <>
         <ProductDescription
           //addToCart
-          id="15"
+          id={uuidv4()}
           title="WILFA SVART GRINDER"
           subtitle=""
           price="130.00"
@@ -701,7 +702,7 @@ let routes = [
       <>
         <ProductDescription
           //addToCart
-          id="16"
+          id={uuidv4()}
           title="FELLOW STAGG EKG ELECTRIC KETTLE"
           subtitle=""
           price="145.00"
@@ -734,7 +735,7 @@ Temperature mode using either celsius or Fahrenheit"
       <>
         <ProductDescription
           //addToCart
-          id="17"
+          id={uuidv4()}
           title="PULLMAN OAK TAMPER"
           subtitle=""
           price="100.00"
@@ -759,7 +760,7 @@ Temperature mode using either celsius or Fahrenheit"
       <>
         <ProductDescription
           //addToCart
-          id="18"
+          id={uuidv4()}
           title="FELLOW EDDY MILK PITCHER"
           subtitle=""
           price="50.00"
@@ -788,7 +789,7 @@ Tapered Body"
       <>
         <ProductDescription
           //addToCart
-          id="19"
+          id={uuidv4()}
           title="PULLMAN CHISEL REDISTRIBUTION TOOL"
           subtitle=""
           price="125.00"
@@ -813,7 +814,7 @@ Tapered Body"
       <>
         <ProductDescription
           //addToCart
-          id="20"
+          id={uuidv4()}
           title="PULLMAN BLACK TAMPER"
           subtitle=""
           price="90.00"
@@ -838,7 +839,7 @@ Tapered Body"
       <>
         <ProductDescription
           //addToCart
-          id="21"
+          id={uuidv4()}
           title="PULLMAN BASKET"
           subtitle=""
           price="20.00"
@@ -868,7 +869,7 @@ Polished, no burrs, no scratches, no misshaped holes"
       <>
         <ProductDescription
           //addToCart
-          id="22"
+          id={uuidv4()}
           title="PULLMAN RIDGELESS VST BASKET"
           subtitle=""
           price="28.00"
@@ -899,7 +900,7 @@ There is more information here."
       <>
         <ProductDescription
           //addToCart
-          id="23"
+          id={uuidv4()}
           title="WILFA CLASSIC+ BREWER"
           subtitle=""
           price="150.00"
@@ -928,7 +929,7 @@ Compatible with the Filtropa papers, not included."
       <>
         <ProductDescription
           //addToCart
-          id="24"
+          id={uuidv4()}
           title="V60 SIMPLY GLASS BREWING KIT"
           subtitle=""
           price="32.00"
@@ -955,7 +956,7 @@ Versatile with a 1-4 cup capacity, the box includes a 2 cup Glass Dripper, V60 G
       <>
         <ProductDescription
           //addToCart
-          id="25"
+          id={uuidv4()}
           title="HARIO DRIP SCALE"
           subtitle=""
           price="55.00"
@@ -982,7 +983,7 @@ Scales measure in 0.1 gram increments up to 200 grams, 0.5 gram increments up to
       <>
         <ProductDescription
           //addToCart
-          id="26"
+          id={uuidv4()}
           title="FELLOW STAGG POUR-OVER KETTLE"
           subtitle=""
           price="70.00"
@@ -1011,7 +1012,7 @@ The best part? Stagg looks fantastic on a shelf, making it a welcome addition to
       <>
         <ProductDescription
           //addToCart
-          id="27"
+          id={uuidv4()}
           title="HUSKEE CUP"
           subtitle=""
           price="14.00"
@@ -1042,7 +1043,7 @@ Approved food safe, BPA free polypropylene mixed with coffee husk."
       <>
         <ProductDescription
           //addToCart
-          id="28"
+          id={uuidv4()}
           title="AEROBIE AEROPRESS"
           subtitle=""
           price="30.00"
