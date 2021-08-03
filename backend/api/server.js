@@ -14,6 +14,7 @@ mongoose.set("useCreateIndex", true);
 
 const mongoURI = process.env.MONGODB_LIVE_URI;
 mongoose.connect(mongoURI, {
+  dbName: "myFirstDatabase",
   useUnifiedTopology: true,
   useNewUrlParser: true,
 });
