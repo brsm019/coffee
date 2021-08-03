@@ -11,7 +11,7 @@ mongoose.set("useNewUrlParser", true);
 mongoose.set("useFindAndModify", false);
 mongoose.set("useCreateIndex", true);
 
-const mongoURI = process.env.MONGODB_URI;
+const mongoURI = process.env.MONGODB_LIVE_URI;
 mongoose.connect(mongoURI, {
   useUnifiedTopology: true,
   useNewUrlParser: true,
