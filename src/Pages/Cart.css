@@ -1,0 +1,88 @@
+.cart__container {
+  box-shadow: 5px 5px 5px rgb(0 0 0 / 1%);
+  background-color: white;
+  width: 65%;
+  max-width: 550px;
+  min-width: 400px;
+  min-height: 53vh;
+  margin: auto;
+  margin-top: 20px;
+  padding: 2em;
+  padding-bottom: 65px;
+}
+
+.cart__header {
+  font-family: "TradeGothic", "Helvetica Neue", Helvetica, Arial, sans-serif;
+  text-align: center;
+  color: black;
+  margin: 5px 0px;
+}
+
+.cart__line {
+  text-align: center;
+  color: rgb(104, 104, 104, 0.35);
+}
+.line2 {
+  padding-bottom: 40px;
+}
+
+.cart__table {
+  width: 50%;
+  margin: auto;
+}
+
+.cart__heading {
+  border-top: 3px solid rgba(1, 1, 1, 0.1);
+  border-bottom: 1px solid rgba(1, 1, 1, 0.1);
+}
+
+.cart__titleItemHeading {
+  padding: 15px 0px;
+  font-size: small;
+  font-weight: 900;
+  color: darkgray;
+  text-transform: uppercase;
+  min-width: 12vw;
+}
+
+.cart__priceHeading {
+  font-size: small;
+  font-weight: 900;
+  color: darkgray;
+  text-transform: uppercase;
+}
+
+.cart__removeHeading {
+  font-size: small;
+  font-weight: 900;
+  color: darkgray;
+}
+
+.cart__subtotal {
+  color: black;
+  font-size: small;
+  font-weight: 500;
+  border-bottom: none !important;
+  text-transform: uppercase;
+  padding: 15px 0px;
+}
+
+.subtotal__price {
+  padding: 0px 10px;
+}
+
+@media screen and (max-width: 1200px) {
+  .cart__table {
+    width: 50%;
+    margin: auto;
+  }
+
+  .cart__titleItemHeading {
+    padding: 15px 0px;
+    font-size: small;
+    font-weight: 900;
+    color: darkgray;
+    text-transform: uppercase;
+    min-width: 20vw;
+  }
+}

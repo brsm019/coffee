@@ -1,4 +1,5 @@
 require("dotenv").config();
+const stripe = require("stripe")(process.env.STRIPE_TEST_KEY);
 let mongoose = require("mongoose");
 let jwt = require("jsonwebtoken");
 let bcrypt = require("bcrypt");
@@ -36,9 +37,23 @@ exports.sign_in = function (req, res) {
       return res.json({
         token: accessToken,
         user: user,
+        auth: true,
       });
     }
   );
+};
+
+exports.checkout = async function (req, res) {
+  const price = req.body.priceTotal * 100;
+  // Create a PaymentIntent with the order amount and currency
+  const paymentIntent = await stripe.paymentIntents.create({
+    amount: price,
+    currency: "gbp",
+  });
+
+  res.send({
+    clientSecret: paymentIntent.client_secret,
+  });
 };
 
 exports.loginRequired = function (req, res, next) {

@@ -1,0 +1,75 @@
+.checkout__container {
+  box-shadow: 5px 5px 5px rgb(0 0 0 / 1%);
+  background-color: white;
+  width: 65%;
+  max-width: 550px;
+  min-width: 400px;
+  min-height: 53vh;
+  margin: auto;
+  margin-top: 20px;
+  padding: 2em;
+  padding-bottom: 1px;
+}
+
+.checkout__header {
+  font-family: "TradeGothic", "Helvetica Neue", Helvetica, Arial, sans-serif;
+  text-align: center;
+  color: black;
+  margin: 5px 0px;
+}
+
+.checkout__line {
+  text-align: center;
+  color: rgb(104, 104, 104, 0.35);
+}
+.line2 {
+  padding-bottom: 40px;
+}
+
+.checkout__payment__form {
+  padding-top: 50px;
+}
+
+button#submit:disabled {
+  float: right;
+  margin-top: 20px;
+  background-color: #e7e7e7;
+  color: rgb(173, 173, 173);
+  font-weight: bold;
+  font-size: 12px;
+  padding: 5px 15px;
+  border: none;
+}
+button#submit {
+  float: right;
+  margin-top: 20px;
+  background-color: #960c14;
+  color: white;
+  font-weight: bold;
+  font-size: 12px;
+  padding: 5px 15px;
+  border: none;
+  transition: background-color 0.8s;
+}
+
+button#submit:hover {
+  float: right;
+  margin-top: 20px;
+  background-color: #5e070c;
+  color: white;
+  font-weight: bold;
+  font-size: 12px;
+  padding: 5px 15px;
+  border: none;
+}
+
+input#checkout__email__address {
+  margin-bottom: 40px;
+}
+
+p.result-message {
+  justify-content: center;
+  text-align: center;
+  padding-top: 80px;
+  color: darkgreen;
+}
