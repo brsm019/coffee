@@ -1,0 +1,22 @@
+.productDescription__container {
+  width: 100%;
+  height: 93%;
+  display: flex;
+  flex-direction: column;
+  margin: 50px 0px;
+}
+.productDescription__grouping {
+  width: 100%;
+  height: 100%;
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  padding-top: 2px;
+}
+
+@media screen and (max-width: 992px) {
+  .productDescription__grouping {
+    flex-direction: column;
+    align-items: center;
+  }
+}

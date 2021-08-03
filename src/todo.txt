@@ -1,0 +1,51 @@
+TODO:
+
+>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>
+
+Priority:
+
+Create a .env file, pass all private content into there
+
+Set up mongo and stripe ready for deployment
+
+Create a .gitignore
+
+DEPLOY
+
+Comment code
+
+Refactor
+
+Add Tests
+
+>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>
+
+
+MLP
+
+Checkout as guest
+
+Stripe success / failure page
+
+Add cartTotal to global state - refactor
+
+Makes sure unique identifier is working
+
+If nothing is in the cart, can't go to the payment page
+
+SignUp:
+Clean up setTimeOut
+
+Login:
+When click sign in, get it to return to previous route it was on rather than navigating to home page
+Create reset password form below login section
+
+Checkout:
+Create cancel page when cancelling payment
+Add address fields
+
+Login:
+Change Password
+
+Mobile Friendly:
+Add a burger menu for smaller screens

@@ -1,0 +1,56 @@
+.infoCard2__container {
+  background-color: white;
+  display: inline-flex;
+  align-items: center;
+  width: 40%;
+  height: 100%;
+  max-width: 380px;
+  width: 380px;
+}
+
+.infoCard2__wrapper {
+  padding: 10px 80px;
+}
+.infoCard2__pretitle {
+  color: darkgray;
+  font-style: italic;
+  font-size: smaller;
+  text-align: center;
+}
+
+.infoCard2__pretitle__eq {
+  font-style: normal;
+  color: black;
+  font-weight: 600;
+}
+
+.infoCard2__title {
+  color: black;
+  font-size: x-large;
+  text-transform: uppercase;
+  font-weight: bold;
+  text-align: center;
+  padding-bottom: 10px;
+}
+
+.infoCard2__title__span {
+  color: #99080c;
+}
+
+.infoCard2__description {
+  color: darkgray;
+  font-size: smaller;
+  line-height: inherit;
+  text-align: center;
+}
+
+.infoCard2__description__eq {
+  color: black !important;
+  font-weight: 300;
+}
+
+@media screen and (max-width: 992px) {
+  .infoCard2__container {
+    padding: 25px 0px;
+  }
+}

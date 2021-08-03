@@ -1,0 +1,22 @@
+.footerContent__container {
+  color: black;
+  padding: 20px;
+}
+.footerContent__title {
+  color: #99080c;
+  text-transform: uppercase;
+  font-size: medium;
+  font-weight: 600;
+}
+.footerContent__paragraph {
+  color: black;
+  font-size: smaller;
+  font-weight: 300;
+}
+.footerContent__footer {
+  color: black;
+  margin-bottom: 0;
+  font-style: italic;
+  font-size: small;
+  font-weight: 100;
+}

@@ -1,0 +1,34 @@
+.checkoutProduct__row {
+  padding: 10px 0px;
+  border-bottom: 1px solid rgba(1, 1, 1, 0.1);
+}
+
+.checkoutProduct__title {
+  margin-bottom: 0 !important;
+  width: 70%;
+  color: black;
+  font-size: small;
+  font-weight: 500;
+  text-transform: uppercase;
+  padding: 15px 0px;
+}
+
+.checkoutProduct__price {
+  margin-bottom: 0 !important;
+  width: 20%;
+  color: black;
+  font-size: smaller;
+  font-weight: 400;
+  text-transform: uppercase;
+}
+
+.checkoutProduct__delete {
+  width: 10%;
+}
+
+.checkoutProduct__delete > button {
+  background-color: none;
+  color: #111;
+  background-color: transparent;
+  border: none;
+}
