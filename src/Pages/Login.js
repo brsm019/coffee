@@ -21,7 +21,7 @@ const Login = () => {
   };
   const handleLogin = (e) => {
     e.preventDefault();
-    const postURL = "/auth/sign_in"; //Our previously set up route in the backend
+    const postURL = "/auth/sign_in"; //Our previously set up route in the backends
     fetch(postURL, {
       method: "POST",
       headers: {
