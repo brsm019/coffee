@@ -31,7 +31,7 @@ const SignUp = () => {
 
   const handleSignUp = (e) => {
     e.preventDefault();
-    const postURL = `${process.env.LIVE_URL}/auth/register`;
+    const postURL = `https://coffee-1ea81.web.app/auth/register`;
     console.log({ postURL });
     fetch(postURL, {
       method: "POST",
