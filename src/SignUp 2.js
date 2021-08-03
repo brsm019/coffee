@@ -31,7 +31,8 @@ const SignUp = () => {
 
   const handleSignUp = (e) => {
     e.preventDefault();
-    const postURL = `${process.env.LIVE_URL}/auth/register`; //Our previously set up route in the backend
+    const postURL = `${process.env.LIVE_URL}/auth/register`;
+    console.log({ postURL });
     fetch(postURL, {
       method: "POST",
       headers: {
