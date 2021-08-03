@@ -69,7 +69,7 @@ app.use(function (req, res) {
   res.status(404).send({ url: req.originalUrl + " not found" });
 });
 
-app.listen(port, () => {
+app.listen(process.env.PORT || 4000, () => {
   console.log(`Listening to port ${port}`);
 });
 
