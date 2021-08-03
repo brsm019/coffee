@@ -23,6 +23,8 @@ Add Tests
 
 MLP
 
+Checkout as guest
+
 Stripe success / failure page
 
 Add cartTotal to global state - refactor

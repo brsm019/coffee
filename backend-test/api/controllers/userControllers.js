@@ -1,5 +1,5 @@
 require("dotenv").config();
-const stripe = require("stripe")(process.env.STRIPE_LIVE_KEY);
+const stripe = require("stripe")(process.env.STRIPE_TEST_KEY);
 let mongoose = require("mongoose");
 let jwt = require("jsonwebtoken");
 let bcrypt = require("bcrypt");
