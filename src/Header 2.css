@@ -1,0 +1,36 @@
+.header {
+  display: flex;
+  justify-content: flex-end;
+  width: 97%;
+  margin: 0px 1.5%;
+  height: 40px;
+  background-color: white;
+
+  border-radius: 0px 0px 5px 5px;
+  box-shadow: 1px 1px 1px rgb(0 0 0 / 10%);
+}
+
+.header__item {
+  font-family: "gentium", Georgia, Times, "Times New Roman", serif;
+  font-weight: lighter;
+  padding-right: 0.9rem;
+  padding-top: 0.9em;
+  color: #464646;
+  text-decoration: none;
+  font-style: italic;
+  font-size: 13px;
+}
+.header__item:hover {
+  font-family: "gentium", Georgia, Times, "Times New Roman", serif;
+  padding-right: 0.9rem;
+  padding-top: 0.9em;
+  color: #464646;
+  text-decoration: none;
+  font-style: italic;
+  font-size: 13px;
+  text-decoration: none;
+}
+
+#header__cart {
+  text-decoration: underline;
+}

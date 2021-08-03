@@ -1,17 +1,16 @@
 import React, { useState } from "react";
 import { NavLink, useHistory } from "react-router-dom";
-import Header from "../Components/Header/Header";
-import Footer from "../Components/Footer/Footer";
+import Header from "./Header";
 import "./Login.css";
-import { useStateValue } from "../GlobalState/StateProvider";
+
+// <Redirect to="/SignUp"
+/* <Redirect
+              to={{ pathname: "/signup", state: { from: props.location } }} */
 
 const Login = () => {
-  const [state, dispatch] = useStateValue();
   const history = useHistory();
   const [email, setEmail] = useState("");
   const [password, setPassword] = useState("");
-  const [name, setName] = useState("");
-  const [error, setError] = useState(false);
 
   const handleEmailChange = (e) => {
     setEmail(e.target.value);
@@ -36,7 +35,7 @@ const Login = () => {
       .then((res) => {
         res.json().then((result, err) => {
           if (err) return err.message;
-          // console.log(result);
+          console.log({ result });
           localStorage.setItem(
             "token",
             JSON.stringify({
@@ -44,31 +43,22 @@ const Login = () => {
             })
           );
           localStorage.setItem("auth", JSON.stringify({ auth: result.auth }));
-          localStorage.setItem(
-            "name",
-            JSON.stringify({ name: result.user.firstName })
-          );
 
-          setName(result.user.firstName);
-          //Dispatch user's name into global state
-          dispatch({
-            type: "SET_USER",
-            user: result.user.firstName,
-          });
-
-          history.push("/");
-          history.go(0);
+          // history.push("/");
         });
       })
       .catch((err) => {
-        setError(true);
         console.error(err);
+        alert("Error logging in please try again");
       });
   };
-  // console.log(localStorage.getItem("auth"));
-  // console.log(localStorage.getItem("name"));
-  // console.log({ name });
-  // console.log({ state });
+  console.log(localStorage.getItem("auth"));
+
+  const handleLogout = () => {
+    localStorage.removeItem("token");
+    localStorage.removeItem("auth");
+    localStorage.removeItem("login");
+  };
 
   return (
     <div className="login">
@@ -97,22 +87,19 @@ const Login = () => {
               <label for="password">Password</label>
               <input
                 type="password"
-                className={`form-control ${error === true ? "is-invalid" : ""}`}
+                class="form-control"
                 id="password"
                 name="password"
                 value={password}
                 onChange={handlePasswordChange}
               />
-              <div className="invalid-feedback">
-                {"Email or password is incorrect"}
-              </div>
             </div>
             <div class="form__button">
               <button type="submit" class="btn-xs" value="Submit">
                 SIGN IN
               </button>
               <span className="form__link">
-                <NavLink to="/signup">
+                <NavLink to="/login">
                   <i className="form__login">
                     or <em>Register</em>
                   </i>
@@ -120,10 +107,37 @@ const Login = () => {
               </span>
             </div>
           </form>
+          <button onClick={handleLogout}>Logout forTesting</button>
         </div>
       </div>
-      {/* <div className="bottom"></div> */}
-      <Footer />
+      {/* <div className="login__container__2">
+        <p className="login__reset__password">RESET PASSWORD</p>
+        <div className="login__form__container">
+          <form>
+            <div className="form-group">
+              <label for="email">Email</label>
+              <input
+                type="text"
+                class="form-control"
+                id="email"
+                name="email"
+                value={email}
+                onChange={handleEmailChange}
+              />
+            </div>
+            <div class="form__button">
+              <button
+                type="submit"
+                class="btn-xs"
+                value="Submit"
+                onSubmit={handleLogin}
+              >
+                SUBMIT
+              </button>
+            </div>
+          </form>
+        </div>
+      </div> */}
     </div>
   );
 };
