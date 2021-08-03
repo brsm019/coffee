@@ -41,7 +41,7 @@ const Cart = () => {
   };
 
   const handleSubmit = () => {
-    const postURL = `${process.env.LIVE_URL}/api/test/`; //Our previously set up route in the backend
+    const postURL = `https://coffee-1ea81.web.app/api/test/`; //Our previously set up route in the backend
     fetch(postURL, {
       method: "POST",
       headers: {
@@ -61,7 +61,7 @@ const Cart = () => {
   };
 
   const handleClick = async () => {
-    const getURL = `${process.env.LIVE_URL}/api/test`;
+    const getURL = `https://coffee-1ea81.web.app/api/test`;
     const response = await axios.get(getURL);
     setPeeps(response.data);
   };

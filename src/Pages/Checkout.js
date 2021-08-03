@@ -39,7 +39,7 @@ export default function Checkout() {
   useEffect(() => {
     // Create PaymentIntent as soon as the page loads
     window
-      .fetch(`${process.env.LIVE_URL}/create-payment-intent`, {
+      .fetch(`https://coffee-1ea81.web.app/create-payment-intent`, {
         method: "POST",
         headers: {
           "Content-Type": "application/json",

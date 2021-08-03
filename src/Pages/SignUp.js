@@ -57,7 +57,7 @@ const SignUp = () => {
 
   const handleSignUp = (e, data) => {
     // e.preventDefault();
-    const postURL = `${process.env.LIVE_URL}/auth/register`; //Our previously set up route in the backend
+    const postURL = `https://coffee-1ea81.web.app/auth/register`; //Our previously set up route in the backend
     fetch(postURL, {
       method: "POST",
       headers: {
