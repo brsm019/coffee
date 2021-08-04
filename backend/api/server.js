@@ -42,7 +42,7 @@ app.use(function (req, res, next) {
       function (err, user) {
         if (err) req.user = undefined;
         req.user = user;
-        // res.json({ user, auth: true });
+        // res.json({ user, auth: true })
         next();
       }
     );
