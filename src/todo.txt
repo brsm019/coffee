@@ -4,6 +4,13 @@ TODO:
 
 Priority:
 
+CURRENTLY: server works on localhost, but cannot get it to work using mongodb atlas - returns 404 when sign up, login etc
+
+Something to do with the atlas connection - it's not working. Maybe create a new one, test in with the localhost running
+
+Then quit the localhost server and check if it working.
+
+
 Create a .env file, pass all private content into there
 
 Set up mongo and stripe ready for deployment
