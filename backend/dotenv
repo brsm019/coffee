@@ -15,3 +15,8 @@ STRIPE_LIVE_KEY = sk_live_51IyCkCGDpXfgd5NmFcXhJmewSAJ9i71zHYktcXWQ02Xgvco2cNcs8
 //follow instructions
 
 //development
+
+mongodb+srv://brsm019:brsm019@cluster0.edcso.mongodb.net/myFirstDatabase?retryWrites=true&w=majority
+
+real:   mongodb+srv://brsm019:brsm019_atlas@cluster0.cmrer.mongodb.net/coffee?retryWrites=true&w=majority
+
