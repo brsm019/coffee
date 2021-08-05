@@ -1,7 +1,7 @@
 require("dotenv").config();
 let express = require("express");
 let app = express();
-let port = process.env.PORT || 4000;
+let port = process.env.PORT || 3000;
 let User = require("./models/userModels");
 let jwt = require("jsonwebtoken");
 const cors = require("cors");
@@ -70,7 +70,7 @@ app.use(function (req, res) {
   res.status(404).send({ url: req.originalUrl + " not found" });
 });
 
-app.listen(process.env.PORT || 4000, () => {
+app.listen(process.env.PORT || 3000, () => {
   console.log(`Listening to port ${port}`);
 });
 
