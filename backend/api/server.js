@@ -54,6 +54,7 @@ app.use(function (req, res, next) {
 let routes = require("./route/userRoute");
 routes(app);
 
+//setting node_env
 if (process.env.NODE_ENV === "production") {
   app.use(express.static(path.join(__dirname, "../../build")));
 
