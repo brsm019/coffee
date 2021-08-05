@@ -12,7 +12,9 @@ mongoose.set("useNewUrlParser", true);
 mongoose.set("useFindAndModify", false);
 mongoose.set("useCreateIndex", true);
 
-const mongoURI = process.env.MONGODB_LIVE_URI;
+// const mongoURI = process.env.MONGODB_LIVE_URI;
+const mongoURI =
+  "mongodb+srv://brsm019:brsm019_atlas@cluster0.cmrer.mongodb.net/myFirstDatabase?retryWrites=true&w=majority";
 mongoose.connect(mongoURI, {
   dbName: "myFirstDatabase",
   useUnifiedTopology: true,
@@ -54,7 +56,6 @@ app.use(function (req, res, next) {
 let routes = require("./route/userRoute");
 routes(app);
 
-//setting node_env
 if (process.env.NODE_ENV === "production") {
   app.use(express.static(path.join(__dirname, "../../build")));
 
