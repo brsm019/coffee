@@ -1,6 +1,7 @@
 TODO:
 
 >>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>
+Branch readyForDep can be used if you make a serious error with deployment.
 
 Priority:
 
