@@ -1,22 +1,18 @@
 require("dotenv").config();
 let express = require("express");
 let app = express();
-let port = process.env.PORT || 3000;
-let User = require("./models/userModels");
+let port = process.env.PORT || 4000;
+let User = require("./api/models/userModels");
 let jwt = require("jsonwebtoken");
 const cors = require("cors");
-const path = require("path");
 
 const mongoose = require("mongoose");
 mongoose.set("useNewUrlParser", true);
 mongoose.set("useFindAndModify", false);
 mongoose.set("useCreateIndex", true);
 
-// const mongoURI = process.env.MONGODB_LIVE_URI;
-const mongoURI =
-  "mongodb+srv://brsm019:brsm019_atlas@cluster0.cmrer.mongodb.net/myFirstDatabase?retryWrites=true&w=majority";
+const mongoURI = process.env.MONGODB_LIVE_URI;
 mongoose.connect(mongoURI, {
-  dbName: "myFirstDatabase",
   useUnifiedTopology: true,
   useNewUrlParser: true,
 });
@@ -44,7 +40,7 @@ app.use(function (req, res, next) {
       function (err, user) {
         if (err) req.user = undefined;
         req.user = user;
-        // res.json({ user, auth: true })
+        // res.json({ user, auth: true });
         next();
       }
     );
@@ -53,26 +49,14 @@ app.use(function (req, res, next) {
     next();
   }
 });
-let routes = require("./route/userRoute");
+let routes = require("./api/route/userRoute");
 routes(app);
-
-if (process.env.NODE_ENV === "production") {
-  app.use(express.static(path.join(__dirname, "../../build")));
-
-  app.get("*", (req, res) => {
-    res.sendFile(path.join(__dirname, "../../build", "index.html"));
-  });
-} else {
-  app.get("/", (req, res) => {
-    res.send("API running");
-  });
-}
 
 app.use(function (req, res) {
   res.status(404).send({ url: req.originalUrl + " not found" });
 });
 
-app.listen(process.env.PORT || 3000, () => {
+app.listen(port, () => {
   console.log(`Listening to port ${port}`);
 });
 
