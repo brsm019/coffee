@@ -2,6 +2,7 @@ require("dotenv").config();
 let express = require("express");
 let app = express();
 let path = require("path");
+let User = require("./api/models/userModels");
 let jwt = require("jsonwebtoken");
 const cors = require("cors");
 
@@ -41,6 +42,7 @@ app.use(function (req, res, next) {
       function (err, user) {
         if (err) req.user = undefined;
         req.user = user;
+        // res.json({ user, auth: true });
         next();
       }
     );
@@ -49,7 +51,6 @@ app.use(function (req, res, next) {
     next();
   }
 });
-
 let routes = require("./api/route/userRoute");
 routes(app);
 
