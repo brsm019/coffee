@@ -124,3 +124,9 @@ a.sidebar__link:active {
   font-size: 0.6em;
   text-decoration: none;
 }
+
+@media screen and (max-width: 520px) {
+  .sidebar__content {
+    display: none;
+  }
+}
