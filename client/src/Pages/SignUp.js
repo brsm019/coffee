@@ -47,17 +47,9 @@ const SignUp = () => {
     setPassword(e.target.value);
   };
 
-  // console.log(firstName, lastName, email, password);
-
-  // function handleSignUp(data) {
-  //   // display form data on success
-  //   alert("SUCCESS!! :-)\n\n" + JSON.stringify(data, null, 4));
-  //   return false;
-  // }
-
   const handleSignUp = (e, data) => {
     // e.preventDefault();
-    const postURL = "/auth/register"; //Our previously set up route in the backend
+    const postURL = "/auth/register";
     fetch(postURL, {
       method: "POST",
       headers: {
@@ -65,7 +57,6 @@ const SignUp = () => {
         "Content-Type": "application/json",
       },
       body: JSON.stringify({
-        // We should keep the fields consistent for managing this data later
         firstName: firstName,
         lastName: lastName,
         email: email,
@@ -74,7 +65,6 @@ const SignUp = () => {
     }).then(() => {
       // Once posted, the user will be notified
       setMessage("Account successfully created!");
-
       setTimeout(() => {
         history.push("/login");
       }, 1000);
