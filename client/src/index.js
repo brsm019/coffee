@@ -6,6 +6,7 @@ import reportWebVitals from "./reportWebVitals";
 import "mdb-react-ui-kit/dist/css/mdb.min.css";
 import { StateProvider } from "./GlobalState/StateProvider";
 import reducer, { initialState } from "./GlobalState/reducer";
+import "mdb-react-ui-kit/dist/css/mdb.min.css";
 
 ReactDOM.render(
   <React.StrictMode>
