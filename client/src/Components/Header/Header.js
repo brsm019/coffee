@@ -7,10 +7,12 @@ import { getBasketTotal } from "../../GlobalState/reducer";
 const Header = () => {
   const history = useHistory();
 
+
   let name = localStorage.getItem("name");
   const [{ user, basket }, dispatch] = useStateValue();
 
   let username = JSON.parse(name); // from local store
+
 
   const getBasket = (basket) => {
     return basket?.reduce((amount, item) => parseFloat(item.price) + amount, 0);
