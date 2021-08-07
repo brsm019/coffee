@@ -10,13 +10,8 @@ const Cart = () => {
   const history = useHistory();
   const [{ basket, user, getBasketTotal }, dispatch] = useStateValue();
 
-  console.log({ basket });
-  // console.log({ user });
-  // console.log({ getBasketTotal });
-
   let cartTotal = (basket) =>
     basket?.reduce((amount, item) => parseFloat(item.price) + amount, 0);
-  // console.log(cartTotal(basket));
   let total = cartTotal(basket);
 
   const onSubmit = () => {
@@ -36,7 +31,6 @@ const Cart = () => {
               <th class="cart__titleItemHeading">Item Title</th>
               <th class="cart__priceHeading">Price</th>
               <th class="cart__removeHeading">Delete</th>
-              {/* <th class="cart__totalHeading">SUBTOTAL</th> */}
             </tr>
 
             {basket.map((item) => (
@@ -81,7 +75,6 @@ const Cart = () => {
               <th class="cart__titleItemHeading">Item Title</th>
               <th class="cart__priceHeading">Price</th>
               <th class="cart__removeHeading">Delete</th>
-              {/* <th class="cart__totalHeading">SUBTOTAL</th> */}
             </tr>
 
             {basket.map((item) => (

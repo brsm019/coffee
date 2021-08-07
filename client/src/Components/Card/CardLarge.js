@@ -38,7 +38,6 @@ const CardLarge = ({ image, link, textColor, title, subtitle, price }) => {
                   ? `cardLarge__feature__logo hidden`
                   : `cardLarge__feature__logo `
               }
-              // style={{ display: smallWidthDisplay }}
             ></div>
             <div class="cardLarge__login__line" style={{ color: textColor }}>
               ❂ ❂ ❂ ❂ ❂ ❂ ❂ ❂ ❂ ❂ ❂ ❂ ❂ ❂ ❂ ❂ ❂ ❂ ❂ ❂ ❂ ❂ ❂ ❂ ❂ ❂ ❂ ❂ ❂ ❂ ❂ ❂

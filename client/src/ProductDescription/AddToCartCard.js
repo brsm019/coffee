@@ -8,9 +8,6 @@ const AddToCartCard = ({ id, title, subtitle, subColor, price }) => {
   const [state, dispatch] = useStateValue();
   const history = useHistory();
 
-  // console.log(name);
-
-  // console.log(useStateValue());
   const addToBasket = () => {
     name
       ? dispatch({
@@ -24,8 +21,6 @@ const AddToCartCard = ({ id, title, subtitle, subColor, price }) => {
         })
       : history.push("/login");
   };
-
-  // console.log(state);
 
   return (
     <div class="addToCartCard__container">
