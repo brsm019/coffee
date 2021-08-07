@@ -57,7 +57,7 @@ const SignUp = () => {
 
   const handleSignUp = (e, data) => {
     // e.preventDefault();
-    const postURL = "/auth/register"; //Our previously set up route in the backend
+    const postURL = "http://localhost:4000/auth/register"; //Our previously set up route in the backend
     fetch(postURL, {
       method: "POST",
       headers: {
