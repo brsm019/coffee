@@ -16,15 +16,9 @@ export default function Checkout() {
   const history = useHistory();
   const [{ basket, user, getBasketTotal }, dispatch] = useStateValue();
 
-  // console.log({ basket });
-  // console.log({ user });
-  // console.log({ getBasketTotal });
-
   let cartTotal = (basket) =>
     basket?.reduce((amount, item) => parseFloat(item.price) + amount, 0);
-  // console.log(cartTotal(basket));
   let total = cartTotal(basket).toFixed(2);
-  // console.log({ total });
   const [succeeded, setSucceeded] = useState(false);
   const [error, setError] = useState(null);
   const [processing, setProcessing] = useState("");
@@ -33,8 +27,6 @@ export default function Checkout() {
   const [email, setEmail] = useState("");
   const stripe = useStripe();
   const elements = useElements();
-
-  // console.log({ clientSecret });
 
   useEffect(() => {
     // Create PaymentIntent as soon as the page loads

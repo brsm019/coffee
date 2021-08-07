@@ -85,15 +85,12 @@ let routes = [
     main: () => (
       <>
         <ProductDescription
-          //addToCart
           id={uuidv4()}
           title="Red Brick"
           subtitle="Seasonal Espresso"
           subColor="#99080c"
           price="11.00"
-          //PictureCard
           image="https://external-content.duckduckgo.com/iu/?u=https%3A%2F%2Fdenverbeverage.com%2Fwp-content%2Fuploads%2F2019%2F03%2FMocha_Cappuccino_2048x.jpg&f=1&nofb=1"
-          //InfoCard1
           title1="2/3"
           title2="1/3"
           title3="Country"
@@ -110,7 +107,6 @@ let routes = [
           subtitle6="GUJI"
           subtitle7="WHITE HONEY"
           subtitle8="WASHED"
-          //InfoCard2
           preTitle="Tasting Notes"
           title9="Cherry"
           title10="Milk Chocolate"
@@ -136,9 +132,7 @@ let routes = [
           subtitle="Seasonal Espresso"
           subColor="#99080c"
           price="16.00"
-          //PictureCard
           image="https://images.unsplash.com/photo-1503481766315-7a586b20f66d?ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&ixlib=rb-1.2.1&auto=format&fit=crop&w=1335&q=80"
-          //InfoCard1
           title1="2/3"
           title2="1/3"
           title3="Country"
@@ -155,7 +149,6 @@ let routes = [
           subtitle6="HUILA"
           subtitle7="NATURAL"
           subtitle8="WASHED"
-          //InfoCard2
           preTitle="Tasting Notes"
           title9="Honey"
           title10="Milk Chocolate"
@@ -178,9 +171,7 @@ let routes = [
           subtitle="ETHIOPIA ESPRESSO"
           subColor="#99080c"
           price="13.50"
-          //PictureCard
           image="https://images.unsplash.com/photo-1495474472287-4d71bcdd2085?ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&ixlib=rb-1.2.1&auto=format&fit=crop&w=2850&q=80"
-          //InfoCard1
           title1="Weight"
           title2="Varieties"
           title3="Country"
@@ -197,7 +188,6 @@ let routes = [
           subtitle6="2000-2150 MASL"
           subtitle7="VARIOUS SMALLHOLDERS"
           subtitle8="MAY"
-          //InfoCard2
           preTitle="Tasting Notes"
           title9="APRICOT"
           title10="FUDGE"
@@ -220,9 +210,7 @@ let routes = [
           subtitle="COLOMBIA ESPRESSO"
           subColor="#99080c"
           price="15.50"
-          //PictureCard
           image="https://images.unsplash.com/photo-1512568400610-62da28bc8a13?ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&ixlib=rb-1.2.1&auto=format&fit=crop&w=668&q=80"
-          //InfoCard1
           title1="Weight"
           title2="Varieties"
           title3="Country"
@@ -239,7 +227,6 @@ let routes = [
           subtitle6="1800-1850 MASL"
           subtitle7="ALBERTO RAMOS"
           subtitle8="MAY"
-          //InfoCard2
           preTitle="Tasting Notes"
           title9="APPLE"
           title10="CARAMEL"
@@ -262,9 +249,7 @@ let routes = [
           subtitle="ETHIOPIAN ESPRESSO"
           subColor="#99080c"
           price="15.50"
-          //PictureCard
           image="https://images.unsplash.com/photo-1442512595331-e89e73853f31?ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&ixlib=rb-1.2.1&auto=format&fit=crop&w=1350&q=80"
-          //InfoCard1
           title1="Weight"
           title2="Varieties"
           title3="Country"
@@ -281,7 +266,6 @@ let routes = [
           subtitle6="1800-1850 MASL"
           subtitle7="ALBERTO RAMOS"
           subtitle8="MAY"
-          //InfoCard2
           preTitle="Tasting Notes"
           title9="BLACKBERRY"
           title10="CHOCOLATE"
@@ -304,9 +288,7 @@ let routes = [
           subtitle="Espresso"
           subColor="#99080c"
           price="13.50"
-          //PictureCard
           image="https://cdn.shopify.com/s/files/1/0017/1562/products/Espresso-17_large.jpg?v=1623396688"
-          //InfoCard1
           title1="Coffee"
           title2="Varieties"
           title3="Country"
@@ -323,7 +305,6 @@ let routes = [
           subtitle6="1500-1900 MASL"
           subtitle7="VARIOUS SMALLHOLDERS"
           subtitle8="MAY"
-          //InfoCard2
           preTitle="Tasting Notes"
           title9="MANDARIN"
           title10="BUTTERSCOTCH"
@@ -346,9 +327,7 @@ let routes = [
           subtitle="Seasonal Filter"
           subColor="#007442"
           price="12.50"
-          //PictureCard
           image="https://images.unsplash.com/photo-1541167760496-1628856ab772?ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&ixlib=rb-1.2.1&auto=format&fit=crop&w=1494&q=80"
-          //InfoCard1
           title1="50%"
           title2="50%"
           title3="Country"
@@ -365,7 +344,6 @@ let routes = [
           subtitle6="DIPILTO"
           subtitle7="WASHED"
           subtitle8="WASHED"
-          //InfoCard2
           preTitle="Tasting Notes"
           title9="ORANGE"
           title10="MILK CHOCOLATE"
@@ -388,9 +366,7 @@ let routes = [
           subtitle="Seasonal Blend"
           subColor="#007442"
           price="14.00"
-          //PictureCard
           image="https://images.unsplash.com/photo-1497636577773-f1231844b336?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=668&q=80"
-          //InfoCard1
           title1="Weight"
           title2="Varieties"
           title3="Country"
@@ -407,7 +383,6 @@ let routes = [
           subtitle6="1600-2000 MASL"
           subtitle7="VARIOUS SMALLHOLDERS"
           subtitle8="FEBRUARY"
-          //InfoCard2
           preTitle="Tasting Notes"
           title9="TANGERINE"
           title10="HONEY"
@@ -430,9 +405,7 @@ let routes = [
           subtitle="Columbia Espresso"
           subColor="#007442"
           price="14.00"
-          //PictureCard
           image="https://images.unsplash.com/photo-1514066558159-fc8c737ef259?ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&ixlib=rb-1.2.1&auto=format&fit=crop&w=668&q=80"
-          //InfoCard1
           title1="Weight"
           title2="Varieties"
           title3="Country"
@@ -449,7 +422,6 @@ let routes = [
           subtitle6="1600-2000 MASL"
           subtitle7="VARIOUS SMALLHOLDERS"
           subtitle8="MAY"
-          //InfoCard2
           preTitle="Tasting Notes"
           title9="HONEY"
           title10="STRAWBERRY"
@@ -469,34 +441,13 @@ let routes = [
           //addToCart
           id={uuidv4()}
           title="SMART DRIPPER"
-          // subtitle="Columbia Espresso"
           subColor="#007442"
           price="23.00"
-          //PictureCard
           image="https://cdn.shopify.com/s/files/1/0017/1562/products/Light-10_1024x1024.jpg?v=1600088640"
-          //InfoCard1
-          // title1=""
-          // title2="Varieties"
-          // title3="Country"
-          // title4="Process"
-          // title5="Region"
-          // title6="Altitude"
-          // title7="Producers"
-          // title8="Landed"
-          // subtitle1="PLEASE NOTE - WE OFFER FREE SHIPPING ON ALL UK ORDERS."
-          // subtitle2="PACHE, BOURBON"
-          // subtitle3="Columbia"
-          // subtitle4="WASHED"
-          // subtitle5="SAN IGNACIO"
-          // subtitle6="1600-2000 MASL"
-          // subtitle7="VARIOUS SMALLHOLDERS"
-          // subtitle8="MAY"
-          //InfoCard2
           preTitle="Please note - We offer free shipping to all our UK orders."
           title9="DRIPPER"
           title10="EQUIPMENT"
           title11="COFFEE"
-          // info="These great little filter coffee brewers offer the best of both brewing styles! Similar in shape to a pour over brew, the big difference here is that there is a stop tap at the bottom of the cone.  This means you can put your coffee in, pour your water over and steep for a desired amount of time.  To drain the cone simply place the brewer on top of your cup and it opens up the tap and drains out.  There is a small saucer for it to rest on to catch any drips, and a lid to keep the brew hot while steeping."
         />
       </>
     ),
@@ -514,9 +465,7 @@ let routes = [
           subtitle="ETHIOPIA"
           subColor="#007442"
           price="16.00"
-          //PictureCard
           image="https://images.unsplash.com/photo-1461023058943-07fcbe16d735?ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&ixlib=rb-1.2.1&auto=format&fit=crop&w=1350&q=80"
-          //InfoCard1
           title1="Weight"
           title2="Varieties"
           title3="Country"
@@ -533,7 +482,6 @@ let routes = [
           subtitle6="2000-2100 MASL"
           subtitle7="VARIOUS SMALLHOLDERS"
           subtitle8="MAY"
-          //InfoCard2
           preTitle="Tasting Notes"
           title9="MANGO"
           title10="RASPBERRY"
@@ -556,9 +504,7 @@ let routes = [
           subtitle="COLUMBIA"
           subColor="#007442"
           price="14.00"
-          //PictureCard
           image="https://images.unsplash.com/photo-1587734195342-39d4b9b2ff05?ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&ixlib=rb-1.2.1&auto=format&fit=crop&w=750&q=80"
-          //InfoCard1
           title1="Weight"
           title2="Varieties"
           title3="Country"
@@ -575,7 +521,6 @@ let routes = [
           subtitle6="1600-2000 MAS"
           subtitle7="VARIOUS SMALLHOLDERS"
           subtitle8="FEBRUARY"
-          //InfoCard2
           preTitle="Tasting Notes"
           title9="CLEMENTINE"
           title10="BLUEBERRY"
@@ -598,9 +543,7 @@ let routes = [
           subtitle="PERU"
           subColor="#007442"
           price="15.00"
-          //PictureCard
           image="https://images.unsplash.com/photo-1517668808822-9ebb02f2a0e6?ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&ixlib=rb-1.2.1&auto=format&fit=crop&w=1355&q=80"
-          //InfoCard1
           title1="Weight"
           title2="Varieties"
           title3="Country"
@@ -617,7 +560,6 @@ let routes = [
           subtitle6="1600-2000 MAS"
           subtitle7="VARIOUS SMALLHOLDERS"
           subtitle8="FEBRUARY"
-          //InfoCard2
           preTitle="Tasting Notes"
           title9="GRAPES"
           title10="CHOCOLATE"
@@ -640,9 +582,7 @@ let routes = [
           subtitle="COLUMBIA"
           subColor="#007442"
           price="13.00"
-          //PictureCard
           image="https://images.unsplash.com/photo-1504630083234-14187a9df0f5?ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&ixlib=rb-1.2.1&auto=format&fit=crop&w=1350&q=80"
-          //InfoCard1
           title1="Weight"
           title2="Varieties"
           title3="Country"
@@ -659,7 +599,6 @@ let routes = [
           subtitle6="1600-2000 MAS"
           subtitle7="VARIOUS SMALLHOLDERS"
           subtitle8="MAY"
-          //InfoCard2
           preTitle="Tasting Notes"
           title9="APRICOT"
           title10="FUDGE"
@@ -1105,10 +1044,6 @@ let unAuthedRoutes = routes.map(
 );
 
 let authenticatedRoutes = auth ? routes : unAuthedRoutes;
-// console.log({ auth });
-// console.log({ routes });
-// console.log({ unAuthedRoutes });
-// console.log({ authenticatedRoutes });
 
 const SideBar = () => {
   return (
