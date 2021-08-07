@@ -1,17 +1,6 @@
 import React from "react";
 import "./CardMedium.css";
 
-/* 
-
-TO DO:
-Need to change image background
-make text responsive 
-Add link to new page or create a popup or buy now, need to decide
-
-create template for smaller images
-
-*/
-
 const CardMedium = ({ image, link, title, subtitle, price, subColor }) => {
   return (
     <>
