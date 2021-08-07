@@ -2,7 +2,7 @@ require("dotenv").config();
 let express = require("express");
 let app = express();
 let port = process.env.PORT || 4000;
-import path from "path";
+let path = require("path");
 let User = require("./api/models/userModels");
 let jwt = require("jsonwebtoken");
 const cors = require("cors");
@@ -53,10 +53,9 @@ app.use(function (req, res, next) {
 let routes = require("./api/route/userRoute");
 routes(app);
 
-// Serve static assets if in production
 if (process.env.NODE_ENV === "production") {
   // Set static folder
-  app.use(express.static("client/build"));
+  app.use(express.static(path.join(__dirname, "client/build")));
 
   app.get("*", (req, res) => {
     res.sendFile(path.resolve(__dirname, "client", "build", "index.html"));
