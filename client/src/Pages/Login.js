@@ -21,7 +21,7 @@ const Login = () => {
   };
   const handleLogin = (e) => {
     e.preventDefault();
-    const postURL = "/auth/sign_in"; //Our previously set up route in the backend
+    const postURL = "/auth/sign_in";
     fetch(postURL, {
       method: "POST",
       headers: {
@@ -36,7 +36,6 @@ const Login = () => {
       .then((res) => {
         res.json().then((result, err) => {
           if (err) return err.message;
-          // console.log(result);
           localStorage.setItem(
             "token",
             JSON.stringify({
@@ -65,10 +64,6 @@ const Login = () => {
         console.error(err);
       });
   };
-  // console.log(localStorage.getItem("auth"));
-  // console.log(localStorage.getItem("name"));
-  // console.log({ name });
-  // console.log({ state });
 
   return (
     <div className="login">
@@ -122,7 +117,6 @@ const Login = () => {
           </form>
         </div>
       </div>
-      {/* <div className="bottom"></div> */}
       <Footer />
     </div>
   );

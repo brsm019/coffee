@@ -1,6 +1,5 @@
 import React from "react";
 import "./App.css";
-import Home from "./Pages/Home";
 import SideBar from "./Pages/SideBar";
 import { loadStripe } from "@stripe/stripe-js";
 import { Elements } from "@stripe/react-stripe-js";
@@ -14,8 +13,6 @@ function App() {
       <Elements stripe={promise}>
         <SideBar />
       </Elements>
-
-      {/* <Home /> */}
     </div>
   );
 }

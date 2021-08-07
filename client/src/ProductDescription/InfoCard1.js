@@ -26,9 +26,6 @@ const InfoCard1 = ({
   return (
     <div class="infoCard1__container">
       <div class="infoCard1__wrapper">
-        {/* <div class="infoCard1__description">
-          <p class="infoCard1__descriptionDetail">{description}</p>
-        </div> */}
         <div class={`infoCard1__grouping `}>
           <div
             class={`infoCard1__group ${eq && "infoCard1__group__eq1"}`}
