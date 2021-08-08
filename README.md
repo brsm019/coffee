@@ -1,4 +1,4 @@
-# Colmore Coffee / eCommerce site to purchase coffee and equipment
+# Colmore Coffee / eCommerce site
 
 View deployed site here: http://colmorec.herokuapp.com/
 
