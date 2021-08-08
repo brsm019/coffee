@@ -40,7 +40,7 @@ const CardForm = () => {
           <CardSmall
             image="https://external-content.duckduckgo.com/iu/?u=https%3A%2F%2Fwww.publicdomainpictures.net%2Fpictures%2F30000%2Fvelka%2Fplain-white-background.jpg&f=1&nofb=1"
             link="/sasaba"
-            title="Sasaba"
+            title="Sasaba Advar"
             subtitle="Ethiopian Espresso"
             price="£13.50"
             subColor="#99080c"

@@ -15,6 +15,7 @@ import ProductDescription from "../ProductDescription/ProductDescription";
 import Checkout from "./Checkout";
 import "./SideBar.css";
 import SignUp from "./SignUp";
+import ScrollToTop from "../Components/ScrollToTop/ScrollToTop";
 import { v4 as uuidv4 } from "uuid";
 let auth = localStorage.getItem("auth") === '{"auth":true}';
 
@@ -167,7 +168,7 @@ let routes = [
         <ProductDescription
           //addToCart
           id={uuidv4()}
-          title="SASABA"
+          title="SASABA ADVAR"
           subtitle="ETHIOPIA ESPRESSO"
           subColor="#99080c"
           price="13.50"
@@ -1048,6 +1049,7 @@ let authenticatedRoutes = auth ? routes : unAuthedRoutes;
 const SideBar = () => {
   return (
     <Router>
+      <ScrollToTop />
       <div className="sidebar" style={{ display: "flex", height: "100%" }}>
         <div className="sidebar__content">
           <div class="sidebar__logo">
