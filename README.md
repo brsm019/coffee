@@ -8,7 +8,7 @@ View deployed site here: http://colmorec.herokuapp.com/
 
 ## Details
 
-Full-stack application that acts as an eCommerce site allowing users to sign up and purchase coffee and coffee equipment
+Full-stack application that acts as an eCommerce site allowing users to sign up and purchase coffee and coffee equipment.
 
 ## Client side built with
 - React
@@ -46,8 +46,11 @@ Clone down the repo.
 The following should be added to your .env file:
 
 Mongo_URI - Create a mongo databse to get this parameter.
+
 Stripe_test_key - You will have to set up a stripe account. To make a dummy payment use 42424 recursively.
+
 Node_env should be set to production.
+
 Port set to 4000.
 
 ```
