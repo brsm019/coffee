@@ -27,7 +27,6 @@ let opts = new chrome.Options();
   async function urlTest(url1, xpath) {
     try {
       console.log({ url1 });
-      console.log({ xpath });
       await driver.wait(
         until.elementLocated(By.xpath(xpath)),
         20000,
@@ -39,8 +38,9 @@ let opts = new chrome.Options();
       assert((await driver.getAllWindowHandles()).length === 1);
 
       let x = await driver.findElement(By.xpath(xpath));
-
       const actions = driver.actions({ async: true });
+      // Performs mouse move action onto the element
+      await actions.move({ origin: x }).perform();
       // Perform context-click action on the element
       await actions.keyDown(Key.SHIFT).click(x).perform();
       await driver.wait(
@@ -123,15 +123,25 @@ let opts = new chrome.Options();
     await urlTest(actualUrl[2], xpath[2]);
     await urlTest(actualUrl[3], xpath[3]);
     await urlTest(actualUrl[4], xpath[4]);
+    // let elDiamante = driver.findElement(
+    //   By.xpath(
+    //     "/html/body/div/div/div/div[2]/div/div/div[2]/div[1]/div[8]/a/div/div"
+    //   )
+    // );
+    // const actions = driver.actions({ async: true });
+    // // Performs mouse move action onto the element
+    // await actions.move({ origin: elDiamante }).perform();
     await urlTest(actualUrl[5], xpath[5]);
     await urlTest(actualUrl[6], xpath[6]);
+
     await urlTest(actualUrl[7], xpath[7]);
     await urlTest(actualUrl[8], xpath[8]);
     await urlTest(actualUrl[9], xpath[9]);
     await urlTest(actualUrl[10], xpath[10]);
     await urlTest(actualUrl[11], xpath[11]);
     await urlTest(actualUrl[12], xpath[12]);
-
+    TODO:
+    //Fix error:- MoveTargetOutOfBoundsError: move target out of bounds, selenium doesn't select elements of screen, need to create scroll functionality or something alike.
     //code is currently working. Need to refactor, create a loop of some kind
   } catch (e) {
     console.log(e);
