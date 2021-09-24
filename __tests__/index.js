@@ -170,68 +170,232 @@ let opts = new chrome.Options();
         commonXpath:
           "/html/body/div/div/div/div[2]/div[2]/div[1]/div/div/div[4]/button",
       },
-      {
-        actualUrl: "http://localhost:3000/el-diamante",
-        xpath:
-          "/html/body/div/div/div/div[2]/div/div/div[2]/div[1]/div[8]/a/div/div",
-        commonXpath:
-          "/html/body/div/div/div/div[2]/div[2]/div[1]/div/div/div[4]/button",
-      },
-      {
-        actualUrl: "http://localhost:3000/dis-palo",
-        xpath:
-          "/html/body/div/div/div/div[2]/div/div/div[2]/div[1]/div[9]/a/div/div",
-        commonXpath:
-          "/html/body/div/div/div/div[2]/div[2]/div[1]/div/div/div[4]/button",
-      },
-      {
-        actualUrl: "http://localhost:3000/smart-dripper",
-        xpath:
-          "/html/body/div/div/div/div[2]/div/div/div[2]/div[1]/div[10]/a/div/div",
-        commonXpath:
-          "/html/body/div/div/div/div[2]/div[2]/div[1]/div/div/div[4]/button",
-      },
-      {
-        actualUrl: "http://localhost:3000/bookkisa",
-        xpath:
-          "/html/body/div/div/div/div[2]/div/div/div[2]/div[1]/div[11]/a/div/div",
-        commonXpath:
-          "/html/body/div/div/div/div[2]/div[2]/div[1]/div/div/div[4]/button",
-      },
-      {
-        actualUrl: "http://localhost:3000/el-dasto",
-        xpath:
-          "/html/body/div/div/div/div[2]/div/div/div[2]/div[1]/div[12]/a/div/div",
-        commonXpath:
-          "/html/body/div/div/div/div[2]/div[2]/div[1]/div/div/div[4]/button",
-      },
-      {
-        actualUrl: "http://localhost:3000/peretu",
-        xpath:
-          "/html/body/div/div/div/div[2]/div/div/div[2]/div[1]/div[13]/a/div/div",
-        commonXpath:
-          "/html/body/div/div/div/div[2]/div[2]/div[1]/div/div/div[4]/button",
-      },
-      {
-        actualUrl: "http://localhost:3000/lultrina",
-        xpath:
-          "/html/body/div/div/div/div[2]/div/div/div[2]/div[1]/div[14]/a/div/div",
-        commonXpath:
-          "/html/body/div/div/div/div[2]/div[2]/div[1]/div/div/div[4]/button",
-      },
+      // {
+      //   actualUrl: "http://localhost:3000/el-diamante",
+      //   xpath:
+      //     "/html/body/div/div/div/div[2]/div/div/div[2]/div[1]/div[8]/a/div/div",
+      //   commonXpath:
+      //     "/html/body/div/div/div/div[2]/div[2]/div[1]/div/div/div[4]/button",
+      // },
+      // {
+      //   actualUrl: "http://localhost:3000/dis-palo",
+      //   xpath:
+      //     "/html/body/div/div/div/div[2]/div/div/div[2]/div[1]/div[9]/a/div/div",
+      //   commonXpath:
+      //     "/html/body/div/div/div/div[2]/div[2]/div[1]/div/div/div[4]/button",
+      // },
+      // {
+      //   actualUrl: "http://localhost:3000/smart-dripper",
+      //   xpath:
+      //     "/html/body/div/div/div/div[2]/div/div/div[2]/div[1]/div[10]/a/div/div",
+      //   commonXpath:
+      //     "/html/body/div/div/div/div[2]/div[2]/div[1]/div/div/div[4]/button",
+      // },
+      // {
+      //   actualUrl: "http://localhost:3000/bookkisa",
+      //   xpath:
+      //     "/html/body/div/div/div/div[2]/div/div/div[2]/div[1]/div[11]/a/div/div",
+      //   commonXpath:
+      //     "/html/body/div/div/div/div[2]/div[2]/div[1]/div/div/div[4]/button",
+      // },
+      // {
+      //   actualUrl: "http://localhost:3000/el-dasto",
+      //   xpath:
+      //     "/html/body/div/div/div/div[2]/div/div/div[2]/div[1]/div[12]/a/div/div",
+      //   commonXpath:
+      //     "/html/body/div/div/div/div[2]/div[2]/div[1]/div/div/div[4]/button",
+      // },
+      // {
+      //   actualUrl: "http://localhost:3000/peretu",
+      //   xpath:
+      //     "/html/body/div/div/div/div[2]/div/div/div[2]/div[1]/div[13]/a/div/div",
+      //   commonXpath:
+      //     "/html/body/div/div/div/div[2]/div[2]/div[1]/div/div/div[4]/button",
+      // },
+      // {
+      //   actualUrl: "http://localhost:3000/lultrina",
+      //   xpath:
+      //     "/html/body/div/div/div/div[2]/div/div/div[2]/div[1]/div[14]/a/div/div",
+      //   commonXpath:
+      //     "/html/body/div/div/div/div[2]/div[2]/div[1]/div/div/div[4]/button",
+      // },
     ];
 
-    for (let i = 0; i < homeData.length; i++) {
-      await urlTest(
-        homeData[i].actualUrl,
-        homeData[i].xpath,
-        homeData[i].commonXpath
-      );
-    }
+    // for (let i = 0; i < homeData.length; i++) {
+    //   await urlTest(
+    //     homeData[i].actualUrl,
+    //     homeData[i].xpath,
+    //     homeData[i].commonXpath
+    //   );
+    // }
 
-    //Fix error:- MoveTargetOutOfBoundsError: move target out of bounds, selenium doesn't select elements of screen, need to create scroll functionality or something alike.
-    //Find x and y coordinates of the element you want to click and try clicking that way
-    //code is currently working. Need to refactor, create a loop of some kind
+    /* 
+    
+        Tests for equipment:
+        Test all links on equipment go to right destination
+   
+   */
+
+    const equipmentData = [
+      {
+        actualUrl: "http://localhost:3000/wilfa-grinder",
+        xpath:
+          "/html/body/div/div/div/div[2]/div/div/div[2]/div[1]/div[1]/a/div/div",
+        commonXpath:
+          "/html/body/div/div/div/div[2]/div[2]/div[3]/div[1]/div[1]/div/h3",
+      },
+      {
+        actualUrl: "http://localhost:3000/fellow-kettle",
+        xpath:
+          "/html/body/div/div/div/div[2]/div/div/div[2]/div[1]/div[2]/a/div/div",
+        commonXpath:
+          "/html/body/div/div/div/div[2]/div[2]/div[3]/div[1]/div[1]/div/h3",
+      },
+      {
+        actualUrl: "http://localhost:3000/pullman-tamper",
+        xpath:
+          "/html/body/div/div/div/div[2]/div/div/div[2]/div[1]/div[3]/a/div/div/h1",
+        commonXpath:
+          "/html/body/div/div/div/div[2]/div[2]/div[3]/div[1]/div[1]/div/h3",
+      },
+      // {
+      //   actualUrl: "http://localhost:3000/fellow-pitcher",
+      //   xpath:
+      //     "/html/body/div/div/div/div[2]/div/div/div[2]/div[1]/div[4]/a/div/div",
+      //   commonXpath:
+      //     "/html/body/div/div/div/div[2]/div[2]/div[3]/div[1]/div[1]/div/h3",
+      // },
+      // {
+      //   actualUrl: "http://localhost:3000/pullman-tool",
+      //   xpath:
+      //     "/html/body/div/div/div/div[2]/div/div/div[2]/div[1]/div[5]/a/div/div/h1",
+      //   commonXpath:
+      //     "/html/body/div/div/div/div[2]/div[2]/div[3]/div[1]/div[1]/div/h3",
+      // },
+      // {
+      //   actualUrl: "http://localhost:3000/pullman-black",
+      //   xpath:
+      //     "/html/body/div/div/div/div[2]/div/div/div[2]/div[1]/div[6]/a/div/div/h1",
+      //   commonXpath:
+      //     "/html/body/div/div/div/div[2]/div[2]/div[3]/div[1]/div[1]/div/h3",
+      // },
+      // {
+      //   actualUrl: "http://localhost:3000/pullman-basket",
+      //   xpath:
+      //     "/html/body/div/div/div/div[2]/div/div/div[2]/div[1]/div[7]/a/div/div/h1",
+      //   commonXpath:
+      //     "/html/body/div/div/div/div[2]/div[2]/div[3]/div[1]/div[1]/div/h3",
+      // },
+    ];
+
+    await driver.wait(
+      until.elementLocated(
+        By.xpath("/html/body/div/div/div/div[1]/ul/li[2]/a")
+      ),
+      20000,
+      "Timed out after 20s",
+      500
+    );
+    await driver
+      .findElement(By.xpath("/html/body/div/div/div/div[1]/ul/li[2]/a"))
+      .click();
+
+    // for (let i = 0; i < equipmentData.length; i++) {
+    //   await urlTest(
+    //     equipmentData[i].actualUrl,
+    //     equipmentData[i].xpath,
+    //     equipmentData[i].commonXpath
+    //   );
+    // }
+
+    /* 
+    
+        Tests for logging into account:
+        Login works correctyl and redirects to correct page
+   
+   */
+
+    //Navigate to signing in
+    await driver.wait(
+      until.elementLocated(
+        By.xpath("/html/body/div/div/div/div[2]/div/div/div[1]/a[2]")
+      ),
+      20000,
+      "Timed out after 20s",
+      500
+    );
+    await driver
+      .findElement(
+        By.xpath("/html/body/div/div/div/div[2]/div/div/div[1]/a[2]")
+      )
+      .click();
+
+    const email = "selenium@gmail.com";
+    const password = "seleniumTest!";
+    const emailXpath =
+      "/html/body/div/div/div/div[2]/div/div/div[2]/div[3]/form/div[1]/input";
+    const passwordXpath =
+      "/html/body/div/div/div/div[2]/div/div/div[2]/div[3]/form/div[2]/input";
+    //Wait until page loads
+    await driver.wait(
+      until.elementLocated(
+        By.xpath("/html/body/div/div/div/div[2]/div/div/div[1]/a[2]")
+      ),
+      20000,
+      "Timed out after 20s",
+      500
+    );
+    await driver.findElement(By.xpath(emailXpath)).sendKeys(email + Key.ENTER);
+    await driver
+      .findElement(By.xpath(passwordXpath))
+      .sendKeys(password + Key.ENTER);
+
+    //Redirected to the correct page
+    const redBrickXpath =
+      "/html/body/div/div/div/div[2]/div/div/div[2]/div[1]/div[1]/a/div/div";
+    await driver.wait(
+      until.elementLocated(By.xpath(redBrickXpath)),
+      20000,
+      "Timed out after 20s",
+      500
+    );
+    const curUrl = await driver.getCurrentUrl();
+    assert.strictEqual(curUrl, "http://localhost:3000/");
+
+    /* 
+    
+        Test buying a product 
+   
+   */
+
+    await driver.findElement(By.xpath(redBrickXpath)).click();
+    const addToBasketXpath =
+      "/html/body/div/div/div/div[2]/div[2]/div[1]/div/div/div[4]/button";
+    await driver
+      .findElement(
+        By.xpath(
+          "/html/body/div/div/div/div[2]/div[2]/div[1]/div/div/div[4]/button"
+        )
+      )
+      .click();
+    const myCartXpath = "/html/body/div/div/div/div[2]/div[1]/a";
+    await driver
+      .findElement(By.xpath("/html/body/div/div/div/div[2]/div[1]/a"))
+      .click();
+    const checkoutXpath = "/html/body/div/div/div/div[2]/div/div/div[2]/button";
+    await driver.findElement(By.xpath(checkoutXpath)).click();
+    const enterEmailXpath =
+      "/html/body/div/div/div/div[2]/div/div[2]/div[3]/form/input";
+    const deets = "424242424242424242424242424";
+
+    await driver
+      .findElement(By.xpath(enterEmailXpath))
+      .sendKeys(email + Key.TAB);
+    await driver.actions().sendKeys(deets, Key.ENTER);
+
+    const payNowXpath =
+      "/html/body/div/div/div/div[2]/div/div[2]/div[3]/form/button/span";
+    await driver.findElement(By.xpath(payNowXpath)).click();
   } catch (e) {
     console.log(e);
   }
