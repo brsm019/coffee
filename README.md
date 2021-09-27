@@ -23,6 +23,7 @@ Full-stack application that acts as an eCommerce site allowing users to sign up 
 - JavaScript
 - HTML
 - CSS
+- Selenium
 
 ## Server side built with
 - MongoDB
