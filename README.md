@@ -49,7 +49,7 @@ The following should be added to your .env file:
 
 Mongo_URI - Create a mongo databse to get this parameter.
 
-Stripe_test_key - You will have to set up a stripe account. To make a dummy payment use 42424 recursively.
+Stripe_test_key - You will have to set up a stripe account. To make a dummy payment, use 42424 recursively.
 
 Node_env should be set to production.
 
