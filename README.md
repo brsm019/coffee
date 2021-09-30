@@ -14,6 +14,7 @@ Full-stack application that acts as an eCommerce site allowing users to sign up 
 - React
 - React Router
 - React Stripe JS
+- Redux
 - React Hook Form
 - Mdbreact
 - Bootstrap
@@ -36,7 +37,7 @@ Full-stack application that acts as an eCommerce site allowing users to sign up 
 
 
 ### Frontend
-The frontend was created with the React, utilising the component based build, creating reusable components that are used throughout the site. React Router was used to make multiple pages and in order to maintain state throughout the site a global state was created with useReducer and context API.
+The frontend was created with the React, utilising the component based build, creating reusable components that are used throughout the site. React Router was used to make multiple pages and in order to maintain state throughout the site a global state was created with React Redux.
 ### Backend
 The backend was created with nodejs and express, using the non-relational database mongoDB to store user credentials. Jsonwebtokens was used to authenticate and authorise users and to secure the process, the sensitive user data was hashed with bcrypt module. To create a full eCommerce site, the payment system was made using Stripe's API.
 
