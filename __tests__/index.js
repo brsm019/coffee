@@ -14,26 +14,29 @@ let opts = new chrome.Options();
   await driver.manage().window().maximize();
   await driver.get("http://localhost:3000/");
 
-  await driver.wait(
-    until.elementLocated(
-      By.xpath(
-        "/html/body/div/div/div/div[2]/div/div/div[2]/div[1]/div[1]/a/div/div"
-      )
-    ),
-    20000,
-    "Timed out after 20 seconds",
-    500
+  //Function: Wait until element is located
+  const locateElement = async (xpath) => {
+    await driver.wait(
+      until.elementLocated(By.xpath(xpath)),
+      20000,
+      "Timed out after 20 seconds",
+      500
+    );
+  };
+
+  //Function: Wait for element and then click that element
+  const waitAndClick = async (xpath) => {
+    await driver.findElement(By.xpath(xpath)).click();
+  };
+
+  await locateElement(
+    "/html/body/div/div/div/div[2]/div/div/div[2]/div[1]/div[1]/a/div/div"
   );
 
   async function urlTest(url1, xpath, commonXpath) {
     try {
       console.log({ url1 });
-      await driver.wait(
-        until.elementLocated(By.xpath(xpath)),
-        20000,
-        "Timed out after 20 seconds",
-        500
-      );
+      await locateElement(xpath);
 
       const originalWindow = await driver.getWindowHandle();
       assert((await driver.getAllWindowHandles()).length === 1);
@@ -58,12 +61,7 @@ let opts = new chrome.Options();
       console.log({ originalWindow });
       console.log({ newWindow });
 
-      await driver.wait(
-        until.elementLocated(By.xpath(commonXpath)),
-        10000,
-        "Timed out after 10s",
-        500
-      );
+      await locateElement(commonXpath);
 
       const url2 = await driver.getCurrentUrl();
       console.log({ url2 });
@@ -221,13 +219,13 @@ let opts = new chrome.Options();
       // },
     ];
 
-    // for (let i = 0; i < homeData.length; i++) {
-    //   await urlTest(
-    //     homeData[i].actualUrl,
-    //     homeData[i].xpath,
-    //     homeData[i].commonXpath
-    //   );
-    // }
+    for (let i = 0; i < homeData.length; i++) {
+      await urlTest(
+        homeData[i].actualUrl,
+        homeData[i].xpath,
+        homeData[i].commonXpath
+      );
+    }
 
     /* 
     
@@ -288,25 +286,18 @@ let opts = new chrome.Options();
       // },
     ];
 
-    await driver.wait(
-      until.elementLocated(
-        By.xpath("/html/body/div/div/div/div[1]/ul/li[2]/a")
-      ),
-      20000,
-      "Timed out after 20s",
-      500
-    );
+    await locateElement("/html/body/div/div/div/div[1]/ul/li[2]/a");
     await driver
       .findElement(By.xpath("/html/body/div/div/div/div[1]/ul/li[2]/a"))
       .click();
 
-    // for (let i = 0; i < equipmentData.length; i++) {
-    //   await urlTest(
-    //     equipmentData[i].actualUrl,
-    //     equipmentData[i].xpath,
-    //     equipmentData[i].commonXpath
-    //   );
-    // }
+    for (let i = 0; i < equipmentData.length; i++) {
+      await urlTest(
+        equipmentData[i].actualUrl,
+        equipmentData[i].xpath,
+        equipmentData[i].commonXpath
+      );
+    }
 
     /* 
     
@@ -316,19 +307,10 @@ let opts = new chrome.Options();
    */
 
     //Navigate to signing in
-    await driver.wait(
-      until.elementLocated(
-        By.xpath("/html/body/div/div/div/div[2]/div/div/div[1]/a[2]")
-      ),
-      20000,
-      "Timed out after 20s",
-      500
-    );
-    await driver
-      .findElement(
-        By.xpath("/html/body/div/div/div/div[2]/div/div/div[1]/a[2]")
-      )
-      .click();
+
+    await locateElement("/html/body/div/div/div/div[2]/div/div/div[1]/a[2]");
+
+    await waitAndClick("/html/body/div/div/div/div[2]/div/div/div[1]/a[2]");
 
     const email = "selenium@gmail.com";
     const password = "seleniumTest!";
@@ -336,15 +318,10 @@ let opts = new chrome.Options();
       "/html/body/div/div/div/div[2]/div/div/div[2]/div[3]/form/div[1]/input";
     const passwordXpath =
       "/html/body/div/div/div/div[2]/div/div/div[2]/div[3]/form/div[2]/input";
+
     //Wait until page loads
-    await driver.wait(
-      until.elementLocated(
-        By.xpath("/html/body/div/div/div/div[2]/div/div/div[1]/a[2]")
-      ),
-      20000,
-      "Timed out after 20s",
-      500
-    );
+    await locateElement("/html/body/div/div/div/div[2]/div/div/div[1]/a[2]");
+
     await driver.findElement(By.xpath(emailXpath)).sendKeys(email + Key.ENTER);
     await driver
       .findElement(By.xpath(passwordXpath))
@@ -353,12 +330,7 @@ let opts = new chrome.Options();
     //Redirected to the correct page
     const redBrickXpath =
       "/html/body/div/div/div/div[2]/div/div/div[2]/div[1]/div[1]/a/div/div";
-    await driver.wait(
-      until.elementLocated(By.xpath(redBrickXpath)),
-      20000,
-      "Timed out after 20s",
-      500
-    );
+    await locateElement(redBrickXpath);
     const curUrl = await driver.getCurrentUrl();
     assert.strictEqual(curUrl, "http://localhost:3000/");
 
@@ -371,19 +343,15 @@ let opts = new chrome.Options();
     await driver.findElement(By.xpath(redBrickXpath)).click();
     const addToBasketXpath =
       "/html/body/div/div/div/div[2]/div[2]/div[1]/div/div/div[4]/button";
-    await driver
-      .findElement(
-        By.xpath(
-          "/html/body/div/div/div/div[2]/div[2]/div[1]/div/div/div[4]/button"
-        )
-      )
-      .click();
+
+    await waitAndClick(
+      "/html/body/div/div/div/div[2]/div[2]/div[1]/div/div/div[4]/button"
+    );
     const myCartXpath = "/html/body/div/div/div/div[2]/div[1]/a";
-    await driver
-      .findElement(By.xpath("/html/body/div/div/div/div[2]/div[1]/a"))
-      .click();
+
+    await waitAndClick("/html/body/div/div/div/div[2]/div[1]/a");
     const checkoutXpath = "/html/body/div/div/div/div[2]/div/div/div[2]/button";
-    await driver.findElement(By.xpath(checkoutXpath)).click();
+    await waitAndClick(checkoutXpath);
     const enterEmailXpath =
       "/html/body/div/div/div/div[2]/div/div[2]/div[3]/form/input";
     const deets = "424242424242424242424242424";
@@ -391,11 +359,14 @@ let opts = new chrome.Options();
     await driver
       .findElement(By.xpath(enterEmailXpath))
       .sendKeys(email + Key.TAB);
-    await driver.actions().sendKeys(deets, Key.ENTER);
+
+    let card = await driver.findElement(By.id("card-element"));
+    console.log({ card });
+    await card.sendKeys(deets, Key.ENTER);
 
     const payNowXpath =
       "/html/body/div/div/div/div[2]/div/div[2]/div[3]/form/button/span";
-    await driver.findElement(By.xpath(payNowXpath)).click();
+    await waitAndClick(payNowXpath);
   } catch (e) {
     console.log(e);
   }
