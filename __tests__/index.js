@@ -168,55 +168,55 @@ let opts = new chrome.Options();
         commonXpath:
           "/html/body/div/div/div/div[2]/div[2]/div[1]/div/div/div[4]/button",
       },
-      // {
-      //   actualUrl: "http://localhost:3000/el-diamante",
-      //   xpath:
-      //     "/html/body/div/div/div/div[2]/div/div/div[2]/div[1]/div[8]/a/div/div",
-      //   commonXpath:
-      //     "/html/body/div/div/div/div[2]/div[2]/div[1]/div/div/div[4]/button",
-      // },
-      // {
-      //   actualUrl: "http://localhost:3000/dis-palo",
-      //   xpath:
-      //     "/html/body/div/div/div/div[2]/div/div/div[2]/div[1]/div[9]/a/div/div",
-      //   commonXpath:
-      //     "/html/body/div/div/div/div[2]/div[2]/div[1]/div/div/div[4]/button",
-      // },
-      // {
-      //   actualUrl: "http://localhost:3000/smart-dripper",
-      //   xpath:
-      //     "/html/body/div/div/div/div[2]/div/div/div[2]/div[1]/div[10]/a/div/div",
-      //   commonXpath:
-      //     "/html/body/div/div/div/div[2]/div[2]/div[1]/div/div/div[4]/button",
-      // },
-      // {
-      //   actualUrl: "http://localhost:3000/bookkisa",
-      //   xpath:
-      //     "/html/body/div/div/div/div[2]/div/div/div[2]/div[1]/div[11]/a/div/div",
-      //   commonXpath:
-      //     "/html/body/div/div/div/div[2]/div[2]/div[1]/div/div/div[4]/button",
-      // },
-      // {
-      //   actualUrl: "http://localhost:3000/el-dasto",
-      //   xpath:
-      //     "/html/body/div/div/div/div[2]/div/div/div[2]/div[1]/div[12]/a/div/div",
-      //   commonXpath:
-      //     "/html/body/div/div/div/div[2]/div[2]/div[1]/div/div/div[4]/button",
-      // },
-      // {
-      //   actualUrl: "http://localhost:3000/peretu",
-      //   xpath:
-      //     "/html/body/div/div/div/div[2]/div/div/div[2]/div[1]/div[13]/a/div/div",
-      //   commonXpath:
-      //     "/html/body/div/div/div/div[2]/div[2]/div[1]/div/div/div[4]/button",
-      // },
-      // {
-      //   actualUrl: "http://localhost:3000/lultrina",
-      //   xpath:
-      //     "/html/body/div/div/div/div[2]/div/div/div[2]/div[1]/div[14]/a/div/div",
-      //   commonXpath:
-      //     "/html/body/div/div/div/div[2]/div[2]/div[1]/div/div/div[4]/button",
-      // },
+      {
+        actualUrl: "http://localhost:3000/el-diamante",
+        xpath:
+          "/html/body/div/div/div/div[2]/div/div/div[2]/div[1]/div[8]/a/div/div",
+        commonXpath:
+          "/html/body/div/div/div/div[2]/div[2]/div[1]/div/div/div[4]/button",
+      },
+      {
+        actualUrl: "http://localhost:3000/dis-palo",
+        xpath:
+          "/html/body/div/div/div/div[2]/div/div/div[2]/div[1]/div[9]/a/div/div",
+        commonXpath:
+          "/html/body/div/div/div/div[2]/div[2]/div[1]/div/div/div[4]/button",
+      },
+      {
+        actualUrl: "http://localhost:3000/smart-dripper",
+        xpath:
+          "/html/body/div/div/div/div[2]/div/div/div[2]/div[1]/div[10]/a/div/div",
+        commonXpath:
+          "/html/body/div/div/div/div[2]/div[2]/div[1]/div/div/div[4]/button",
+      },
+      {
+        actualUrl: "http://localhost:3000/bookkisa",
+        xpath:
+          "/html/body/div/div/div/div[2]/div/div/div[2]/div[1]/div[11]/a/div/div",
+        commonXpath:
+          "/html/body/div/div/div/div[2]/div[2]/div[1]/div/div/div[4]/button",
+      },
+      {
+        actualUrl: "http://localhost:3000/el-dasto",
+        xpath:
+          "/html/body/div/div/div/div[2]/div/div/div[2]/div[1]/div[12]/a/div/div",
+        commonXpath:
+          "/html/body/div/div/div/div[2]/div[2]/div[1]/div/div/div[4]/button",
+      },
+      {
+        actualUrl: "http://localhost:3000/peretu",
+        xpath:
+          "/html/body/div/div/div/div[2]/div/div/div[2]/div[1]/div[13]/a/div/div",
+        commonXpath:
+          "/html/body/div/div/div/div[2]/div[2]/div[1]/div/div/div[4]/button",
+      },
+      {
+        actualUrl: "http://localhost:3000/lultrina",
+        xpath:
+          "/html/body/div/div/div/div[2]/div/div/div[2]/div[1]/div[14]/a/div/div",
+        commonXpath:
+          "/html/body/div/div/div/div[2]/div[2]/div[1]/div/div/div[4]/button",
+      },
     ];
 
     for (let i = 0; i < homeData.length; i++) {
@@ -256,34 +256,34 @@ let opts = new chrome.Options();
         commonXpath:
           "/html/body/div/div/div/div[2]/div[2]/div[3]/div[1]/div[1]/div/h3",
       },
-      // {
-      //   actualUrl: "http://localhost:3000/fellow-pitcher",
-      //   xpath:
-      //     "/html/body/div/div/div/div[2]/div/div/div[2]/div[1]/div[4]/a/div/div",
-      //   commonXpath:
-      //     "/html/body/div/div/div/div[2]/div[2]/div[3]/div[1]/div[1]/div/h3",
-      // },
-      // {
-      //   actualUrl: "http://localhost:3000/pullman-tool",
-      //   xpath:
-      //     "/html/body/div/div/div/div[2]/div/div/div[2]/div[1]/div[5]/a/div/div/h1",
-      //   commonXpath:
-      //     "/html/body/div/div/div/div[2]/div[2]/div[3]/div[1]/div[1]/div/h3",
-      // },
-      // {
-      //   actualUrl: "http://localhost:3000/pullman-black",
-      //   xpath:
-      //     "/html/body/div/div/div/div[2]/div/div/div[2]/div[1]/div[6]/a/div/div/h1",
-      //   commonXpath:
-      //     "/html/body/div/div/div/div[2]/div[2]/div[3]/div[1]/div[1]/div/h3",
-      // },
-      // {
-      //   actualUrl: "http://localhost:3000/pullman-basket",
-      //   xpath:
-      //     "/html/body/div/div/div/div[2]/div/div/div[2]/div[1]/div[7]/a/div/div/h1",
-      //   commonXpath:
-      //     "/html/body/div/div/div/div[2]/div[2]/div[3]/div[1]/div[1]/div/h3",
-      // },
+      {
+        actualUrl: "http://localhost:3000/fellow-pitcher",
+        xpath:
+          "/html/body/div/div/div/div[2]/div/div/div[2]/div[1]/div[4]/a/div/div",
+        commonXpath:
+          "/html/body/div/div/div/div[2]/div[2]/div[3]/div[1]/div[1]/div/h3",
+      },
+      {
+        actualUrl: "http://localhost:3000/pullman-tool",
+        xpath:
+          "/html/body/div/div/div/div[2]/div/div/div[2]/div[1]/div[5]/a/div/div/h1",
+        commonXpath:
+          "/html/body/div/div/div/div[2]/div[2]/div[3]/div[1]/div[1]/div/h3",
+      },
+      {
+        actualUrl: "http://localhost:3000/pullman-black",
+        xpath:
+          "/html/body/div/div/div/div[2]/div/div/div[2]/div[1]/div[6]/a/div/div/h1",
+        commonXpath:
+          "/html/body/div/div/div/div[2]/div[2]/div[3]/div[1]/div[1]/div/h3",
+      },
+      {
+        actualUrl: "http://localhost:3000/pullman-basket",
+        xpath:
+          "/html/body/div/div/div/div[2]/div/div/div[2]/div[1]/div[7]/a/div/div/h1",
+        commonXpath:
+          "/html/body/div/div/div/div[2]/div[2]/div[3]/div[1]/div[1]/div/h3",
+      },
     ];
 
     await locateElement("/html/body/div/div/div/div[1]/ul/li[2]/a");
