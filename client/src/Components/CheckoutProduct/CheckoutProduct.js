@@ -1,9 +1,9 @@
-import React, { forwardRef } from "react";
+import React from "react";
 import "./CheckoutProduct.css";
 import { useStateValue } from "../../GlobalState/StateProvider";
 import { TiDeleteOutline } from "react-icons/ti";
 
-const CheckoutProduct = forwardRef(({ id, title, price }, ref) => {
+const CheckoutProduct = ({ id, title, price }) => {
   const [{ basket }, dispatch] = useStateValue();
 
   const removeFromBasket = () => {
@@ -16,9 +16,7 @@ const CheckoutProduct = forwardRef(({ id, title, price }, ref) => {
   return (
     <>
       <tr className="checkoutProduct__row">
-        <td className="checkoutProduct__title" ref={ref}>
-          {title}
-        </td>
+        <td className="checkoutProduct__title">{title}</td>
         <td className="checkoutProduct__price">£{price}</td>
         <td className="checkoutProduct__delete">
           <button onClick={removeFromBasket}>
@@ -28,6 +26,6 @@ const CheckoutProduct = forwardRef(({ id, title, price }, ref) => {
       </tr>
     </>
   );
-});
+};
 
 export default CheckoutProduct;

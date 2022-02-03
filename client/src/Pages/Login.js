@@ -35,7 +35,9 @@ const Login = () => {
     })
       .then((res) => {
         res.json().then((result, err) => {
-          if (err) return err.message;
+          if (err) {
+            return res.status(401).json({ message: "Unauthorised access." });
+          }
           localStorage.setItem(
             "token",
             JSON.stringify({

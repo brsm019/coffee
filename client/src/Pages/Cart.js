@@ -4,7 +4,7 @@ import CheckoutProduct from "../Components/CheckoutProduct/CheckoutProduct";
 import Footer from "../Components/Footer/Footer";
 import Header from "../Components/Header/Header";
 import { useStateValue } from "../GlobalState/StateProvider";
-import { NavLink, useHistory } from "react-router-dom";
+import { useHistory } from "react-router-dom";
 
 const Cart = () => {
   const history = useHistory();

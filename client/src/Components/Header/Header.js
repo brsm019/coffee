@@ -1,18 +1,24 @@
-import React, { useEffect, useState } from "react";
+import React, { useState, useEffect } from "react";
 import { Link, useHistory } from "react-router-dom";
 import "./Header.css";
 import { useStateValue } from "../../GlobalState/StateProvider";
-import { getBasketTotal } from "../../GlobalState/reducer";
 
 const Header = () => {
   const history = useHistory();
+  const [width, setWidth] = useState(window.innerWidth);
 
+  useEffect(() => {
+    const handleWindowResize = () => setWidth(window.innerWidth);
+    window.addEventListener("resize", handleWindowResize);
+
+    // Return a function from the effect that removes the event listener
+    return () => window.removeEventListener("resize", handleWindowResize);
+  }, []);
 
   let name = localStorage.getItem("name");
   const [{ user, basket }, dispatch] = useStateValue();
 
   let username = JSON.parse(name); // from local store
-
 
   const getBasket = (basket) => {
     return basket?.reduce((amount, item) => parseFloat(item.price) + amount, 0);
@@ -52,7 +58,7 @@ const Header = () => {
         </Link>
       )}
 
-      {window.innerWidth <= 520 ? (
+      {width <= 520 ? (
         <Link to="/" className="header__item">
           Coffee
         </Link>
@@ -61,7 +67,7 @@ const Header = () => {
           Items: <b>{basketCount}</b>
         </span>
       )}
-      {window.innerWidth <= 520 ? (
+      {width <= 520 ? (
         <Link to="/equipment" className="header__item">
           Equipment
         </Link>
