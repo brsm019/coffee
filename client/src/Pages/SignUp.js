@@ -5,26 +5,13 @@ import Footer from "../Components/Footer/Footer";
 import "./SignUp.css";
 import { useForm } from "react-hook-form";
 import { yupResolver } from "@hookform/resolvers/yup";
-import * as Yup from "yup";
+import { validationSchema } from "../utils/validation";
 import { useHistory } from "react-router-dom";
 
 const SignUp = () => {
-  //Form validation with yup schema
-  const validationSchema = Yup.object().shape({
-    firstName: Yup.string().required("First name is required"),
-    lastName: Yup.string().required("Last name is required"),
-    email: Yup.string().required("Email is required").email("Email is invalid"),
-    password: Yup.string()
-      .min(6, "Password must be at least 6 characters")
-      .required("Password is required"),
-    confirmPassword: Yup.string()
-      .oneOf([Yup.ref("password"), null], "Passwords must match")
-      .required("Confirm Password is required"),
-  });
-
   const formOptions = { resolver: yupResolver(validationSchema) };
 
-  const { register, handleSubmit, reset, formState } = useForm(formOptions);
+  const { register, handleSubmit, formState } = useForm(formOptions);
   const { errors } = formState;
 
   const history = useHistory();
