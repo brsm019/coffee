@@ -47,32 +47,6 @@ const SignUp = () => {
     setPassword(e.target.value);
   };
 
-  // const handleSignUp = (e, data) => {
-  //   // e.preventDefault();
-  //   const postURL = "/auth/register";
-  //   fetch(postURL, {
-  //     method: "POST",
-  //     headers: {
-  //       Accept: "application/json",
-  //       "Content-Type": "application/json",
-  //     },
-  //     body: JSON.stringify({
-  //       firstName: firstName,
-  //       lastName: lastName,
-  //       email: email,
-  //       password: password,
-  //     }),
-  //   }).then(() => {
-  //     // Once posted, the user will be notified
-  //     setMessage("Account successfully created!");
-  //     setTimeout(() => {
-  //       history.push("/login");
-  //     }, 1000);
-
-  //     console.log("You have been added to the system!");
-  //   });
-  // };
-
   const handleSignUp = async (e) => {
     // e.preventDefault();
     const postURL = "/auth/register";
