@@ -4,6 +4,7 @@ import Header from "../Components/Header/Header";
 import Footer from "../Components/Footer/Footer";
 import "./Login.css";
 import { useStateValue } from "../GlobalState/StateProvider";
+import { handleLogin } from "../actions";
 
 const Login = () => {
   const [state, dispatch] = useStateValue();
@@ -20,38 +21,6 @@ const Login = () => {
     setPassword(e.target.value);
   };
 
-  const handleLogin = async (e) => {
-    e.preventDefault();
-    const postURL = "/auth/sign_in";
-    try {
-      const res = await fetch(postURL, {
-        method: "POST",
-        headers: {
-          Accept: "application/json",
-          "Content-Type": "application/json",
-        },
-        body: JSON.stringify({
-          email,
-          password,
-        }),
-      });
-      if (!res.ok) {
-        throw new Error(res.statusText);
-      }
-
-      const { auth, token, user } = await res.json();
-      localStorage.setItem("token", JSON.stringify({ token }));
-      localStorage.setItem("auth", JSON.stringify({ auth }));
-      localStorage.setItem("name", JSON.stringify({ name: user.firstName }));
-      setName(user.firstName);
-      dispatch({ type: "SET_USER", user: user.firstName });
-      history.push("/");
-    } catch (err) {
-      setError(true);
-      console.error(err);
-    }
-  };
-
   return (
     <div className="login">
       <Header />
@@ -63,7 +32,19 @@ const Login = () => {
         <br></br>
         <br></br>
         <div className="login__form__container">
-          <form onSubmit={handleLogin}>
+          <form
+            onSubmit={(e) =>
+              handleLogin(
+                e,
+                email,
+                password,
+                setName,
+                dispatch,
+                history,
+                setError
+              )
+            }
+          >
             <div className="form-group">
               <label for="email">Email</label>
               <input
