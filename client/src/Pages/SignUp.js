@@ -7,6 +7,7 @@ import { useForm } from "react-hook-form";
 import { yupResolver } from "@hookform/resolvers/yup";
 import { validationSchema } from "../utils/validation";
 import { useHistory } from "react-router-dom";
+import { handleSignUp } from "../actions";
 
 const SignUp = () => {
   const formOptions = { resolver: yupResolver(validationSchema) };
@@ -34,38 +35,6 @@ const SignUp = () => {
     setPassword(e.target.value);
   };
 
-  const handleSignUp = async (e) => {
-    // e.preventDefault();
-    const postURL = "/auth/register";
-    try {
-      const res = await fetch(postURL, {
-        method: "POST",
-        headers: {
-          Accept: "application/json",
-          "Content-Type": "application/json",
-        },
-        body: JSON.stringify({
-          firstName,
-          lastName,
-          email,
-          password,
-        }),
-      });
-
-      if (!res.ok) {
-        throw new Error(res.statusText);
-      }
-
-      setMessage("Account successfully created!");
-      setTimeout(() => {
-        history.push("/login");
-      }, 1000);
-      console.log("You have been added to the system!");
-    } catch (err) {
-      console.error(err);
-    }
-  };
-
   return (
     <>
       <Header />
@@ -78,7 +47,20 @@ const SignUp = () => {
           <br></br>
           <br></br>
           <div className="signup__form__container">
-            <form onSubmit={handleSubmit(handleSignUp)}>
+            <form
+              onSubmit={handleSubmit((values, e) =>
+                handleSignUp(
+                  values,
+                  e,
+                  firstName,
+                  lastName,
+                  email,
+                  password,
+                  setMessage,
+                  history
+                )
+              )}
+            >
               <div className="form-group">
                 <label for="first__name">First Name</label>
                 <input
