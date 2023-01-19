@@ -19,50 +19,37 @@ const Login = () => {
   const handlePasswordChange = (e) => {
     setPassword(e.target.value);
   };
-  const handleLogin = (e) => {
+
+  const handleLogin = async (e) => {
     e.preventDefault();
     const postURL = "/auth/sign_in";
-    fetch(postURL, {
-      method: "POST",
-      headers: {
-        Accept: "application/json",
-        "Content-Type": "application/json",
-      },
-      body: JSON.stringify({
-        email: email,
-        password: password,
-      }),
-    })
-      .then((res) => {
-        res.json().then((result, err) => {
-          if (err) return err.message;
-          localStorage.setItem(
-            "token",
-            JSON.stringify({
-              token: result.token,
-            })
-          );
-          localStorage.setItem("auth", JSON.stringify({ auth: result.auth }));
-          localStorage.setItem(
-            "name",
-            JSON.stringify({ name: result.user.firstName })
-          );
-
-          setName(result.user.firstName);
-          //Dispatch user's name into global state
-          dispatch({
-            type: "SET_USER",
-            user: result.user.firstName,
-          });
-
-          history.push("/");
-          history.go(0);
-        });
-      })
-      .catch((err) => {
-        setError(true);
-        console.error(err);
+    try {
+      const res = await fetch(postURL, {
+        method: "POST",
+        headers: {
+          Accept: "application/json",
+          "Content-Type": "application/json",
+        },
+        body: JSON.stringify({
+          email,
+          password,
+        }),
       });
+      if (!res.ok) {
+        throw new Error(res.statusText);
+      }
+
+      const { auth, token, user } = await res.json();
+      localStorage.setItem("token", JSON.stringify({ token }));
+      localStorage.setItem("auth", JSON.stringify({ auth }));
+      localStorage.setItem("name", JSON.stringify({ name: user.firstName }));
+      setName(user.firstName);
+      dispatch({ type: "SET_USER", user: user.firstName });
+      history.push("/");
+    } catch (err) {
+      setError(true);
+      console.error(err);
+    }
   };
 
   return (
