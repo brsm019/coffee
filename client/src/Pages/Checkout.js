@@ -28,21 +28,22 @@ export default function Checkout() {
   const elements = useElements();
 
   useEffect(() => {
-    // Create PaymentIntent as soon as the page loads
-    window
-      .fetch("/create-payment-intent", {
-        method: "POST",
-        headers: {
-          "Content-Type": "application/json",
-        },
-        body: JSON.stringify({ priceTotal: total }),
-      })
-      .then((res) => {
-        return res.json();
-      })
-      .then((data) => {
+    async function createPaymentIntent() {
+      try {
+        const res = await window.fetch("/create-payment-intent", {
+          method: "POST",
+          headers: {
+            "Content-Type": "application/json",
+          },
+          body: JSON.stringify({ priceTotal: total }),
+        });
+        const data = await res.json();
         setClientSecret(data.clientSecret);
-      });
+      } catch (error) {
+        console.error(error);
+      }
+    }
+    createPaymentIntent();
   }, []);
 
   const cardStyle = {
