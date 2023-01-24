@@ -5,6 +5,7 @@ import Header from "../Components/Header/Header";
 import "./Checkout.css";
 import { useHistory } from "react-router-dom";
 import Footer from "../Components/Footer/Footer";
+import { cartTotal } from "./../utils/cartTotal";
 
 export default function Checkout() {
   const emptyBasket = () => {
@@ -16,8 +17,6 @@ export default function Checkout() {
   const history = useHistory();
   const [{ basket, user, getBasketTotal }, dispatch] = useStateValue();
 
-  let cartTotal = (basket) =>
-    basket?.reduce((amount, item) => parseFloat(item.price) + amount, 0);
   let total = cartTotal(basket).toFixed(2);
   const [succeeded, setSucceeded] = useState(false);
   const [error, setError] = useState(null);
