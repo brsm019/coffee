@@ -1,15 +1,15 @@
 import React from "react";
 import "./AddToCartCard.css";
 import { useStateValue } from "../GlobalState/StateProvider";
-import { name } from "../GlobalState/reducer";
 import { useHistory } from "react-router";
+import { userName } from "../utils/getUserName";
 
 const AddToCartCard = ({ id, title, subtitle, subColor, price }) => {
   const [state, dispatch] = useStateValue();
   const history = useHistory();
 
   const addToBasket = () => {
-    name
+    userName
       ? dispatch({
           type: "ADD_TO_BASKET",
           item: {
