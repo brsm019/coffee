@@ -1,3 +1,1 @@
-const userName = JSON.parse(localStorage.getItem("name"));
-
-export { userName };
+export const userName = JSON.parse(localStorage.getItem("name"));
