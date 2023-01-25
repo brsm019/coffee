@@ -2,21 +2,15 @@ import React, { useEffect, useState } from "react";
 import { Link, useHistory } from "react-router-dom";
 import "./Header.css";
 import { useStateValue } from "../../GlobalState/StateProvider";
-import { getBasketTotal } from "../../GlobalState/reducer";
+import { getBasket } from "../../utils/basketTotal";
 
 const Header = () => {
   const history = useHistory();
-
 
   let name = localStorage.getItem("name");
   const [{ user, basket }, dispatch] = useStateValue();
 
   let username = JSON.parse(name); // from local store
-
-
-  const getBasket = (basket) => {
-    return basket?.reduce((amount, item) => parseFloat(item.price) + amount, 0);
-  };
 
   let totalBasket = name ? getBasket(basket).toFixed(2) : "0";
   let basketCount = name ? ("0" + basket.length).slice(-2) : "00";
