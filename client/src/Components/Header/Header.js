@@ -1,16 +1,15 @@
-import React, { useEffect, useState } from "react";
+import React from "react";
 import { Link, useHistory } from "react-router-dom";
 import "./Header.css";
 import { useStateValue } from "../../GlobalState/StateProvider";
 import { getBasket } from "../../utils/basketTotal";
-import { userName } from "../../utils/getUserName";
 
 const Header = () => {
   const history = useHistory();
 
   let name = localStorage.getItem("name");
-  const [{ user, basket }, dispatch] = useStateValue();
-
+  const [{ basket }, dispatch] = useStateValue();
+  let username = JSON.parse(name); // from local store
   let totalBasket = name ? getBasket(basket).toFixed(2) : "0";
   let basketCount = name ? ("0" + basket.length).slice(-2) : "00";
 
@@ -28,7 +27,7 @@ const Header = () => {
       {name ? (
         <div className="header__loggedIn">
           <div style={{ color: "#757575", fontSize: "10px" }}>Hi</div>
-          <div>{userName.name}</div>
+          <div>{username.name}</div>
         </div>
       ) : (
         <Link to="/signup" className="header__item">
