@@ -6,6 +6,7 @@ import "./Checkout.css";
 import { useHistory } from "react-router-dom";
 import Footer from "../Components/Footer/Footer";
 import { cartTotal } from "./../utils/cartTotal";
+import { createPaymentIntent } from "../actions";
 
 export default function Checkout() {
   const emptyBasket = () => {
@@ -28,22 +29,7 @@ export default function Checkout() {
   const elements = useElements();
 
   useEffect(() => {
-    async function createPaymentIntent() {
-      try {
-        const res = await window.fetch("/create-payment-intent", {
-          method: "POST",
-          headers: {
-            "Content-Type": "application/json",
-          },
-          body: JSON.stringify({ priceTotal: total }),
-        });
-        const data = await res.json();
-        setClientSecret(data.clientSecret);
-      } catch (error) {
-        console.error(error);
-      }
-    }
-    createPaymentIntent();
+    createPaymentIntent(total, setClientSecret);
   }, []);
 
   const cardStyle = {
