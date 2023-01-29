@@ -48,10 +48,9 @@ const SignUp = () => {
           <br></br>
           <div className="signup__form__container">
             <form
-              onSubmit={handleSubmit((values, e) =>
+              onSubmit={handleSubmit((values) =>
                 handleSignUp(
                   values,
-                  e,
                   firstName,
                   lastName,
                   email,
