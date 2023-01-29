@@ -5,6 +5,8 @@ import Header from "../Components/Header/Header";
 import "./Checkout.css";
 import { useHistory } from "react-router-dom";
 import Footer from "../Components/Footer/Footer";
+import { cartTotal } from "./../utils/cartTotal";
+import { createPaymentIntent } from "../actions";
 
 export default function Checkout() {
   const emptyBasket = () => {
@@ -16,8 +18,6 @@ export default function Checkout() {
   const history = useHistory();
   const [{ basket, user, getBasketTotal }, dispatch] = useStateValue();
 
-  let cartTotal = (basket) =>
-    basket?.reduce((amount, item) => parseFloat(item.price) + amount, 0);
   let total = cartTotal(basket).toFixed(2);
   const [succeeded, setSucceeded] = useState(false);
   const [error, setError] = useState(null);
@@ -29,21 +29,7 @@ export default function Checkout() {
   const elements = useElements();
 
   useEffect(() => {
-    // Create PaymentIntent as soon as the page loads
-    window
-      .fetch("/create-payment-intent", {
-        method: "POST",
-        headers: {
-          "Content-Type": "application/json",
-        },
-        body: JSON.stringify({ priceTotal: total }),
-      })
-      .then((res) => {
-        return res.json();
-      })
-      .then((data) => {
-        setClientSecret(data.clientSecret);
-      });
+    createPaymentIntent(total, setClientSecret);
   }, []);
 
   const cardStyle = {

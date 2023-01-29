@@ -5,13 +5,12 @@ import Footer from "../Components/Footer/Footer";
 import Header from "../Components/Header/Header";
 import { useStateValue } from "../GlobalState/StateProvider";
 import { NavLink, useHistory } from "react-router-dom";
+import { cartTotal } from "./../utils/cartTotal";
 
 const Cart = () => {
   const history = useHistory();
   const [{ basket, user, getBasketTotal }, dispatch] = useStateValue();
 
-  let cartTotal = (basket) =>
-    basket?.reduce((amount, item) => parseFloat(item.price) + amount, 0);
   let total = cartTotal(basket);
 
   const onSubmit = () => {

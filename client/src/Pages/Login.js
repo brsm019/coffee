@@ -4,6 +4,7 @@ import Header from "../Components/Header/Header";
 import Footer from "../Components/Footer/Footer";
 import "./Login.css";
 import { useStateValue } from "../GlobalState/StateProvider";
+import { handleLogin } from "../actions";
 
 const Login = () => {
   const [state, dispatch] = useStateValue();
@@ -19,51 +20,6 @@ const Login = () => {
   const handlePasswordChange = (e) => {
     setPassword(e.target.value);
   };
-  const handleLogin = (e) => {
-    e.preventDefault();
-    const postURL = "/auth/sign_in";
-    fetch(postURL, {
-      method: "POST",
-      headers: {
-        Accept: "application/json",
-        "Content-Type": "application/json",
-      },
-      body: JSON.stringify({
-        email: email,
-        password: password,
-      }),
-    })
-      .then((res) => {
-        res.json().then((result, err) => {
-          if (err) return err.message;
-          localStorage.setItem(
-            "token",
-            JSON.stringify({
-              token: result.token,
-            })
-          );
-          localStorage.setItem("auth", JSON.stringify({ auth: result.auth }));
-          localStorage.setItem(
-            "name",
-            JSON.stringify({ name: result.user.firstName })
-          );
-
-          setName(result.user.firstName);
-          //Dispatch user's name into global state
-          dispatch({
-            type: "SET_USER",
-            user: result.user.firstName,
-          });
-
-          history.push("/");
-          history.go(0);
-        });
-      })
-      .catch((err) => {
-        setError(true);
-        console.error(err);
-      });
-  };
 
   return (
     <div className="login">
@@ -76,7 +32,19 @@ const Login = () => {
         <br></br>
         <br></br>
         <div className="login__form__container">
-          <form onSubmit={handleLogin}>
+          <form
+            onSubmit={(e) =>
+              handleLogin(
+                e,
+                email,
+                password,
+                setName,
+                dispatch,
+                history,
+                setError
+              )
+            }
+          >
             <div className="form-group">
               <label for="email">Email</label>
               <input

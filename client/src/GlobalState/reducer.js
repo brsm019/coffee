@@ -3,11 +3,6 @@ export const initialState = {
   user: null,
 };
 
-export const getBasketTotal = (basket) =>
-  basket?.reduce((amount, item) => parseInt(item.price) + amount, 0);
-
-export const name = JSON.parse(localStorage.getItem("name"));
-
 const reducer = (state, action) => {
   switch (action.type) {
     case "ADD_TO_BASKET":

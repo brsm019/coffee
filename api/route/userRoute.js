@@ -1,4 +1,4 @@
-module.exports = function (app) {
+module.exports = (app) => {
   let userController = require("../controllers/userControllers.js");
 
   app

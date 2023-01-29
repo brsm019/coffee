@@ -5,26 +5,14 @@ import Footer from "../Components/Footer/Footer";
 import "./SignUp.css";
 import { useForm } from "react-hook-form";
 import { yupResolver } from "@hookform/resolvers/yup";
-import * as Yup from "yup";
+import { validationSchema } from "../utils/validation";
 import { useHistory } from "react-router-dom";
+import { handleSignUp } from "../actions";
 
 const SignUp = () => {
-  //Form validation with yup schema
-  const validationSchema = Yup.object().shape({
-    firstName: Yup.string().required("First name is required"),
-    lastName: Yup.string().required("Last name is required"),
-    email: Yup.string().required("Email is required").email("Email is invalid"),
-    password: Yup.string()
-      .min(6, "Password must be at least 6 characters")
-      .required("Password is required"),
-    confirmPassword: Yup.string()
-      .oneOf([Yup.ref("password"), null], "Passwords must match")
-      .required("Confirm Password is required"),
-  });
-
   const formOptions = { resolver: yupResolver(validationSchema) };
 
-  const { register, handleSubmit, reset, formState } = useForm(formOptions);
+  const { register, handleSubmit, formState } = useForm(formOptions);
   const { errors } = formState;
 
   const history = useHistory();
@@ -47,32 +35,6 @@ const SignUp = () => {
     setPassword(e.target.value);
   };
 
-  const handleSignUp = (e, data) => {
-    // e.preventDefault();
-    const postURL = "/auth/register";
-    fetch(postURL, {
-      method: "POST",
-      headers: {
-        Accept: "application/json",
-        "Content-Type": "application/json",
-      },
-      body: JSON.stringify({
-        firstName: firstName,
-        lastName: lastName,
-        email: email,
-        password: password,
-      }),
-    }).then(() => {
-      // Once posted, the user will be notified
-      setMessage("Account successfully created!");
-      setTimeout(() => {
-        history.push("/login");
-      }, 1000);
-
-      console.log("You have been added to the system!");
-    });
-  };
-
   return (
     <>
       <Header />
@@ -85,7 +47,19 @@ const SignUp = () => {
           <br></br>
           <br></br>
           <div className="signup__form__container">
-            <form onSubmit={handleSubmit(handleSignUp)}>
+            <form
+              onSubmit={handleSubmit((values) =>
+                handleSignUp(
+                  values,
+                  firstName,
+                  lastName,
+                  email,
+                  password,
+                  setMessage,
+                  history
+                )
+              )}
+            >
               <div className="form-group">
                 <label for="first__name">First Name</label>
                 <input
