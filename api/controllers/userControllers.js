@@ -39,16 +39,20 @@ exports.sign_in = async function (req, res) {
 };
 
 exports.checkout = async function (req, res) {
-  const price = req.body.priceTotal * 100;
-  // Create a PaymentIntent with the order amount and currency
-  const paymentIntent = await stripe.paymentIntents.create({
-    amount: price,
-    currency: "gbp",
-  });
+  try {
+    const price = req.body.priceTotal * 100;
+    const paymentIntent = await stripe.paymentIntents.create({
+      amount: price,
+      currency: "gbp",
+    });
 
-  res.send({
-    clientSecret: paymentIntent.client_secret,
-  });
+    res.send({
+      clientSecret: paymentIntent.client_secret,
+    });
+  } catch (error) {
+    console.error(error);
+    res.status(500).send({ error: "Error creating payment intent" });
+  }
 };
 
 exports.loginRequired = function (req, res, next) {
