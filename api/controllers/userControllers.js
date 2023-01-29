@@ -5,19 +5,18 @@ let jwt = require("jsonwebtoken");
 let bcrypt = require("bcrypt");
 let User = mongoose.model("User");
 
-exports.register = function (req, res) {
-  let newUser = new User(req.body);
-  newUser.hash_password = bcrypt.hashSync(req.body.password, 10);
-  newUser.save(function (err, user) {
-    if (err) {
-      return res.status(400).send({
-        message: err,
-      });
-    } else {
-      user.hash_password = undefined;
-      return res.json(user);
-    }
-  });
+exports.register = async (req, res) => {
+  try {
+    const newUser = new User({
+      ...req.body,
+      hash_password: bcrypt.hashSync(req.body.password, 10),
+    });
+    const user = await newUser.save();
+    user.hash_password = undefined;
+    return res.json(user);
+  } catch (error) {
+    return res.status(400).send({ message: error.message });
+  }
 };
 
 exports.sign_in = function (req, res) {
