@@ -30,27 +30,23 @@ app.use(express.static("."));
 app.use(express.urlencoded({ extended: true }));
 app.use(express.json());
 
-app.use(function (req, res, next) {
-  if (
-    req.headers &&
-    req.headers.authorization &&
-    req.headers.authorization.split(" ")[0] === "Bearer"
-  ) {
-    jwt.verify(
-      req.headers.authorization.split(" ")[1],
-      process.env.ACCESS_TOKEN_SECRET,
-      function (err, user) {
-        if (err) req.user = undefined;
-        req.user = user;
-        // res.json({ user, auth: true });
-        next();
-      }
-    );
-  } else {
-    req.User = undefined;
+app.use(async (req, res, next) => {
+  const authHeader = req.headers.authorization;
+  if (!authHeader || !authHeader.startsWith("Bearer")) {
+    req.user = undefined;
+    return next();
+  }
+
+  const token = authHeader.split(" ")[1];
+  try {
+    req.user = await jwt.verify(token, process.env.ACCESS_TOKEN_SECRET);
+    next();
+  } catch (error) {
+    req.user = undefined;
     next();
   }
 });
+
 let routes = require("./api/route/userRoute");
 routes(app);
 
@@ -63,8 +59,14 @@ if (process.env.NODE_ENV === "production") {
   });
 }
 
-app.use(function (req, res) {
-  res.status(404).send({ url: req.originalUrl + " not found" });
+app.use((req, res, next) => {
+  const error = new Error(`${req.originalUrl} not found`);
+  error.status = 404;
+  next(error);
+});
+
+app.use((error, req, res, next) => {
+  res.status(error.status || 500).send({ error: error.message });
 });
 
 app.listen(port, () => {
