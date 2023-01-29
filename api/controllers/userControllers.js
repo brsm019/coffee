@@ -19,27 +19,23 @@ exports.register = async (req, res) => {
   }
 };
 
-exports.sign_in = function (req, res) {
-  User.findOne(
-    {
-      email: req.body.email,
-    },
-    function (err, user) {
-      if (err) throw err;
-      if (!user || !user.comparePassword(req.body.password)) {
-        return res.status(401).json({
-          message: "Authentication failed. Invalid user or password.",
-        });
-      }
-      let accessToken = jwt.sign({ user }, process.env.ACCESS_TOKEN_SECRET);
-
-      return res.json({
-        token: accessToken,
-        user: user,
-        auth: true,
+exports.sign_in = async function (req, res) {
+  try {
+    const user = await User.findOne({ email: req.body.email });
+    if (!user || !user.comparePassword(req.body.password)) {
+      return res.status(401).json({
+        message: "Authentication failed. Invalid user or password.",
       });
     }
-  );
+    const accessToken = jwt.sign({ user }, process.env.ACCESS_TOKEN_SECRET);
+    return res.json({
+      token: accessToken,
+      user: user,
+      auth: true,
+    });
+  } catch (err) {
+    return res.status(400).send({ message: err });
+  }
 };
 
 exports.checkout = async function (req, res) {
