@@ -2,11 +2,12 @@ import React from "react";
 import "./AddToCartCard.css";
 import { useStateValue } from "../GlobalState/StateProvider";
 import { useHistory } from "react-router";
-import { userName } from "../utils/getUserName";
 
 const AddToCartCard = ({ id, title, subtitle, subColor, price }) => {
   const [state, dispatch] = useStateValue();
   const history = useHistory();
+
+  let userName = JSON.parse(localStorage.getItem("name"));
 
   const addToBasket = () => {
     userName
