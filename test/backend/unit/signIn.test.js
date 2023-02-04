@@ -1,12 +1,9 @@
-require("dotenv").config();
 const request = require("supertest");
-const mongoose = require("mongoose");
-const User = require("../../../api/models/userModels");
 const app = require("../../../server");
 const chai = require("chai");
 const { expect } = chai;
 
-describe("Sign In Function", () => {
+describe("Sign In Function Tests", () => {
   it("should return a token and user if sign in is successful", async () => {
     const response = await request(app)
       .post("/auth/sign_in")
@@ -24,6 +21,12 @@ describe("Sign In Function", () => {
       .post("/auth/sign_in")
       .send({ email: "invaliduser@example.com", password: "invalid" });
     expect(response.statusCode).to.equal(401);
+  });
+
+  it("should return the correct error message if the email or password is invalid", async () => {
+    const response = await request(app)
+      .post("/auth/sign_in")
+      .send({ email: "invaliduser@example.com", password: "invalid" });
     expect(response.body.message).to.equal(
       "Authentication failed. Invalid user or password."
     );
