@@ -34,6 +34,9 @@ Full-stack application that acts as an eCommerce site allowing users to sign up 
 - Stripe
 - Express
 - Node
+- Mocha
+- Chai
+- Supertest
 
 
 ### Frontend
