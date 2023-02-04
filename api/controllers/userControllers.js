@@ -64,8 +64,7 @@ exports.loginRequired = function (req, res, next) {
 };
 exports.profile = function (req, res, next) {
   if (req.user) {
-    res.send(req.user);
-    next();
+    return res.send(req.user);
   } else {
     return res.status(401).json({ message: "Invalid token" });
   }
