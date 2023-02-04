@@ -7,7 +7,7 @@ import {
 } from "react-router-dom";
 import "./SideBar.css";
 import ScrollToTop from "../Components/ScrollToTop/ScrollToTop";
-import { routes, unAuthedRoute } from "../Components/Sidebar/Routes";
+import { routes, unAuthedRoute } from "../Components/Sidebar/routes";
 let auth = localStorage.getItem("auth") === '{"auth":true}';
 
 let unAuthedRoutes = routes.map(
