@@ -1,5 +1,5 @@
 import React from "react";
-import { Link, useHistory } from "react-router-dom";
+import { Link, Redirect, useHistory } from "react-router-dom";
 import "./Header.css";
 import { useStateValue } from "../../GlobalState/StateProvider";
 import { getBasket } from "../../utils/basketTotal";
@@ -62,9 +62,13 @@ const Header = () => {
           Total: <b>{`£ ${totalBasket}`}</b>
         </span>
       )}
-      <Link to="/myCart" id="header__cart" className="header__item">
-        My Cart
-      </Link>
+      {username ? (
+        <Link to="/myCart" id="header__cart" className="header__item">
+          My Cart
+        </Link>
+      ) : (
+        <Redirect to="/login" />
+      )}
     </div>
   );
 };

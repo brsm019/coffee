@@ -837,7 +837,6 @@ let unAuthedRoute = [
     main: () => (
       <div>
         <Cart />
-        <Redirect to="/login" />
       </div>
     ),
   },
