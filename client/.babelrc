@@ -1,0 +1,6 @@
+// Configuration that enables the experimental syntax for JSX
+// in root FE
+
+{
+  "presets": ["@babel/preset-env", "@babel/preset-react"]
+}

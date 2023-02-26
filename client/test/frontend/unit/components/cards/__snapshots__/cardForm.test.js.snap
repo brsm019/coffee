@@ -1,0 +1,940 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`CardForm component renders the component 1`] = `
+<DocumentFragment>
+  <div
+    class="cardform"
+  >
+    <div
+      class="row"
+    >
+      <div
+        class="col-lg-6 col-md-12 col-sm-12 mb-4 mb-lg-0"
+      >
+        <img
+          alt=""
+          class="w-100 h-100 shadow-1-strong rounded mb-4"
+          id="cardlarge__image"
+          src="https://external-content.duckduckgo.com/iu/?u=https%3A%2F%2Fdenverbeverage.com%2Fwp-content%2Fuploads%2F2019%2F03%2FMocha_Cappuccino_2048x.jpg&f=1&nofb=1"
+        />
+        <a
+          class="sidebar__link"
+          href="/redbrick"
+        >
+          <div
+            class="mask"
+          >
+            <div
+              class="cardLarge__text"
+            >
+              <div
+                class="cardLarge__feature__logo "
+              />
+              <div
+                class="cardLarge__login__line"
+              >
+                ❂ ❂ ❂ ❂ ❂ ❂ ❂ ❂ ❂ ❂ ❂ ❂ ❂ ❂ ❂ ❂ ❂ ❂ ❂ ❂ ❂ ❂ ❂ ❂ ❂ ❂ ❂ ❂ ❂ ❂ ❂ ❂
+              </div>
+              <h1
+                class="cardLarge__title"
+              >
+                Red Brick
+              </h1>
+              <div
+                class="cardLarge__login__line"
+              >
+                ❂ ❂ ❂ ❂ ❂ ❂ ❂ ❂ ❂ ❂ ❂ ❂ ❂ ❂ ❂ ❂ ❂ ❂ ❂ ❂ ❂ ❂ ❂ ❂ ❂ ❂ ❂ ❂ ❂ ❂ ❂ ❂
+              </div>
+              <p
+                class="cardLarge__subtitle"
+              >
+                Seasonal Espresso
+              </p>
+              <div
+                class="cardLarge__offer"
+              >
+                <span
+                  class="cardLarge__price"
+                >
+                  £11.00
+                </span>
+              </div>
+            </div>
+          </div>
+        </a>
+      </div>
+      <div
+        class="col-lg-3 col-md-6 col-sm-6 mb-4 mb-lg-0"
+      >
+        <img
+          alt=""
+          class="w-100 h-100 shadow-sm rounded mb-4"
+          id="cardMedium__image"
+          src="https://external-content.duckduckgo.com/iu/?u=https%3A%2F%2Fwww.publicdomainpictures.net%2Fpictures%2F30000%2Fvelka%2Fplain-white-background.jpg&f=1&nofb=1"
+        />
+        <a
+          class="sidebar__link"
+          href="/sweet-shop"
+        >
+          <div
+            class="mask"
+          >
+            <div
+              class="cardMedium__text"
+            >
+              <div
+                class="cardMedium__login__line"
+              >
+                ❂ ❂ ❂ ❂ ❂ ❂ ❂ ❂ ❂ ❂ ❂ ❂ ❂ ❂ ❂ ❂ ❂ ❂ ❂ ❂ ❂ ❂ ❂ ❂ ❂ ❂ ❂ ❂ ❂ ❂ ❂ ❂
+              </div>
+              <h1
+                class="cardMedium__title"
+              >
+                Sweetshop
+              </h1>
+              <div
+                class="cardMedium__login__line"
+              >
+                 ❂ ❂ ❂ ❂ ❂ ❂ ❂ ❂ ❂ ❂ ❂ ❂ ❂ ❂ ❂ ❂ ❂ ❂ ❂ ❂ ❂ ❂ ❂ ❂ ❂ ❂ ❂ ❂ ❂ ❂ ❂ ❂
+              </div>
+              <p
+                class="cardMedium__subtitle"
+                style="color: rgb(153, 8, 12);"
+              >
+                Seasonal Espresso
+              </p>
+              <div
+                class="cardMedium__offer"
+              >
+                <span
+                  class="cardMedium__price"
+                >
+                  £16.00
+                </span>
+              </div>
+            </div>
+          </div>
+        </a>
+      </div>
+      <div
+        class="col-lg-3 col-md-6 col-sm-6 mb-4 mb-lg-0"
+      >
+        <img
+          alt=""
+          class="w-100 h-100 shadow-sm rounded mb-4"
+          id="cardMedium__image"
+          src="https://external-content.duckduckgo.com/iu/?u=https%3A%2F%2Fwww.publicdomainpictures.net%2Fpictures%2F30000%2Fvelka%2Fplain-white-background.jpg&f=1&nofb=1"
+        />
+        <a
+          class="sidebar__link"
+          href="/decaf-espresso"
+        >
+          <div
+            class="mask"
+          >
+            <div
+              class="cardMedium__text"
+            >
+              <div
+                class="cardMedium__login__line"
+              >
+                ❂ ❂ ❂ ❂ ❂ ❂ ❂ ❂ ❂ ❂ ❂ ❂ ❂ ❂ ❂ ❂ ❂ ❂ ❂ ❂ ❂ ❂ ❂ ❂ ❂ ❂ ❂ ❂ ❂ ❂ ❂ ❂
+              </div>
+              <h1
+                class="cardMedium__title"
+              >
+                Decaf
+              </h1>
+              <div
+                class="cardMedium__login__line"
+              >
+                 ❂ ❂ ❂ ❂ ❂ ❂ ❂ ❂ ❂ ❂ ❂ ❂ ❂ ❂ ❂ ❂ ❂ ❂ ❂ ❂ ❂ ❂ ❂ ❂ ❂ ❂ ❂ ❂ ❂ ❂ ❂ ❂
+              </div>
+              <p
+                class="cardMedium__subtitle"
+                style="color: rgb(153, 8, 12);"
+              >
+                Espresso
+              </p>
+              <div
+                class="cardMedium__offer"
+              >
+                <span
+                  class="cardMedium__price"
+                >
+                  £13.50
+                </span>
+              </div>
+            </div>
+          </div>
+        </a>
+      </div>
+      <div
+        class="col-lg-3 col-md-6 col-sm-6 mb-4 mt-4 mb-4"
+        id="cardSmall__contain"
+      >
+        <img
+          alt=""
+          class="w-100 h-100 shadow-sm rounded mb-4"
+          id="cardSmall__image"
+          src="https://external-content.duckduckgo.com/iu/?u=https%3A%2F%2Fwww.publicdomainpictures.net%2Fpictures%2F30000%2Fvelka%2Fplain-white-background.jpg&f=1&nofb=1"
+        />
+        <a
+          class="sidebar__link"
+          href="/sasaba"
+        >
+          <div
+            class="mask"
+          >
+            <div
+              class="cardSmall__text"
+            >
+              <div
+                class="cardSmall__login__line"
+              >
+                ❂ ❂ ❂ ❂ ❂ ❂ ❂ ❂ ❂ ❂ ❂ ❂ ❂ ❂ ❂ ❂ ❂ ❂ ❂ ❂ ❂ ❂ ❂ ❂ ❂ ❂ ❂ ❂ ❂ ❂ ❂ ❂
+              </div>
+              <h1
+                class="cardSmall__title"
+              >
+                Sasaba Advar
+              </h1>
+              <div
+                class="cardSmall__login__line"
+              >
+                 ❂ ❂ ❂ ❂ ❂ ❂ ❂ ❂ ❂ ❂ ❂ ❂ ❂ ❂ ❂ ❂ ❂ ❂ ❂ ❂ ❂ ❂ ❂ ❂ ❂ ❂ ❂ ❂ ❂ ❂ ❂ ❂
+              </div>
+              <p
+                class="cardSmall__subtitle"
+                style="color: rgb(153, 8, 12);"
+              >
+                Ethiopian Espresso
+              </p>
+              <div
+                class="cardSmall__offer"
+              >
+                <span
+                  class="cardSmall__price"
+                >
+                  £13.50
+                </span>
+              </div>
+            </div>
+          </div>
+        </a>
+      </div>
+      <div
+        class="col-lg-3 col-md-6 col-sm-6 mb-4 mt-4 mb-4"
+        id="cardSmall__contain"
+      >
+        <img
+          alt=""
+          class="w-100 h-100 shadow-sm rounded mb-4"
+          id="cardSmall__image"
+          src="https://external-content.duckduckgo.com/iu/?u=https%3A%2F%2Fwww.publicdomainpictures.net%2Fpictures%2F30000%2Fvelka%2Fplain-white-background.jpg&f=1&nofb=1"
+        />
+        <a
+          class="sidebar__link"
+          href="/la-floresta"
+        >
+          <div
+            class="mask"
+          >
+            <div
+              class="cardSmall__text"
+            >
+              <div
+                class="cardSmall__login__line"
+              >
+                ❂ ❂ ❂ ❂ ❂ ❂ ❂ ❂ ❂ ❂ ❂ ❂ ❂ ❂ ❂ ❂ ❂ ❂ ❂ ❂ ❂ ❂ ❂ ❂ ❂ ❂ ❂ ❂ ❂ ❂ ❂ ❂
+              </div>
+              <h1
+                class="cardSmall__title"
+              >
+                La Floresta
+              </h1>
+              <div
+                class="cardSmall__login__line"
+              >
+                 ❂ ❂ ❂ ❂ ❂ ❂ ❂ ❂ ❂ ❂ ❂ ❂ ❂ ❂ ❂ ❂ ❂ ❂ ❂ ❂ ❂ ❂ ❂ ❂ ❂ ❂ ❂ ❂ ❂ ❂ ❂ ❂
+              </div>
+              <p
+                class="cardSmall__subtitle"
+                style="color: rgb(153, 8, 12);"
+              >
+                Columbian Espresso
+              </p>
+              <div
+                class="cardSmall__offer"
+              >
+                <span
+                  class="cardSmall__price"
+                >
+                  £15.50
+                </span>
+              </div>
+            </div>
+          </div>
+        </a>
+      </div>
+      <div
+        class="col-lg-3 col-md-6 col-sm-6 mb-4 mt-4 mb-4"
+        id="cardSmall__contain"
+      >
+        <img
+          alt=""
+          class="w-100 h-100 shadow-sm rounded mb-4"
+          id="cardSmall__image"
+          src="https://external-content.duckduckgo.com/iu/?u=https%3A%2F%2Fwww.publicdomainpictures.net%2Fpictures%2F30000%2Fvelka%2Fplain-white-background.jpg&f=1&nofb=1"
+        />
+        <a
+          class="sidebar__link"
+          href="/adela-reyes"
+        >
+          <div
+            class="mask"
+          >
+            <div
+              class="cardSmall__text"
+            >
+              <div
+                class="cardSmall__login__line"
+              >
+                ❂ ❂ ❂ ❂ ❂ ❂ ❂ ❂ ❂ ❂ ❂ ❂ ❂ ❂ ❂ ❂ ❂ ❂ ❂ ❂ ❂ ❂ ❂ ❂ ❂ ❂ ❂ ❂ ❂ ❂ ❂ ❂
+              </div>
+              <h1
+                class="cardSmall__title"
+              >
+                Adela Reyes
+              </h1>
+              <div
+                class="cardSmall__login__line"
+              >
+                 ❂ ❂ ❂ ❂ ❂ ❂ ❂ ❂ ❂ ❂ ❂ ❂ ❂ ❂ ❂ ❂ ❂ ❂ ❂ ❂ ❂ ❂ ❂ ❂ ❂ ❂ ❂ ❂ ❂ ❂ ❂ ❂
+              </div>
+              <p
+                class="cardSmall__subtitle"
+                style="color: rgb(153, 8, 12);"
+              >
+                Ethiopian Espresso
+              </p>
+              <div
+                class="cardSmall__offer"
+              >
+                <span
+                  class="cardSmall__price"
+                >
+                  £15.50
+                </span>
+              </div>
+            </div>
+          </div>
+        </a>
+      </div>
+      <div
+        class="col-lg-3 col-md-6 col-sm-6 mb-4 mt-4 mb-4"
+        id="cardSmall__contain"
+      >
+        <img
+          alt=""
+          class="w-100 h-100 shadow-sm rounded mb-4"
+          id="cardSmall__image"
+          src="https://external-content.duckduckgo.com/iu/?u=https%3A%2F%2Fwww.publicdomainpictures.net%2Fpictures%2F30000%2Fvelka%2Fplain-white-background.jpg&f=1&nofb=1"
+        />
+        <a
+          class="sidebar__link"
+          href="/filtered-bean"
+        >
+          <div
+            class="mask"
+          >
+            <div
+              class="cardSmall__text"
+            >
+              <div
+                class="cardSmall__login__line"
+              >
+                ❂ ❂ ❂ ❂ ❂ ❂ ❂ ❂ ❂ ❂ ❂ ❂ ❂ ❂ ❂ ❂ ❂ ❂ ❂ ❂ ❂ ❂ ❂ ❂ ❂ ❂ ❂ ❂ ❂ ❂ ❂ ❂
+              </div>
+              <h1
+                class="cardSmall__title"
+              >
+                Filtered Bean
+              </h1>
+              <div
+                class="cardSmall__login__line"
+              >
+                 ❂ ❂ ❂ ❂ ❂ ❂ ❂ ❂ ❂ ❂ ❂ ❂ ❂ ❂ ❂ ❂ ❂ ❂ ❂ ❂ ❂ ❂ ❂ ❂ ❂ ❂ ❂ ❂ ❂ ❂ ❂ ❂
+              </div>
+              <p
+                class="cardSmall__subtitle"
+                style="color: rgb(0, 116, 66);"
+              >
+                Seasonal Filter
+              </p>
+              <div
+                class="cardSmall__offer"
+              >
+                <span
+                  class="cardSmall__price"
+                >
+                  £12.50
+                </span>
+              </div>
+            </div>
+          </div>
+        </a>
+      </div>
+      <div
+        class="col-lg-3 col-md-6 col-sm-6 mb-4 mb-lg-0"
+      >
+        <img
+          alt=""
+          class="w-100 h-100 shadow-sm rounded mb-4"
+          id="cardMedium__image"
+          src="https://external-content.duckduckgo.com/iu/?u=https%3A%2F%2Fwww.publicdomainpictures.net%2Fpictures%2F30000%2Fvelka%2Fplain-white-background.jpg&f=1&nofb=1"
+        />
+        <a
+          class="sidebar__link"
+          href="/el-diamante"
+        >
+          <div
+            class="mask"
+          >
+            <div
+              class="cardMedium__text"
+            >
+              <div
+                class="cardMedium__login__line"
+              >
+                ❂ ❂ ❂ ❂ ❂ ❂ ❂ ❂ ❂ ❂ ❂ ❂ ❂ ❂ ❂ ❂ ❂ ❂ ❂ ❂ ❂ ❂ ❂ ❂ ❂ ❂ ❂ ❂ ❂ ❂ ❂ ❂
+              </div>
+              <h1
+                class="cardMedium__title"
+              >
+                El Diamante
+              </h1>
+              <div
+                class="cardMedium__login__line"
+              >
+                 ❂ ❂ ❂ ❂ ❂ ❂ ❂ ❂ ❂ ❂ ❂ ❂ ❂ ❂ ❂ ❂ ❂ ❂ ❂ ❂ ❂ ❂ ❂ ❂ ❂ ❂ ❂ ❂ ❂ ❂ ❂ ❂
+              </div>
+              <p
+                class="cardMedium__subtitle"
+                style="color: rgba(13, 87, 7, 0.604);"
+              >
+                Peru
+              </p>
+              <div
+                class="cardMedium__offer"
+              >
+                <span
+                  class="cardMedium__price"
+                >
+                  £14.00
+                </span>
+              </div>
+            </div>
+          </div>
+        </a>
+      </div>
+      <div
+        class="col-lg-3 col-md-6 col-sm-6 mb-4 mb-lg-0"
+      >
+        <img
+          alt=""
+          class="w-100 h-100 shadow-sm rounded mb-4"
+          id="cardMedium__image"
+          src="https://external-content.duckduckgo.com/iu/?u=https%3A%2F%2Fwww.publicdomainpictures.net%2Fpictures%2F30000%2Fvelka%2Fplain-white-background.jpg&f=1&nofb=1"
+        />
+        <a
+          class="sidebar__link"
+          href="/dis-palo"
+        >
+          <div
+            class="mask"
+          >
+            <div
+              class="cardMedium__text"
+            >
+              <div
+                class="cardMedium__login__line"
+              >
+                ❂ ❂ ❂ ❂ ❂ ❂ ❂ ❂ ❂ ❂ ❂ ❂ ❂ ❂ ❂ ❂ ❂ ❂ ❂ ❂ ❂ ❂ ❂ ❂ ❂ ❂ ❂ ❂ ❂ ❂ ❂ ❂
+              </div>
+              <h1
+                class="cardMedium__title"
+              >
+                Dis Palo
+              </h1>
+              <div
+                class="cardMedium__login__line"
+              >
+                 ❂ ❂ ❂ ❂ ❂ ❂ ❂ ❂ ❂ ❂ ❂ ❂ ❂ ❂ ❂ ❂ ❂ ❂ ❂ ❂ ❂ ❂ ❂ ❂ ❂ ❂ ❂ ❂ ❂ ❂ ❂ ❂
+              </div>
+              <p
+                class="cardMedium__subtitle"
+                style="color: rgba(13, 87, 7, 0.604);"
+              >
+                Columbia Espresso
+              </p>
+              <div
+                class="cardMedium__offer"
+              >
+                <span
+                  class="cardMedium__price"
+                >
+                  £14.00
+                </span>
+              </div>
+            </div>
+          </div>
+        </a>
+      </div>
+      <div
+        class="col-lg-6 col-md-12 col-sm-12 mb-4 mb-lg-0"
+      >
+        <img
+          alt=""
+          class="w-100 h-100 shadow-1-strong rounded mb-4"
+          id="cardlarge__image"
+          src="https://cdn.shopify.com/s/files/1/0017/1562/products/Light-10_1024x1024.jpg?v=1600088640"
+        />
+        <a
+          class="sidebar__link"
+          href="/smart-dripper"
+        >
+          <div
+            class="mask"
+          >
+            <div
+              class="cardLarge__text"
+            >
+              <div
+                class="cardLarge__feature__logo "
+              />
+              <div
+                class="cardLarge__login__line"
+              >
+                ❂ ❂ ❂ ❂ ❂ ❂ ❂ ❂ ❂ ❂ ❂ ❂ ❂ ❂ ❂ ❂ ❂ ❂ ❂ ❂ ❂ ❂ ❂ ❂ ❂ ❂ ❂ ❂ ❂ ❂ ❂ ❂
+              </div>
+              <h1
+                class="cardLarge__title"
+              >
+                Smart Dripper
+              </h1>
+              <div
+                class="cardLarge__login__line"
+              >
+                ❂ ❂ ❂ ❂ ❂ ❂ ❂ ❂ ❂ ❂ ❂ ❂ ❂ ❂ ❂ ❂ ❂ ❂ ❂ ❂ ❂ ❂ ❂ ❂ ❂ ❂ ❂ ❂ ❂ ❂ ❂ ❂
+              </div>
+              <p
+                class="cardLarge__subtitle"
+              />
+              <div
+                class="cardLarge__offer"
+              >
+                <span
+                  class="cardLarge__price"
+                >
+                  £23.00
+                </span>
+              </div>
+            </div>
+          </div>
+        </a>
+      </div>
+      <div
+        class="col-lg-3 col-md-6 col-sm-6 mb-4 mt-4 mb-4"
+        id="cardSmall__contain"
+      >
+        <img
+          alt=""
+          class="w-100 h-100 shadow-sm rounded mb-4"
+          id="cardSmall__image"
+          src="https://external-content.duckduckgo.com/iu/?u=https%3A%2F%2Fwww.publicdomainpictures.net%2Fpictures%2F30000%2Fvelka%2Fplain-white-background.jpg&f=1&nofb=1"
+        />
+        <a
+          class="sidebar__link"
+          href="/bookkisa"
+        >
+          <div
+            class="mask"
+          >
+            <div
+              class="cardSmall__text"
+            >
+              <div
+                class="cardSmall__login__line"
+              >
+                ❂ ❂ ❂ ❂ ❂ ❂ ❂ ❂ ❂ ❂ ❂ ❂ ❂ ❂ ❂ ❂ ❂ ❂ ❂ ❂ ❂ ❂ ❂ ❂ ❂ ❂ ❂ ❂ ❂ ❂ ❂ ❂
+              </div>
+              <h1
+                class="cardSmall__title"
+              >
+                Bookkisa
+              </h1>
+              <div
+                class="cardSmall__login__line"
+              >
+                 ❂ ❂ ❂ ❂ ❂ ❂ ❂ ❂ ❂ ❂ ❂ ❂ ❂ ❂ ❂ ❂ ❂ ❂ ❂ ❂ ❂ ❂ ❂ ❂ ❂ ❂ ❂ ❂ ❂ ❂ ❂ ❂
+              </div>
+              <p
+                class="cardSmall__subtitle"
+                style="color: rgba(13, 87, 7, 0.604);"
+              >
+                Ethiopia Espresso
+              </p>
+              <div
+                class="cardSmall__offer"
+              >
+                <span
+                  class="cardSmall__price"
+                >
+                  £16.00
+                </span>
+              </div>
+            </div>
+          </div>
+        </a>
+      </div>
+      <div
+        class="col-lg-3 col-md-6 col-sm-6 mb-4 mt-4 mb-4"
+        id="cardSmall__contain"
+      >
+        <img
+          alt=""
+          class="w-100 h-100 shadow-sm rounded mb-4"
+          id="cardSmall__image"
+          src="https://external-content.duckduckgo.com/iu/?u=https%3A%2F%2Fwww.publicdomainpictures.net%2Fpictures%2F30000%2Fvelka%2Fplain-white-background.jpg&f=1&nofb=1"
+        />
+        <a
+          class="sidebar__link"
+          href="/el-dasto"
+        >
+          <div
+            class="mask"
+          >
+            <div
+              class="cardSmall__text"
+            >
+              <div
+                class="cardSmall__login__line"
+              >
+                ❂ ❂ ❂ ❂ ❂ ❂ ❂ ❂ ❂ ❂ ❂ ❂ ❂ ❂ ❂ ❂ ❂ ❂ ❂ ❂ ❂ ❂ ❂ ❂ ❂ ❂ ❂ ❂ ❂ ❂ ❂ ❂
+              </div>
+              <h1
+                class="cardSmall__title"
+              >
+                EL DASTO
+              </h1>
+              <div
+                class="cardSmall__login__line"
+              >
+                 ❂ ❂ ❂ ❂ ❂ ❂ ❂ ❂ ❂ ❂ ❂ ❂ ❂ ❂ ❂ ❂ ❂ ❂ ❂ ❂ ❂ ❂ ❂ ❂ ❂ ❂ ❂ ❂ ❂ ❂ ❂ ❂
+              </div>
+              <p
+                class="cardSmall__subtitle"
+                style="color: rgba(13, 87, 7, 0.604);"
+              >
+                COLUMBIA
+              </p>
+              <div
+                class="cardSmall__offer"
+              >
+                <span
+                  class="cardSmall__price"
+                >
+                  £14.00
+                </span>
+              </div>
+            </div>
+          </div>
+        </a>
+      </div>
+      <div
+        class="col-lg-3 col-md-6 col-sm-6 mb-4 mt-4 mb-4"
+        id="cardSmall__contain"
+      >
+        <img
+          alt=""
+          class="w-100 h-100 shadow-sm rounded mb-4"
+          id="cardSmall__image"
+          src="https://external-content.duckduckgo.com/iu/?u=https%3A%2F%2Fwww.publicdomainpictures.net%2Fpictures%2F30000%2Fvelka%2Fplain-white-background.jpg&f=1&nofb=1"
+        />
+        <a
+          class="sidebar__link"
+          href="/peretu"
+        >
+          <div
+            class="mask"
+          >
+            <div
+              class="cardSmall__text"
+            >
+              <div
+                class="cardSmall__login__line"
+              >
+                ❂ ❂ ❂ ❂ ❂ ❂ ❂ ❂ ❂ ❂ ❂ ❂ ❂ ❂ ❂ ❂ ❂ ❂ ❂ ❂ ❂ ❂ ❂ ❂ ❂ ❂ ❂ ❂ ❂ ❂ ❂ ❂
+              </div>
+              <h1
+                class="cardSmall__title"
+              >
+                Peretu
+              </h1>
+              <div
+                class="cardSmall__login__line"
+              >
+                 ❂ ❂ ❂ ❂ ❂ ❂ ❂ ❂ ❂ ❂ ❂ ❂ ❂ ❂ ❂ ❂ ❂ ❂ ❂ ❂ ❂ ❂ ❂ ❂ ❂ ❂ ❂ ❂ ❂ ❂ ❂ ❂
+              </div>
+              <p
+                class="cardSmall__subtitle"
+                style="color: rgba(13, 87, 7, 0.604);"
+              >
+                Peruvian Espresso
+              </p>
+              <div
+                class="cardSmall__offer"
+              >
+                <span
+                  class="cardSmall__price"
+                >
+                  £15.00
+                </span>
+              </div>
+            </div>
+          </div>
+        </a>
+      </div>
+      <div
+        class="col-lg-3 col-md-6 col-sm-6 mb-4 mt-4 mb-4"
+        id="cardSmall__contain"
+      >
+        <img
+          alt=""
+          class="w-100 h-100 shadow-sm rounded mb-4"
+          id="cardSmall__image"
+          src="https://external-content.duckduckgo.com/iu/?u=https%3A%2F%2Fwww.publicdomainpictures.net%2Fpictures%2F30000%2Fvelka%2Fplain-white-background.jpg&f=1&nofb=1"
+        />
+        <a
+          class="sidebar__link"
+          href="/lultrina"
+        >
+          <div
+            class="mask"
+          >
+            <div
+              class="cardSmall__text"
+            >
+              <div
+                class="cardSmall__login__line"
+              >
+                ❂ ❂ ❂ ❂ ❂ ❂ ❂ ❂ ❂ ❂ ❂ ❂ ❂ ❂ ❂ ❂ ❂ ❂ ❂ ❂ ❂ ❂ ❂ ❂ ❂ ❂ ❂ ❂ ❂ ❂ ❂ ❂
+              </div>
+              <h1
+                class="cardSmall__title"
+              >
+                Lultrina
+              </h1>
+              <div
+                class="cardSmall__login__line"
+              >
+                 ❂ ❂ ❂ ❂ ❂ ❂ ❂ ❂ ❂ ❂ ❂ ❂ ❂ ❂ ❂ ❂ ❂ ❂ ❂ ❂ ❂ ❂ ❂ ❂ ❂ ❂ ❂ ❂ ❂ ❂ ❂ ❂
+              </div>
+              <p
+                class="cardSmall__subtitle"
+                style="color: rgba(13, 87, 7, 0.604);"
+              >
+                Columbian Espresso
+              </p>
+              <div
+                class="cardSmall__offer"
+              >
+                <span
+                  class="cardSmall__price"
+                >
+                  £13.00
+                </span>
+              </div>
+            </div>
+          </div>
+        </a>
+      </div>
+    </div>
+    <div
+      class="footer__container"
+    >
+      <div
+        class="footer__group"
+      >
+        <div
+          class="footer__section"
+        >
+          <div
+            class="footerContent__container"
+          >
+            <h3
+              class="footerContent__title"
+            >
+              WELCOME TO THE WEBSHOP
+            </h3>
+            <p
+              class="footerContent__paragraph"
+            >
+              Welcome to the Colmore Row Coffee Roasters webshop. Above are our current offerings that will be updated as the seasons change and new crops arrive.
+            </p>
+            <p
+              class="footerContent__footer"
+            >
+              More about us
+            </p>
+            <p
+              class="footerContent__footer"
+            >
+              Where to drink our coffee
+            </p>
+          </div>
+        </div>
+        <div
+          class="footer__section"
+        >
+          <div
+            class="footerContent__container"
+          >
+            <h3
+              class="footerContent__title"
+            >
+              FROM THE BLOG
+            </h3>
+            <p
+              class="footerContent__paragraph"
+            >
+              For regular updates, faq and to leave feedback then visit our blog:
+            </p>
+            <p
+              class="footerContent__footer"
+            >
+              colmorerowblog.com
+            </p>
+            <p
+              class="footerContent__footer"
+            />
+          </div>
+        </div>
+        <div
+          class="footer__section"
+        >
+          <div
+            class="footerContent__container"
+          >
+            <h3
+              class="footerContent__title"
+            >
+              SUBSCRIBE TO OUR NEWSLETTER
+            </h3>
+            <p
+              class="footerContent__paragraph"
+            >
+              Our newsletter is currently under development, we'll let you know when we're up and running
+            </p>
+            <p
+              class="footerContent__footer"
+            >
+              Our best coffees
+            </p>
+            <p
+              class="footerContent__footer"
+            />
+          </div>
+        </div>
+      </div>
+      <div
+        class="footer__group"
+      >
+        <div
+          class="footer__section"
+        >
+          <div
+            class="footerContent__container"
+          >
+            <h3
+              class="footerContent__title"
+            >
+              WHOLESALE ENQUIRIES
+            </h3>
+            <p
+              class="footerContent__paragraph"
+            >
+              We are looking to work with people who see value in serving the best coffee possible. If you think you are a good match for what we do and would like more information, please contact us on
+            </p>
+            <p
+              class="footerContent__footer"
+            >
+              info@colmorerowcoffee.com
+            </p>
+            <p
+              class="footerContent__footer"
+            />
+          </div>
+        </div>
+        <div
+          class="footer__section"
+        >
+          <div
+            class="footerContent__container"
+          >
+            <h3
+              class="footerContent__title"
+            >
+              MEETINGS BY APPOINTMENT ONLY, NO RETAIL SALES ONLINE
+            </h3>
+            <p
+              class="footerContent__paragraph"
+            >
+              Colmore Row Coffee Roasters
+            </p>
+            <p
+              class="footerContent__footer"
+            >
+              FAQ's
+            </p>
+            <p
+              class="footerContent__footer"
+            >
+              Terms & Conditions
+            </p>
+          </div>
+        </div>
+        <div
+          class="footer__section"
+        >
+          <div
+            class="footerContent__container"
+          >
+            <h3
+              class="footerContent__title"
+            >
+              CONTACT
+            </h3>
+            <p
+              class="footerContent__paragraph"
+            >
+              t: 0207 729 3742
+            </p>
+            <p
+              class="footerContent__footer"
+            >
+              e: webshop@colmorerowtest.com
+            </p>
+            <p
+              class="footerContent__footer"
+            >
+              e:info@colmorerowtest.com
+            </p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</DocumentFragment>
+`;

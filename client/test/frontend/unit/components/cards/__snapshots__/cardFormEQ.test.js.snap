@@ -1,0 +1,938 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`CardForm component renders the component 1`] = `
+<DocumentFragment>
+  <div
+    class="cardformeq"
+  >
+    <div
+      class="row"
+    >
+      <div
+        class="col-lg-6 col-md-12 col-sm-12 mb-4 mb-lg-0"
+      >
+        <img
+          alt=""
+          class="w-100 h-100 shadow-1-strong rounded mb-4"
+          id="cardlarge__image"
+          src="https://cdn.shopify.com/s/files/1/0017/1562/files/wilfa_feat1.jpg?v=9595446469403274234"
+        />
+        <a
+          class="sidebar__link"
+          href="/wilfa-grinder"
+        >
+          <div
+            class="mask"
+          >
+            <div
+              class="cardLarge__text"
+            >
+              <div
+                class="cardLarge__feature__logo "
+              />
+              <div
+                class="cardLarge__login__line"
+              >
+                ❂ ❂ ❂ ❂ ❂ ❂ ❂ ❂ ❂ ❂ ❂ ❂ ❂ ❂ ❂ ❂ ❂ ❂ ❂ ❂ ❂ ❂ ❂ ❂ ❂ ❂ ❂ ❂ ❂ ❂ ❂ ❂
+              </div>
+              <h1
+                class="cardLarge__title"
+              >
+                WILFA SVART GRINDER
+              </h1>
+              <div
+                class="cardLarge__login__line"
+              >
+                ❂ ❂ ❂ ❂ ❂ ❂ ❂ ❂ ❂ ❂ ❂ ❂ ❂ ❂ ❂ ❂ ❂ ❂ ❂ ❂ ❂ ❂ ❂ ❂ ❂ ❂ ❂ ❂ ❂ ❂ ❂ ❂
+              </div>
+              <p
+                class="cardLarge__subtitle"
+              />
+              <div
+                class="cardLarge__offer"
+              >
+                <span
+                  class="cardLarge__price"
+                >
+                  £130.00
+                </span>
+              </div>
+            </div>
+          </div>
+        </a>
+      </div>
+      <div
+        class="col-lg-3 col-md-6 col-sm-6 mb-4 mb-lg-0"
+      >
+        <img
+          alt=""
+          class="w-100 h-100 shadow-sm rounded mb-4"
+          id="cardMedium__image"
+          src="https://cdn.shopify.com/s/files/1/0017/1562/files/Stag_EKG_feat.jpg?v=835009315080376446"
+        />
+        <a
+          class="sidebar__link"
+          href="/fellow-kettle"
+        >
+          <div
+            class="mask"
+          >
+            <div
+              class="cardMedium__text"
+            >
+              <div
+                class="cardMedium__login__line"
+                style="color: white;"
+              >
+                ❂ ❂ ❂ ❂ ❂ ❂ ❂ ❂ ❂ ❂ ❂ ❂ ❂ ❂ ❂ ❂ ❂ ❂ ❂ ❂ ❂ ❂ ❂ ❂ ❂ ❂ ❂ ❂ ❂ ❂ ❂ ❂
+              </div>
+              <h1
+                class="cardMedium__title"
+                style="color: white;"
+              >
+                FELLOW STAGG EKG ELECTRIC KETTLE
+              </h1>
+              <div
+                class="cardMedium__login__line"
+                style="color: white;"
+              >
+                 ❂ ❂ ❂ ❂ ❂ ❂ ❂ ❂ ❂ ❂ ❂ ❂ ❂ ❂ ❂ ❂ ❂ ❂ ❂ ❂ ❂ ❂ ❂ ❂ ❂ ❂ ❂ ❂ ❂ ❂ ❂ ❂
+              </div>
+              <p
+                class="cardMedium__subtitle"
+              />
+              <div
+                class="cardMedium__offer"
+              >
+                <span
+                  class="cardMedium__price"
+                >
+                  £145.00
+                </span>
+              </div>
+            </div>
+          </div>
+        </a>
+      </div>
+      <div
+        class="col-lg-3 col-md-6 col-sm-6 mb-4 mb-lg-0"
+      >
+        <img
+          alt=""
+          class="w-100 h-100 shadow-sm rounded mb-4"
+          id="cardMedium__image"
+          src="https://cdn.shopify.com/s/files/1/0017/1562/products/SQM-143_1080x1080_dce57860-ce38-4cb5-b0c1-8e29de96e44a_large.jpg?v=1614614119"
+        />
+        <a
+          class="sidebar__link"
+          href="/pullman-tamper"
+        >
+          <div
+            class="mask"
+          >
+            <div
+              class="cardMedium__text"
+            >
+              <div
+                class="cardMedium__login__line"
+                style="color: white;"
+              >
+                ❂ ❂ ❂ ❂ ❂ ❂ ❂ ❂ ❂ ❂ ❂ ❂ ❂ ❂ ❂ ❂ ❂ ❂ ❂ ❂ ❂ ❂ ❂ ❂ ❂ ❂ ❂ ❂ ❂ ❂ ❂ ❂
+              </div>
+              <h1
+                class="cardMedium__title"
+                style="color: white;"
+              >
+                PULLMAN OAK TAMPER
+              </h1>
+              <div
+                class="cardMedium__login__line"
+                style="color: white;"
+              >
+                 ❂ ❂ ❂ ❂ ❂ ❂ ❂ ❂ ❂ ❂ ❂ ❂ ❂ ❂ ❂ ❂ ❂ ❂ ❂ ❂ ❂ ❂ ❂ ❂ ❂ ❂ ❂ ❂ ❂ ❂ ❂ ❂
+              </div>
+              <p
+                class="cardMedium__subtitle"
+              />
+              <div
+                class="cardMedium__offer"
+              >
+                <span
+                  class="cardMedium__price"
+                >
+                  £100.00
+                </span>
+              </div>
+            </div>
+          </div>
+        </a>
+      </div>
+      <div
+        class="col-lg-3 col-md-6 col-sm-6 mb-4 mt-4 mb-4"
+        id="cardSmall__contain"
+      >
+        <img
+          alt=""
+          class="w-100 h-100 shadow-sm rounded mb-4"
+          id="cardSmall__image"
+          src="https://cdn.shopify.com/s/files/1/0017/1562/products/SQM-072_1080x1080_ce9bb5aa-af32-4841-9ea5-0c1fe8d2ab4f_large.jpg?v=1614614613"
+        />
+        <a
+          class="sidebar__link"
+          href="/fellow-pitcher"
+        >
+          <div
+            class="mask"
+          >
+            <div
+              class="cardSmall__text"
+            >
+              <div
+                class="cardSmall__login__line"
+                style="color: white;"
+              >
+                ❂ ❂ ❂ ❂ ❂ ❂ ❂ ❂ ❂ ❂ ❂ ❂ ❂ ❂ ❂ ❂ ❂ ❂ ❂ ❂ ❂ ❂ ❂ ❂ ❂ ❂ ❂ ❂ ❂ ❂ ❂ ❂
+              </div>
+              <h1
+                class="cardSmall__title"
+                style="color: white;"
+              >
+                FELLOW EDDY MILK PITCHER
+              </h1>
+              <div
+                class="cardSmall__login__line"
+                style="color: white;"
+              >
+                 ❂ ❂ ❂ ❂ ❂ ❂ ❂ ❂ ❂ ❂ ❂ ❂ ❂ ❂ ❂ ❂ ❂ ❂ ❂ ❂ ❂ ❂ ❂ ❂ ❂ ❂ ❂ ❂ ❂ ❂ ❂ ❂
+              </div>
+              <p
+                class="cardSmall__subtitle"
+              />
+              <div
+                class="cardSmall__offer"
+              >
+                <span
+                  class="cardSmall__price"
+                >
+                  £50.00
+                </span>
+              </div>
+            </div>
+          </div>
+        </a>
+      </div>
+      <div
+        class="col-lg-3 col-md-6 col-sm-6 mb-4 mt-4 mb-4"
+        id="cardSmall__contain"
+      >
+        <img
+          alt=""
+          class="w-100 h-100 shadow-sm rounded mb-4"
+          id="cardSmall__image"
+          src="https://cdn.shopify.com/s/files/1/0017/1562/products/pullman_chisel_life_1_large.jpg?v=1614614379"
+        />
+        <a
+          class="sidebar__link"
+          href="/pullman-tool"
+        >
+          <div
+            class="mask"
+          >
+            <div
+              class="cardSmall__text"
+            >
+              <div
+                class="cardSmall__login__line"
+                style="color: white;"
+              >
+                ❂ ❂ ❂ ❂ ❂ ❂ ❂ ❂ ❂ ❂ ❂ ❂ ❂ ❂ ❂ ❂ ❂ ❂ ❂ ❂ ❂ ❂ ❂ ❂ ❂ ❂ ❂ ❂ ❂ ❂ ❂ ❂
+              </div>
+              <h1
+                class="cardSmall__title"
+                style="color: white;"
+              >
+                PULLMAN CHISEL REDISTRIBUTION TOOL
+              </h1>
+              <div
+                class="cardSmall__login__line"
+                style="color: white;"
+              >
+                 ❂ ❂ ❂ ❂ ❂ ❂ ❂ ❂ ❂ ❂ ❂ ❂ ❂ ❂ ❂ ❂ ❂ ❂ ❂ ❂ ❂ ❂ ❂ ❂ ❂ ❂ ❂ ❂ ❂ ❂ ❂ ❂
+              </div>
+              <p
+                class="cardSmall__subtitle"
+              />
+              <div
+                class="cardSmall__offer"
+              >
+                <span
+                  class="cardSmall__price"
+                >
+                  £125.00
+                </span>
+              </div>
+            </div>
+          </div>
+        </a>
+      </div>
+      <div
+        class="col-lg-3 col-md-6 col-sm-6 mb-4 mt-4 mb-4"
+        id="cardSmall__contain"
+      >
+        <img
+          alt=""
+          class="w-100 h-100 shadow-sm rounded mb-4"
+          id="cardSmall__image"
+          src="https://cdn.shopify.com/s/files/1/0017/1562/products/SQM-133_1080x1080_74ac975f-e7c2-49f1-91b5-d7465b086caf_large.jpg?v=1614614285"
+        />
+        <a
+          class="sidebar__link"
+          href="/pullman-black"
+        >
+          <div
+            class="mask"
+          >
+            <div
+              class="cardSmall__text"
+            >
+              <div
+                class="cardSmall__login__line"
+                style="color: white;"
+              >
+                ❂ ❂ ❂ ❂ ❂ ❂ ❂ ❂ ❂ ❂ ❂ ❂ ❂ ❂ ❂ ❂ ❂ ❂ ❂ ❂ ❂ ❂ ❂ ❂ ❂ ❂ ❂ ❂ ❂ ❂ ❂ ❂
+              </div>
+              <h1
+                class="cardSmall__title"
+                style="color: white;"
+              >
+                PULLMAN BLACK TAMPER
+              </h1>
+              <div
+                class="cardSmall__login__line"
+                style="color: white;"
+              >
+                 ❂ ❂ ❂ ❂ ❂ ❂ ❂ ❂ ❂ ❂ ❂ ❂ ❂ ❂ ❂ ❂ ❂ ❂ ❂ ❂ ❂ ❂ ❂ ❂ ❂ ❂ ❂ ❂ ❂ ❂ ❂ ❂
+              </div>
+              <p
+                class="cardSmall__subtitle"
+              />
+              <div
+                class="cardSmall__offer"
+              >
+                <span
+                  class="cardSmall__price"
+                >
+                  £90.00
+                </span>
+              </div>
+            </div>
+          </div>
+        </a>
+      </div>
+      <div
+        class="col-lg-3 col-md-6 col-sm-6 mb-4 mt-4 mb-4"
+        id="cardSmall__contain"
+      >
+        <img
+          alt=""
+          class="w-100 h-100 shadow-sm rounded mb-4"
+          id="cardSmall__image"
+          src="https://cdn.shopify.com/s/files/1/0017/1562/products/SQM-164_1080x1080_a1db6a5c-e97e-4a99-ac99-a89fee06025c_large.jpg?v=1614614742"
+        />
+        <a
+          class="sidebar__link"
+          href="/pullman-basket"
+        >
+          <div
+            class="mask"
+          >
+            <div
+              class="cardSmall__text"
+            >
+              <div
+                class="cardSmall__login__line"
+                style="color: white;"
+              >
+                ❂ ❂ ❂ ❂ ❂ ❂ ❂ ❂ ❂ ❂ ❂ ❂ ❂ ❂ ❂ ❂ ❂ ❂ ❂ ❂ ❂ ❂ ❂ ❂ ❂ ❂ ❂ ❂ ❂ ❂ ❂ ❂
+              </div>
+              <h1
+                class="cardSmall__title"
+                style="color: white;"
+              >
+                PULLMAN BASKET
+              </h1>
+              <div
+                class="cardSmall__login__line"
+                style="color: white;"
+              >
+                 ❂ ❂ ❂ ❂ ❂ ❂ ❂ ❂ ❂ ❂ ❂ ❂ ❂ ❂ ❂ ❂ ❂ ❂ ❂ ❂ ❂ ❂ ❂ ❂ ❂ ❂ ❂ ❂ ❂ ❂ ❂ ❂
+              </div>
+              <p
+                class="cardSmall__subtitle"
+              />
+              <div
+                class="cardSmall__offer"
+              >
+                <span
+                  class="cardSmall__price"
+                >
+                  £20.00
+                </span>
+              </div>
+            </div>
+          </div>
+        </a>
+      </div>
+      <div
+        class="col-lg-3 col-md-6 col-sm-6 mb-4 mb-lg-0"
+      >
+        <img
+          alt=""
+          class="w-100 h-100 shadow-sm rounded mb-4"
+          id="cardMedium__image"
+          src="https://cdn.shopify.com/s/files/1/0017/1562/products/Dark-19_large.jpg?v=1529935146"
+        />
+        <a
+          class="sidebar__link"
+          href="/ridgeless-basket"
+        >
+          <div
+            class="mask"
+          >
+            <div
+              class="cardMedium__text"
+            >
+              <div
+                class="cardMedium__login__line"
+                style="color: white;"
+              >
+                ❂ ❂ ❂ ❂ ❂ ❂ ❂ ❂ ❂ ❂ ❂ ❂ ❂ ❂ ❂ ❂ ❂ ❂ ❂ ❂ ❂ ❂ ❂ ❂ ❂ ❂ ❂ ❂ ❂ ❂ ❂ ❂
+              </div>
+              <h1
+                class="cardMedium__title"
+                style="color: white;"
+              >
+                PULLMAN RIDGELESS VST BASKET
+              </h1>
+              <div
+                class="cardMedium__login__line"
+                style="color: white;"
+              >
+                 ❂ ❂ ❂ ❂ ❂ ❂ ❂ ❂ ❂ ❂ ❂ ❂ ❂ ❂ ❂ ❂ ❂ ❂ ❂ ❂ ❂ ❂ ❂ ❂ ❂ ❂ ❂ ❂ ❂ ❂ ❂ ❂
+              </div>
+              <p
+                class="cardMedium__subtitle"
+              />
+              <div
+                class="cardMedium__offer"
+              >
+                <span
+                  class="cardMedium__price"
+                >
+                  £28.00
+                </span>
+              </div>
+            </div>
+          </div>
+        </a>
+      </div>
+      <div
+        class="col-lg-3 col-md-6 col-sm-6 mb-4 mb-lg-0"
+      >
+        <img
+          alt=""
+          class="w-100 h-100 shadow-sm rounded mb-4"
+          id="cardMedium__image"
+          src="https://cdn.shopify.com/s/files/1/0017/1562/products/Hero_00d0bf74-0854-4f5a-b832-0dd7a4e1c439_large.jpg?v=1600090686"
+        />
+        <a
+          class="sidebar__link"
+          href="/wilfa-brewer"
+        >
+          <div
+            class="mask"
+          >
+            <div
+              class="cardMedium__text"
+            >
+              <div
+                class="cardMedium__login__line"
+                style="color: white;"
+              >
+                ❂ ❂ ❂ ❂ ❂ ❂ ❂ ❂ ❂ ❂ ❂ ❂ ❂ ❂ ❂ ❂ ❂ ❂ ❂ ❂ ❂ ❂ ❂ ❂ ❂ ❂ ❂ ❂ ❂ ❂ ❂ ❂
+              </div>
+              <h1
+                class="cardMedium__title"
+                style="color: white;"
+              >
+                WILFA CLASSIC+ BREWER
+              </h1>
+              <div
+                class="cardMedium__login__line"
+                style="color: white;"
+              >
+                 ❂ ❂ ❂ ❂ ❂ ❂ ❂ ❂ ❂ ❂ ❂ ❂ ❂ ❂ ❂ ❂ ❂ ❂ ❂ ❂ ❂ ❂ ❂ ❂ ❂ ❂ ❂ ❂ ❂ ❂ ❂ ❂
+              </div>
+              <p
+                class="cardMedium__subtitle"
+              />
+              <div
+                class="cardMedium__offer"
+              >
+                <span
+                  class="cardMedium__price"
+                >
+                  £150.00
+                </span>
+              </div>
+            </div>
+          </div>
+        </a>
+      </div>
+      <div
+        class="col-lg-6 col-md-12 col-sm-12 mb-4 mb-lg-0"
+      >
+        <img
+          alt=""
+          class="w-100 h-100 shadow-1-strong rounded mb-4"
+          id="cardlarge__image"
+          src="https://cdn.shopify.com/s/files/1/0017/1562/files/SQM-042_square_1.jpg?v=15493489480238712228"
+        />
+        <a
+          class="sidebar__link"
+          href="/v60-kit"
+        >
+          <div
+            class="mask"
+          >
+            <div
+              class="cardLarge__text"
+            >
+              <div
+                class="cardLarge__feature__logo "
+              />
+              <div
+                class="cardLarge__login__line"
+              >
+                ❂ ❂ ❂ ❂ ❂ ❂ ❂ ❂ ❂ ❂ ❂ ❂ ❂ ❂ ❂ ❂ ❂ ❂ ❂ ❂ ❂ ❂ ❂ ❂ ❂ ❂ ❂ ❂ ❂ ❂ ❂ ❂
+              </div>
+              <h1
+                class="cardLarge__title"
+              >
+                V60 SIMPLY GLASS BREWING KIT
+              </h1>
+              <div
+                class="cardLarge__login__line"
+              >
+                ❂ ❂ ❂ ❂ ❂ ❂ ❂ ❂ ❂ ❂ ❂ ❂ ❂ ❂ ❂ ❂ ❂ ❂ ❂ ❂ ❂ ❂ ❂ ❂ ❂ ❂ ❂ ❂ ❂ ❂ ❂ ❂
+              </div>
+              <p
+                class="cardLarge__subtitle"
+              />
+              <div
+                class="cardLarge__offer"
+              >
+                <span
+                  class="cardLarge__price"
+                >
+                  £32.00
+                </span>
+              </div>
+            </div>
+          </div>
+        </a>
+      </div>
+      <div
+        class="col-lg-3 col-md-6 col-sm-6 mb-4 mt-4 mb-4"
+        id="cardSmall__contain"
+      >
+        <img
+          alt=""
+          class="w-100 h-100 shadow-sm rounded mb-4"
+          id="cardSmall__image"
+          src="https://cdn.shopify.com/s/files/1/0017/1562/products/Light-3_large.jpg?v=1583490548"
+        />
+        <a
+          class="sidebar__link"
+          href="/hario-scale"
+        >
+          <div
+            class="mask"
+          >
+            <div
+              class="cardSmall__text"
+            >
+              <div
+                class="cardSmall__login__line"
+                style="color: white;"
+              >
+                ❂ ❂ ❂ ❂ ❂ ❂ ❂ ❂ ❂ ❂ ❂ ❂ ❂ ❂ ❂ ❂ ❂ ❂ ❂ ❂ ❂ ❂ ❂ ❂ ❂ ❂ ❂ ❂ ❂ ❂ ❂ ❂
+              </div>
+              <h1
+                class="cardSmall__title"
+                style="color: white;"
+              >
+                HARIO DRIP SCALE
+              </h1>
+              <div
+                class="cardSmall__login__line"
+                style="color: white;"
+              >
+                 ❂ ❂ ❂ ❂ ❂ ❂ ❂ ❂ ❂ ❂ ❂ ❂ ❂ ❂ ❂ ❂ ❂ ❂ ❂ ❂ ❂ ❂ ❂ ❂ ❂ ❂ ❂ ❂ ❂ ❂ ❂ ❂
+              </div>
+              <p
+                class="cardSmall__subtitle"
+              />
+              <div
+                class="cardSmall__offer"
+              >
+                <span
+                  class="cardSmall__price"
+                >
+                  £55.00
+                </span>
+              </div>
+            </div>
+          </div>
+        </a>
+      </div>
+      <div
+        class="col-lg-3 col-md-6 col-sm-6 mb-4 mt-4 mb-4"
+        id="cardSmall__contain"
+      >
+        <img
+          alt=""
+          class="w-100 h-100 shadow-sm rounded mb-4"
+          id="cardSmall__image"
+          src="https://cdn.shopify.com/s/files/1/0017/1562/products/Stag_silver_large.jpg?v=1605176113"
+        />
+        <a
+          class="sidebar__link"
+          href="/stagg-kettle"
+        >
+          <div
+            class="mask"
+          >
+            <div
+              class="cardSmall__text"
+            >
+              <div
+                class="cardSmall__login__line"
+                style="color: white;"
+              >
+                ❂ ❂ ❂ ❂ ❂ ❂ ❂ ❂ ❂ ❂ ❂ ❂ ❂ ❂ ❂ ❂ ❂ ❂ ❂ ❂ ❂ ❂ ❂ ❂ ❂ ❂ ❂ ❂ ❂ ❂ ❂ ❂
+              </div>
+              <h1
+                class="cardSmall__title"
+                style="color: white;"
+              >
+                FELLOW STAGG POUR-OVER KETTLE
+              </h1>
+              <div
+                class="cardSmall__login__line"
+                style="color: white;"
+              >
+                 ❂ ❂ ❂ ❂ ❂ ❂ ❂ ❂ ❂ ❂ ❂ ❂ ❂ ❂ ❂ ❂ ❂ ❂ ❂ ❂ ❂ ❂ ❂ ❂ ❂ ❂ ❂ ❂ ❂ ❂ ❂ ❂
+              </div>
+              <p
+                class="cardSmall__subtitle"
+              />
+              <div
+                class="cardSmall__offer"
+              >
+                <span
+                  class="cardSmall__price"
+                >
+                  £70.00
+                </span>
+              </div>
+            </div>
+          </div>
+        </a>
+      </div>
+      <div
+        class="col-lg-3 col-md-6 col-sm-6 mb-4 mt-4 mb-4"
+        id="cardSmall__contain"
+      >
+        <img
+          alt=""
+          class="w-100 h-100 shadow-sm rounded mb-4"
+          id="cardSmall__image"
+          src="https://cdn.shopify.com/s/files/1/0017/1562/products/Huskee4_large.jpg?v=1600089337"
+        />
+        <a
+          class="sidebar__link"
+          href="/huskee-cup"
+        >
+          <div
+            class="mask"
+          >
+            <div
+              class="cardSmall__text"
+            >
+              <div
+                class="cardSmall__login__line"
+                style="color: white;"
+              >
+                ❂ ❂ ❂ ❂ ❂ ❂ ❂ ❂ ❂ ❂ ❂ ❂ ❂ ❂ ❂ ❂ ❂ ❂ ❂ ❂ ❂ ❂ ❂ ❂ ❂ ❂ ❂ ❂ ❂ ❂ ❂ ❂
+              </div>
+              <h1
+                class="cardSmall__title"
+                style="color: white;"
+              >
+                HUSKEE CUP
+              </h1>
+              <div
+                class="cardSmall__login__line"
+                style="color: white;"
+              >
+                 ❂ ❂ ❂ ❂ ❂ ❂ ❂ ❂ ❂ ❂ ❂ ❂ ❂ ❂ ❂ ❂ ❂ ❂ ❂ ❂ ❂ ❂ ❂ ❂ ❂ ❂ ❂ ❂ ❂ ❂ ❂ ❂
+              </div>
+              <p
+                class="cardSmall__subtitle"
+              />
+              <div
+                class="cardSmall__offer"
+              >
+                <span
+                  class="cardSmall__price"
+                >
+                  £14.00
+                </span>
+              </div>
+            </div>
+          </div>
+        </a>
+      </div>
+      <div
+        class="col-lg-3 col-md-6 col-sm-6 mb-4 mt-4 mb-4"
+        id="cardSmall__contain"
+      >
+        <img
+          alt=""
+          class="w-100 h-100 shadow-sm rounded mb-4"
+          id="cardSmall__image"
+          src="https://cdn.shopify.com/s/files/1/0017/1562/products/AeroPressInsta_large.jpg?v=1619621450"
+        />
+        <a
+          class="sidebar__link"
+          href="/aerobie-aeropress"
+        >
+          <div
+            class="mask"
+          >
+            <div
+              class="cardSmall__text"
+            >
+              <div
+                class="cardSmall__login__line"
+                style="color: white;"
+              >
+                ❂ ❂ ❂ ❂ ❂ ❂ ❂ ❂ ❂ ❂ ❂ ❂ ❂ ❂ ❂ ❂ ❂ ❂ ❂ ❂ ❂ ❂ ❂ ❂ ❂ ❂ ❂ ❂ ❂ ❂ ❂ ❂
+              </div>
+              <h1
+                class="cardSmall__title"
+                style="color: white;"
+              >
+                AEROBIE AEROPRESS
+              </h1>
+              <div
+                class="cardSmall__login__line"
+                style="color: white;"
+              >
+                 ❂ ❂ ❂ ❂ ❂ ❂ ❂ ❂ ❂ ❂ ❂ ❂ ❂ ❂ ❂ ❂ ❂ ❂ ❂ ❂ ❂ ❂ ❂ ❂ ❂ ❂ ❂ ❂ ❂ ❂ ❂ ❂
+              </div>
+              <p
+                class="cardSmall__subtitle"
+              />
+              <div
+                class="cardSmall__offer"
+              >
+                <span
+                  class="cardSmall__price"
+                >
+                  £30.00
+                </span>
+              </div>
+            </div>
+          </div>
+        </a>
+      </div>
+    </div>
+    <div
+      class="footer__container"
+    >
+      <div
+        class="footer__group"
+      >
+        <div
+          class="footer__section"
+        >
+          <div
+            class="footerContent__container"
+          >
+            <h3
+              class="footerContent__title"
+            >
+              WELCOME TO THE WEBSHOP
+            </h3>
+            <p
+              class="footerContent__paragraph"
+            >
+              Welcome to the Colmore Row Coffee Roasters webshop. Above are our current offerings that will be updated as the seasons change and new crops arrive.
+            </p>
+            <p
+              class="footerContent__footer"
+            >
+              More about us
+            </p>
+            <p
+              class="footerContent__footer"
+            >
+              Where to drink our coffee
+            </p>
+          </div>
+        </div>
+        <div
+          class="footer__section"
+        >
+          <div
+            class="footerContent__container"
+          >
+            <h3
+              class="footerContent__title"
+            >
+              FROM THE BLOG
+            </h3>
+            <p
+              class="footerContent__paragraph"
+            >
+              For regular updates, faq and to leave feedback then visit our blog:
+            </p>
+            <p
+              class="footerContent__footer"
+            >
+              colmorerowblog.com
+            </p>
+            <p
+              class="footerContent__footer"
+            />
+          </div>
+        </div>
+        <div
+          class="footer__section"
+        >
+          <div
+            class="footerContent__container"
+          >
+            <h3
+              class="footerContent__title"
+            >
+              SUBSCRIBE TO OUR NEWSLETTER
+            </h3>
+            <p
+              class="footerContent__paragraph"
+            >
+              Our newsletter is currently under development, we'll let you know when we're up and running
+            </p>
+            <p
+              class="footerContent__footer"
+            >
+              Our best coffees
+            </p>
+            <p
+              class="footerContent__footer"
+            />
+          </div>
+        </div>
+      </div>
+      <div
+        class="footer__group"
+      >
+        <div
+          class="footer__section"
+        >
+          <div
+            class="footerContent__container"
+          >
+            <h3
+              class="footerContent__title"
+            >
+              WHOLESALE ENQUIRIES
+            </h3>
+            <p
+              class="footerContent__paragraph"
+            >
+              We are looking to work with people who see value in serving the best coffee possible. If you think you are a good match for what we do and would like more information, please contact us on
+            </p>
+            <p
+              class="footerContent__footer"
+            >
+              info@colmorerowcoffee.com
+            </p>
+            <p
+              class="footerContent__footer"
+            />
+          </div>
+        </div>
+        <div
+          class="footer__section"
+        >
+          <div
+            class="footerContent__container"
+          >
+            <h3
+              class="footerContent__title"
+            >
+              MEETINGS BY APPOINTMENT ONLY, NO RETAIL SALES ONLINE
+            </h3>
+            <p
+              class="footerContent__paragraph"
+            >
+              Colmore Row Coffee Roasters
+            </p>
+            <p
+              class="footerContent__footer"
+            >
+              FAQ's
+            </p>
+            <p
+              class="footerContent__footer"
+            >
+              Terms & Conditions
+            </p>
+          </div>
+        </div>
+        <div
+          class="footer__section"
+        >
+          <div
+            class="footerContent__container"
+          >
+            <h3
+              class="footerContent__title"
+            >
+              CONTACT
+            </h3>
+            <p
+              class="footerContent__paragraph"
+            >
+              t: 0207 729 3742
+            </p>
+            <p
+              class="footerContent__footer"
+            >
+              e: webshop@colmorerowtest.com
+            </p>
+            <p
+              class="footerContent__footer"
+            >
+              e:info@colmorerowtest.com
+            </p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</DocumentFragment>
+`;
