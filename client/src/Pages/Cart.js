@@ -27,9 +27,9 @@ const Cart = () => {
         <table className="cart__table">
           <tbody>
             <tr className="cart__heading">
-              <th class="cart__titleItemHeading">Item Title</th>
-              <th class="cart__priceHeading">Price</th>
-              <th class="cart__removeHeading">Delete</th>
+              <th className="cart__titleItemHeading">Item Title</th>
+              <th className="cart__priceHeading">Price</th>
+              <th className="cart__removeHeading">Delete</th>
             </tr>
 
             {basket.map((item) => (
@@ -52,7 +52,7 @@ const Cart = () => {
         <button
           onClick={onSubmit}
           type="submit"
-          class="btn-xs"
+          className="btn-xs"
           value="Submit"
           style={{ float: "right" }}
         >
@@ -71,9 +71,9 @@ const Cart = () => {
         <table>
           <tbody>
             <tr className="cart__heading">
-              <th class="cart__titleItemHeading">Item Title</th>
-              <th class="cart__priceHeading">Price</th>
-              <th class="cart__removeHeading">Delete</th>
+              <th className="cart__titleItemHeading">Item Title</th>
+              <th className="cart__priceHeading">Price</th>
+              <th className="cart__removeHeading">Delete</th>
             </tr>
 
             {basket.map((item) => (
@@ -97,7 +97,7 @@ const Cart = () => {
         <button
           onClick={onSubmit}
           type="submit"
-          class="btn-xs"
+          className="btn-xs"
           value="Submit"
           style={{ float: "right" }}
         >
